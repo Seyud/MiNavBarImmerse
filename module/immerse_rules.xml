@@ -103,14 +103,12 @@
    <package name="com.ss.android.ugc.live" enable="true" activityRule="com.ss.android.ugc.aweme.live.LivePlayActivity:0,com.ss.android.ugc.aweme.splash.SplashActivity:0,com.ss.android.ugc.aweme.live.LiveDummyActivity:1:1,com.ss.android.ugc.aweme.detail.ui.DetailActivity:0,com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity:1:1" />
    <package name="com.cubic.autohome" enable="true" activityRule="com.autohome.main.article.zbusiness.video.SlideVideoPageActivity:1:1,com.autohome.mainlib.business.reactnative.base.AHCommRNActivity:1:1,com.autohome.plugin.usedcarhome.imchat.ChatActivity:1:1" />
    <package name="com.hupu.games" enable="true" activityRule="com.hupu.games.main.MainActivity:0" />
-   <package name="tv.danmaku.bili" enable="true" activityRule="tv.danmaku.bili.ui.video.VideoDetailsActivity:0,com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity:1:1,com.bilibili.ad.adview.downloadmanager.ADDownloadManagerActivity:1:1,tv.danmaku.bili.MainActivityV2:0,com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2:0,com.bilibili.lib.ui.ComposeActivity:0,com.bilibili.ad.adview.download.ADDownloadManagerActivity:1:1,com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3:0" />
    <package name="com.fenbi.android.servant" enable="true" activityRule="com.fenbi.android.ti.pdf.DownloadPdfListActivity:1:1" />
    <package name="com.ss.android.auto" enable="true" activityRule="com.ss.android.auto.lynx.LynxActivity:1:1,com.ss.android.auto.ugc.video.activity.UgcVideoDetailActivity:0,com.ss.android.auto.activity.UploadBrowserActivity:0,com.ss.android.auto.activity.SplashActivity:0" />
    <package name="com.baidu.homework" enable="true" activityRule="com.baidu.homework.activity.web.ZybWebActivity:1:-1" />
    <package name="com.mihoyo.hyperion" enable="true" activityRule="com.mihoyo.hyperion.editor.container.PublishActivity:1:-1,com.mihoyo.hyperion.post.detail.PostDetailActivity:1:-1,com.mihoyo.hyperion.post.video.PostVideoActivity:1:-1,com.mihoyo.hyperion.post.pictureDetail.v2.PostPictureDetailActivityV2:1:-1,com.luck.picture.lib.PictureSelectActivity2:1:-1" />
    <package name="com.UCMobile" enable="true" activityRule="com.uc.browser.InnerUCMobile:0" />
    <package name="com.lphtsccft" enable="true" activityRule="com.lphtsccft.zhangle.market.SearchStockActivity:2,*:0,com.lphtsccft.zhangle.main.MainActivity:1:1" />
-   <package name="com.eg.android.AlipayGphone" enable="true" activityRule="com.antfortune.wealth.stock.common.cube.page.CubePageActivity:0,com.alipay.android.msp.ui.views.MspContainerActivity:0,com.alipay.mobile.chatapp.ui.PersonalChatMsgActivity_:0,com.alipay.android.phone.xriver.bundlex.CSGAPushActivity:0,com.alipay.android.phone.wallet.mylive.activity.QuickPreviewActivity:0,com.alipay.mobile.nebulax.xriver.activity.XRiverActivity:1:-1,com.eg.android.AlipayGphone.AlipayLogin:1:1,com.alipay.mobile.verifyidentity.module.password.pay.ui.PayPwdDialogActivity:0" />
    <package name="com.job.android" enable="false" />
    <package name="com.zhihu.android" enable="true" activityRule="com.zhihu.android.videox.VideoXHostActivity:0,com.zhihu.android.comment.ui.activity.CommentListActivity:1:1,com.zhihu.android.zvideo_publish.editor.DbEditorHostActivity:1:1,com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity:1:1" />
    <package name="com.pingan.paces.ccms" enable="false" />
@@ -123,7 +121,6 @@
    <package name="com.MobileTicket" enable="true" activityRule="com.alipay.mobile.nebulacore.ui.H5Activity:1:-1" />
    <package name="com.hundsun.winner.pazq" enable="true" activityRule="com.hundsun.winner.pazq.business.quotation.activity.StockChartScreen:1:1" />
    <package name="com.shuqi.controller" enable="true" />
-   <package name="com.taobao.taobao" enable="true" activityRule="com.taobao.search.searchdoor.SearchDoorActivity:0,com.taobao.android.tbabilitykit.pop.StdPopActivityGroup:0,com.taobao.browser.BrowserActivity:0,com.taobao.message.activity.ChatActivityV2:0,com.taobao.android.detail2.core.framework.NewDetailActivity:2,com.taobao.android.detail.wrapper.activity.DetailActivity:1:1,com.taobao.themis.container.app.TMSActivity:0,com.taobao.message.activity.ChatActivity:0,com.taobao.taolive.room.TaoLiveVideoActivity:0,com.taobao.taolivehome.TaoLiveHomepageActivity:0,com.taobao.android.detail.alittdetail.TTDetailActivity:0,com.taobao.weex.weexv2.page.WeexV2Activity:0" />
    <package name="com.dianping.v1" enable="true" activityRule="com.dianping.social.activity.NewFeedDetailActivity:0,com.dianping.nova.picasso.DPPicassoBoxActivity:0" />
    <package name="com.kugou.android" enable="true" activityRule="com.kugou.android.app.lockscreen.LockScreenActivity:2,com.kugou.android.app.splash.SplashActivity:0" />
    <package name="com.alibaba.android.rimet" enable="false" />
@@ -163,4 +160,15 @@
    <package name="com.baidu.BaiduMap" enable="true" activityRule="*:2" />
    <package name="com.baidu.netdisk" enable="true" activityRule="*:2,com.baidu.netdisk.ui.MainActivity:0" />
    <package name="com.zidongdianji" enable="true" activityRule="com.autoclicker.clicker.MainActivity:1:-331014" />
+   <package name="com.baidu.baidutranslate" enable="true" activityRule="*:2,com.baidu.baidutranslate.activity.MainActivity:0" />
+   <package name="com.baidu.newapp" enable="true" activityRule="*:2" />
+   <package name="com.eg.android.AlipayGphone" enable="true" activityRule="*:2" />
+   <package name="com.tencent.mm" enable="true" activityRule="com.tencent.mm.plugin.topstory.ui.home.TopStoryHomeAffinityUI:2,com.tencent.mm.ui.LauncherUI:2,com.tencent.mm.plugin.appbrand.ui.*:2,com.tencent.mm.ui.conversation.NewBizConversationUI:2,com.tencent.mm.plugin.lite.ui.WxaLiteAppLiteUI:2,com.tencent.mm.plugin.lite.ui.WxaLiteAppLiteUI:2,com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI:2" />
+   <package name="com.oray.sunlogin" enable="true" activityRule="*:2" />
+   <package name="com.xiwang.youke" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0" />
+   <package name="com.xiwang.zaixian" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0" />
+   <package name="com.xueersi.parentsmeeting" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0" />
+   <package name="com.tal.imonkey.chinese" enable="true" activityRule="*:2,com.tal.imonkey.business.launch.activity.MainActivity:0" />
+   <package name="com.taobao.taobao" enable="true" activityRule="com.taobao.search.searchdoor.SearchDoorActivity:0,com.taobao.android.tbabilitykit.pop.StdPopActivityGroup:0,com.taobao.browser.BrowserActivity:0,com.taobao.message.activity.ChatActivityV2:0,com.taobao.android.detail2.core.framework.NewDetailActivity:2,com.taobao.android.detail.wrapper.activity.DetailActivity:1:1,com.taobao.themis.container.app.TMSActivity:0,com.taobao.message.activity.ChatActivity:0,com.taobao.taolive.room.TaoLiveVideoActivity:0,com.taobao.taolivehome.TaoLiveHomepageActivity:0,com.taobao.android.detail.alittdetail.TTDetailActivity:0,com.taobao.weex.weexv2.page.WeexV2Activity:0,com.taobao.search.uniform.SearchActivity:2" />
+   <package name="tv.danmaku.bili" enable="true" activityRule="*:2,tv.danmaku.bili.MainActivityV2:0" />
 </NBIRules>
