@@ -4,7 +4,7 @@ MiNavBarImmerse（小米小白条沉浸优化）是一个通过替换Xiaomi Hype
 
 # 使用
 
-需要Xiaomi HyperOS 2.2及以上版本的机型，解锁root权限，刷入.zip格式的Magisk模块即可使用。
+需要Xiaomi HyperOS 2.2及以上版本的机型，解锁root权限，刷入.zip格式的Magisk模块即可使用，可能需要重启两次系统生效。
 
 # 更多
 

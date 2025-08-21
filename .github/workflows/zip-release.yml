@@ -27,7 +27,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ github.run_id }}
-          name: MiNavBarImmerse_${{ github.run_id }}   # 修正项：使用 name 而非 release_name
+          name: MiNavBarImmerse_${{ github.run_id }}
           files: MiNavBarImmerse_${{ github.run_id }}.zip
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
