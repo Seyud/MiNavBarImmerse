@@ -160,5 +160,7 @@
    <package name="com.iflytek.elpmobile.marktool" enable="true" activityRule="*:2" />
    <package name="com.iflytek.elpmobile.smartlearning" enable="true" activityRule="*:2" />
    <package name="com.iflytek.elpmobile.student" enable="true" activityRule="*:2" />
-   <package name="com.baidu.BaiduMap" enable="true" activityRule="com.baidu.baidumaps.MapsActivity:0" />
+   <package name="com.baidu.BaiduMap" enable="true" activityRule="*:2" />
+   <package name="com.baidu.netdisk" enable="true" activityRule="*:2,com.baidu.netdisk.ui.MainActivity:0" />
+   <package name="com.zidongdianji" enable="true" activityRule="com.autoclicker.clicker.MainActivity:1:-16448250" />
 </NBIRules>
