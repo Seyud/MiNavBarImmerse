@@ -35,12 +35,12 @@
 | 美团               | com.sankuai.meituan                 | 小米部分适配，全局填充白色     | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
 | 大众点评             | com.dianping.v1                     | 部分页面适配            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
 | 123云盘            | com.mfcloudcalculate.networkdisk    | 部分页面适配            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
-| 甲壳虫ADB助手         | com.didjdk.adbhelper                | 部分页面适配            | 填充底部颜色       | 待测试                 | 2025年8月21日 |
+| 甲壳虫ADB助手         | com.didjdk.adbhelper                | 部分页面适配            | 填充底部颜色       | 效果好                 | 2025年8月21日 |
 | 阅读               | io.legado.app.release               | 全局固定灰色            | 主页阅读页面以外悬浮显示 | 设置界面黑色              | 2025年8月21日 |
 | BubbleUPnP       | com.bubblesoft.android.bubbleupnp   | 全局固定取色            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
 | LX Music         | cn.toside.music.mobile              | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | 信号检测仪            | com.lefan.signal                    | 部分页面适配            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
-| DSU Sideloader   | vegabobo.dsusideloader              | 颜色稍微浅一点点          |              | 待测试                 | 2025年8月21日 |
+| DSU Sideloader   | vegabobo.dsusideloader              | 颜色稍微浅一点点          | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
 | Activity Manager | com.activitymanager                 | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | Kernel Flasher   | com.github.capntrips.kernelflasher  | 颜色稍微浅一点点          | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | Scene            | com.omarea.vtools                   | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |

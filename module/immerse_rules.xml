@@ -179,7 +179,7 @@
     <package name="com.bubblesoft.android.bubbleupnp" enable="true" activityRule="*:2,com.bubblesoft.android.bubbleupnp.MainTabActivity:0"/>
     <package name="cn.toside.music.mobile" enable="true" activityRule="*:2"/>
     <package name="com.lefan.signal" enable="true" activityRule="*:2,com.lefan.signal.MainActivity:0"/>
-    <package name="vegabobo.dsusideloader" enable="true" activityRule="*:1"/>
+    <package name="vegabobo.dsusideloader" enable="true" activityRule="*:2"/>
     <package name="com.activitymanager" enable="true" activityRule="*:2"/>
     <package name="com.github.capntrips.kernelflasher" enable="true" activityRule="*:2"/>
     <package name="com.omarea.vtools" enable="true" activityRule="*:2"/>
@@ -188,5 +188,5 @@
     <package name="dev.miuiicons.pedroz" enable="true" activityRule="*:2"/>
     <package name="com.microsoft.emmx" enable="true" activityRule="*:2"/>
     <package name="com.houvven.guise" enable="true" activityRule="*:2"/>
-    <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2,com.tencent.mobileqq.activity.QQBrowserActivity:2"/>
+    <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2"/>
 </NBIRules>
