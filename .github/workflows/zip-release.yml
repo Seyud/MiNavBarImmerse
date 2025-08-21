@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+permissions:
+  contents: write
 
 jobs:
   zip-and-release:
@@ -11,15 +13,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
+        uses: actions/checkout@v3
 
       - name: Install zip
-        run: sudo apt-get install zip
+        run: sudo apt-get update && sudo apt-get install -y zip
 
       - name: Create zip file
         run: |
@@ -29,7 +26,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ github.run_id }}
-          release_name: Release ${{ github.run_id }}
+          name: MiNavBarImmerse_${{ github.run_id }}   # 修正项：使用 name 而非 release_name
           files: MiNavBarImmerse_${{ github.run_id }}.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
