@@ -1,0 +1,35 @@
+name: Zip and Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  zip-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install zip
+        run: sudo apt-get install zip
+
+      - name: Create zip file
+        run: |
+          zip -r MiNavBarImmerse_${{ github.run_id }}.zip module
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ github.run_id }}
+          release_name: Release ${{ github.run_id }}
+          files: MiNavBarImmerse_${{ github.run_id }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
