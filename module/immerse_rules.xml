@@ -77,7 +77,6 @@
    <package name="air.tv.douyu.android" enable="true" activityRule="com.douyu.module.player.p.socialinteraction.functions.switch_room.AudioPlayerPagerActivity:0,com.douyu.module.list.view.activity.CustomHomeSetupBActivity:1:1,com.douyu.sdk.rn.activity.DYReactActivity:1:-1,com.douyu.module.vod.p.voddownload.VodDownloadActivity:1:1" />
    <package name="com.ss.android.article.lite" enable="true" activityRule="com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity:1:1,com.ss.android.live.host.livehostimpl.OpenLivePlayerActivity:0,com.ss.android.list.news.activity.AudioNewsListActivity:0" />
    <package name="com.tencent.wework" enable="false" />
-   <package name="com.baidu.BaiduMap" enable="false" activityRule="com.baidu.baidumaps.MapsActivity:0" />
    <package name="com.unionpay" enable="true" activityRule="com.unionpay.activity.react.UPActivityReactNative:0" />
    <package name="com.tencent.mm" enable="true" activityRule="com.tencent.mm.ui.conversation.NewBizConversationUI:1:1" />
    <package name="com.icbc" enable="true" activityRule="icbc.com.icbccustomerservice.chat.ui.CsmPublicChatActivity:1:-1" />
@@ -158,4 +157,8 @@
    <package name="com.android.email" enable="true" activityRule="*:2" />
    <package name="com.xiaomi.shop" enable="true" activityRule="*:2,com.xiaomi.shop2.activity.MainActivity:0" />
    <package name="com.iflytek.elpmobile.smartlearning" enable="true" activityRule="*:2" />
+   <package name="com.iflytek.elpmobile.marktool" enable="true" activityRule="*:2" />
+   <package name="com.iflytek.elpmobile.smartlearning" enable="true" activityRule="*:2" />
+   <package name="com.iflytek.elpmobile.student" enable="true" activityRule="*:2" />
+   <package name="com.baidu.BaiduMap" enable="true" activityRule="com.baidu.baidumaps.MapsActivity:0" />
 </NBIRules>
