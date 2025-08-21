@@ -40,7 +40,7 @@
 | BubbleUPnP       | com.bubblesoft.android.bubbleupnp   | 全局固定取色            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
 | LX Music         | cn.toside.music.mobile              | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | 信号检测仪            | com.lefan.signal                    | 部分页面适配            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
-| DSU Sideloader   | vegabobo.dsusideloader              | 颜色稍微浅一点点          | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
+| DSU Sideloader   | vegabobo.dsusideloader              | 颜色稍微浅一点点          | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | Activity Manager | com.activitymanager                 | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | Kernel Flasher   | com.github.capntrips.kernelflasher  | 颜色稍微浅一点点          | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | Scene            | com.omarea.vtools                   | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
