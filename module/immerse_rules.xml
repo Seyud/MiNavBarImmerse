@@ -174,12 +174,12 @@
     <package name="com.sankuai.meituan" enable="true" activityRule="*:2,com.meituan.android.pt.homepage.activity.MainActivity:0"/>
     <package name="com.dianping.v1" enable="true" activityRule="*:2,com.dianping.v1.NovaMainActivity:0"/>
     <package name="com.mfcloudcalculate.networkdisk" enable="true" activityRule="*:2"/>
-    <package name="com.didjdk.adbhelper" enable="true" activityRule="com.didjdk.adbhelper.FastbootActivity:1:-460,552"/>
-    <package name="io.legado.app.release" enable="true" activityRule="*:2,io.legado.app.ui.main.MainActivity:0,io.legado.app.ui.book.read.ReadBookActivity:0"/>
+    <package name="com.didjdk.adbhelper" enable="true" activityRule="com.didjdk.adbhelper.FastbootActivity:1:-460552"/>
+    <package name="io.legado.app.release" enable="true" activityRule="*:2,io.legado.app.ui.main.MainActivity:0,io.legado.app.ui.book.read.ReadBookActivity:0,io.legado.app.ui.config.ConfigActivity:0"/>
     <package name="com.bubblesoft.android.bubbleupnp" enable="true" activityRule="*:2,com.bubblesoft.android.bubbleupnp.MainTabActivity:0"/>
     <package name="cn.toside.music.mobile" enable="true" activityRule="*:2"/>
     <package name="com.lefan.signal" enable="true" activityRule="*:2,com.lefan.signal.MainActivity:0"/>
-    <package name="vegabobo.dsusideloader" enable="true" activityRule="*:0"/>
+    <package name="vegabobo.dsusideloader" enable="true" activityRule="*:1"/>
     <package name="com.activitymanager" enable="true" activityRule="*:2"/>
     <package name="com.github.capntrips.kernelflasher" enable="true" activityRule="*:2"/>
     <package name="com.omarea.vtools" enable="true" activityRule="*:2"/>
@@ -187,12 +187,6 @@
     <package name="bin.mt.plus" enable="true" activityRule="*:2,com.byyoung.setting.HomePage.activitys.MainActivity:0"/>
     <package name="dev.miuiicons.pedroz" enable="true" activityRule="*:2"/>
     <package name="com.microsoft.emmx" enable="true" activityRule="*:2"/>
-    <package name="com.tsng.hidemyapplist" enable="true" activityRule="*:2"/>
     <package name="com.houvven.guise" enable="true" activityRule="*:2"/>
-    <package name="me.hd.wauxv" enable="true" activityRule="*:2"/>
-    <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2"/>
-    <package name="me.iacn.biliroaming" enable="true" activityRule="*:2"/>
-    <package name="top.hookvip.pro" enable="true" activityRule="*:2"/>
-    <package name="com.bug.hookvip" enable="true" activityRule="*:2"/>
-    <package name="org.wikipedia" enable="true" activityRule="*:2,com.miui.home.launcher.Launcher:0"/>
+    <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2,com.tencent.mobileqq.activity.QQBrowserActivity:2"/>
 </NBIRules>

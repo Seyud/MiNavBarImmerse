@@ -29,33 +29,33 @@
 | Bilibili         | tv.danmaku.bili                     | 小米部分适配，视频页面有Bug变黑 | 主页以外悬浮显示     | 效果好（发评论有部分遮挡）       | 2025年8月21日 |
 | 番茄免费小说           | com.dragon.read                     | 小米部分适配            | 书架分组悬浮显示     | 效果好                 | 2025年8月21日 |
 | AppShare         | info.muge.appshare                  | 大部分页面适配           | 全局悬浮显示       | 不成功                 | 2025年8月21日 |
-| 铁路12306          | com.MobileTicket                    | 全局填充白色            | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
-| 京东               | com.jingdong.app.mall               | 部分页面适配            | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
-| 闲鱼               | com.taobao.idlefish                 | 小米部分适配，全局填充白色     | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
-| 美团               | com.sankuai.meituan                 | 小米部分适配，全局填充白色     | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
-| 大众点评             | com.dianping.v1                     | 部分页面适配            | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
-| 123云盘            | com.mfcloudcalculate.networkdisk    | 部分页面适配            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
+| 铁路12306          | com.MobileTicket                    | 全局填充白色            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
+| 京东               | com.jingdong.app.mall               | 部分页面适配            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
+| 闲鱼               | com.taobao.idlefish                 | 小米部分适配，全局填充白色     | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
+| 美团               | com.sankuai.meituan                 | 小米部分适配，全局填充白色     | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
+| 大众点评             | com.dianping.v1                     | 部分页面适配            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
+| 123云盘            | com.mfcloudcalculate.networkdisk    | 部分页面适配            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
 | 甲壳虫ADB助手         | com.didjdk.adbhelper                | 部分页面适配            | 填充底部颜色       | 待测试                 | 2025年8月21日 |
-| 阅读               | io.legado.app.release               | 全局固定灰色            | 主页阅读页面以外悬浮显示 | 待测试                 | 2025年8月21日 |
-| BubbleUPnP       | com.bubblesoft.android.bubbleupnp   | 全局固定取色            | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
-| LX Music         | cn.toside.music.mobile              | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| 信号检测仪            | com.lefan.signal                    | 部分页面适配            | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
+| 阅读               | io.legado.app.release               | 全局固定灰色            | 主页阅读页面以外悬浮显示 | 设置界面黑色              | 2025年8月21日 |
+| BubbleUPnP       | com.bubblesoft.android.bubbleupnp   | 全局固定取色            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
+| LX Music         | cn.toside.music.mobile              | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
+| 信号检测仪            | com.lefan.signal                    | 部分页面适配            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
 | DSU Sideloader   | vegabobo.dsusideloader              | 颜色稍微浅一点点          |              | 待测试                 | 2025年8月21日 |
-| Activity Manager | com.activitymanager                 | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| Kernel Flasher   | com.github.capntrips.kernelflasher  | 颜色稍微浅一点点          | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| Scene            | com.omarea.vtools                   | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| MT管理器            | bin.mt.plus                         | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| 爱玩机工具箱           | com.byyoung.setting                 | 部分页面取色            | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
-| 完美图标计划           | dev.miuiicons.pedroz                | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| Edge             | com.microsoft.emmx                  | 主界面固定取色           | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| 隐藏应用列表           | com.tsng.hidemyapplist              | 全局固定浅色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| Guise            | com.houvven.guise                   | 全局固定浅色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| WAuxiliary       | me.hd.wauxv                         | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| QQ               | com.tencent.mobileqq                | 部分页面未适配           | 悬浮显示         | 待测试                 | 2025年8月21日 |
-| 哔哩漫游             | me.iacn.biliroaming                 | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| HookVip          | top.hookvip.pro                     | 设置页面固定浅色          | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| Fuck for VIP     | com.bug.hookvip                     | 全局固定白色            | 全局悬浮显示       | 待测试                 | 2025年8月21日 |
-| 维基百科             | org.wikipedia                       | 全局固定白色            | 主页以外悬浮显示     | 待测试                 | 2025年8月21日 |
+| Activity Manager | com.activitymanager                 | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
+| Kernel Flasher   | com.github.capntrips.kernelflasher  | 颜色稍微浅一点点          | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
+| Scene            | com.omarea.vtools                   | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
+| MT管理器            | bin.mt.plus                         | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
+| 爱玩机工具箱           | com.byyoung.setting                 | 部分页面取色            | 主页以外悬浮显示     | 效果好                 | 2025年8月21日 |
+| 完美图标计划           | dev.miuiicons.pedroz                | 全局固定白色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
+| Edge             | com.microsoft.emmx                  | 主界面固定取色           | 全局悬浮显示       | 效果好（主界面有部分遮挡）       | 2025年8月21日 |
+| 隐藏应用列表           | com.tsng.hidemyapplist              | 全局固定浅色            | 全局悬浮显示       | 不成功                 | 2025年8月21日 |
+| Guise            | com.houvven.guise                   | 全局固定浅色            | 全局悬浮显示       | 效果好                 | 2025年8月21日 |
+| WAuxiliary       | me.hd.wauxv                         | 全局固定白色            | 全局悬浮显示       | 不成功                 | 2025年8月21日 |
+| QQ               | com.tencent.mobileqq                | 部分页面未适配           | 悬浮显示         | 效果好                 | 2025年8月21日 |
+| 哔哩漫游             | me.iacn.biliroaming                 | 全局固定白色            | 全局悬浮显示       | 不成功                 | 2025年8月21日 |
+| HookVip          | top.hookvip.pro                     | 设置页面固定浅色          | 全局悬浮显示       | 不成功                 | 2025年8月21日 |
+| Fuck for VIP     | com.bug.hookvip                     | 全局固定白色            | 全局悬浮显示       | 不成功                 | 2025年8月21日 |
+| 维基百科             | org.wikipedia                       | 全局固定白色            | 主页以外悬浮显示     | 不成功                 | 2025年8月21日 |
 |                  |                                     |                   |              |                     |            |
 |                  |                                     |                   |              |                     |            |
 |                  |                                     |                   |              |                     |            |
