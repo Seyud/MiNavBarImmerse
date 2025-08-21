@@ -159,11 +159,11 @@
    <package name="com.iflytek.elpmobile.student" enable="true" activityRule="*:2" />
    <package name="com.baidu.BaiduMap" enable="true" activityRule="*:2" />
    <package name="com.baidu.netdisk" enable="true" activityRule="*:2,com.baidu.netdisk.ui.MainActivity:0" />
-   <package name="com.zidongdianji" enable="true" activityRule="com.autoclicker.clicker.MainActivity:1:-331014" />
+   <package name="com.zidongdianji" enable="true" activityRule="com.autoclicker.clicker.MainActivity:1:-328966" />
    <package name="com.baidu.baidutranslate" enable="true" activityRule="*:2,com.baidu.baidutranslate.activity.MainActivity:0" />
    <package name="com.baidu.newapp" enable="true" activityRule="*:2" />
-   <package name="com.eg.android.AlipayGphone" enable="true" activityRule="*:2" />
-   <package name="com.tencent.mm" enable="true" activityRule="com.tencent.mm.plugin.topstory.ui.home.TopStoryHomeAffinityUI:2,com.tencent.mm.ui.LauncherUI:2,com.tencent.mm.plugin.appbrand.ui.*:2,com.tencent.mm.ui.conversation.NewBizConversationUI:2,com.tencent.mm.plugin.lite.ui.WxaLiteAppLiteUI:2,com.tencent.mm.plugin.lite.ui.WxaLiteAppLiteUI:2,com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI:2" />
+   <package name="com.eg.android.AlipayGphone" enable="true" activityRule="*:2,com.eg.android.AlipayGphone.AlipayLogin:0" />
+   <package name="com.tencent.mm" enable="true" activityRule="*:2,com.tencent.mm.ui.LauncherUI:0" />
    <package name="com.oray.sunlogin" enable="true" activityRule="*:2" />
    <package name="com.xiwang.youke" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0" />
    <package name="com.xiwang.zaixian" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0" />
