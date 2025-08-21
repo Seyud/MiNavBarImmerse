@@ -1,6 +1,6 @@
 # 适配方式
 
-模块通过替换/data/system/cloudFeature_navigation_bar_immersive_rules_list.xml生效，规则位于[immerse_rules.xml](/module/immerse_rules.xml)。  
+模块通过替换/data/system/cloudFeature_navigation_bar_immersive_rules_list.xml生效，规则位于[immerse_rules.xml](/module/immerse_rules.xml)，模块内的文件是基于源文件修改得来的。  
 
 
 NBIRules标签内为应用列表，格式为：
