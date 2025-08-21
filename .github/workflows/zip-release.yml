@@ -20,7 +20,8 @@ jobs:
 
       - name: Create zip file
         run: |
-          zip -r MiNavBarImmerse_${{ github.run_id }}.zip module
+          cd module
+          zip -r ../MiNavBarImmerse_${{ github.run_id }}.zip .
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
