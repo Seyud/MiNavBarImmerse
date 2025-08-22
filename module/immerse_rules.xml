@@ -165,16 +165,16 @@
     <package name="com.xiwang.zaixian" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0"/>
     <package name="com.xueersi.parentsmeeting" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0"/>
     <package name="com.tal.imonkey.chinese" enable="true" activityRule="*:2,com.tal.imonkey.business.launch.activity.MainActivity:0"/>
-    <package name="com.taobao.taobao" enable="true" activityRule="com.taobao.search.searchdoor.SearchDoorActivity:0,com.taobao.android.tbabilitykit.pop.StdPopActivityGroup:0,com.taobao.browser.BrowserActivity:0,com.taobao.message.activity.ChatActivityV2:0,com.taobao.android.detail2.core.framework.NewDetailActivity:2,com.taobao.android.detail.wrapper.activity.DetailActivity:1:1,com.taobao.themis.container.app.TMSActivity:0,com.taobao.message.activity.ChatActivity:0,com.taobao.taolive.room.TaoLiveVideoActivity:0,com.taobao.taolivehome.TaoLiveHomepageActivity:0,com.taobao.android.detail.alittdetail.TTDetailActivity:0,com.taobao.weex.weexv2.page.WeexV2Activity:0,com.taobao.search.uniform.SearchActivity:2"/>
-    <package name="tv.danmaku.bili" enable="true" activityRule="*:2,tv.danmaku.bili.MainActivityV2:0,com.tencent.connect.common.AssistActivity:0"/>
+    <package name="com.taobao.taobao" enable="true" activityRule="com.taobao.search.searchdoor.SearchDoorActivity:0,com.taobao.android.tbabilitykit.pop.StdPopActivityGroup:0,com.taobao.browser.BrowserActivity:0,com.taobao.message.activity.ChatActivityV2:0,com.taobao.android.detail2.core.framework.NewDetailActivity:2,com.taobao.android.detail.wrapper.activity.DetailActivity:1:1,com.taobao.themis.container.app.TMSActivity:0,com.taobao.message.activity.ChatActivity:0,com.taobao.taolive.room.TaoLiveVideoActivity:0,com.taobao.taolivehome.TaoLiveHomepageActivity:0,com.taobao.android.detail.alittdetail.TTDetailActivity:0,com.taobao.weex.weexv2.page.WeexV2Activity:0,com.taobao.search.uniform.SearchActivity:2,com.taobao.tao.welcome.Welcome:0"/>
+    <package name="tv.danmaku.bili" enable="true" activityRule="*:2,tv.danmaku.bili.MainActivityV2:0,com.bilibili.app.preferences.BiliPreferencesActivity:0"/>
     <package name="com.dragon.read" enable="true" activityRule="com.dragon.read.component.biz.impl.bookshelf.bookgroup.BookGroupActivity:2,com.dragon.read.plugin.live.web.OpenLiveWebViewActivity:1:1,com.dragon.read.reader.ui.ReaderActivity:0,com.bytedance.android.openlive.plugin.OpenLiveDummyActivity:1:1,com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity:1:1,com.dragon.read.component.shortvideo.impl.ShortSeriesActivity:0"/>
     <package name="com.MobileTicket" enable="true" activityRule="*:2,com.MobileTicket.ui.activity.MainActivity:0"/>
-    <package name="com.jingdong.app.mall" enable="true" activityRule="*:2,com.jingdong.app.mall.MainFrameActivity:0"/>
-    <package name="com.taobao.idlefish" enable="true" activityRule="*:2,com.taobao.idlefish.maincontainer.activity.MainActivity:0"/>
+    <package name="com.jingdong.app.mall" enable="true" activityRule="*:2,com.jingdong.app.mall.MainFrameActivity:0,com.jd.lib.ttt.page.TTTMultiPageActivity:0"/>
+    <package name="com.taobao.idlefish" enable="true" activityRule="*:2,com.taobao.idlefish.maincontainer.activity.MainActivity:0,com.taobao.idlefish.detail.DetailActivity:0"/>
     <package name="com.sankuai.meituan" enable="true" activityRule="*:2,com.meituan.android.pt.homepage.activity.MainActivity:0"/>
     <package name="com.dianping.v1" enable="true" activityRule="*:2,com.dianping.v1.NovaMainActivity:0"/>
     <package name="com.mfcloudcalculate.networkdisk" enable="true" activityRule="*:2"/>
-    <package name="com.didjdk.adbhelper" enable="true" activityRule="com.didjdk.adbhelper.FastbootActivity:1:-460552"/>
+    <package name="com.didjdk.adbhelper" enable="true" activityRule="com.didjdk.adbhelper.FastbootActivity:2"/>
     <package name="io.legado.app.release" enable="true" activityRule="*:2,io.legado.app.ui.main.MainActivity:0,io.legado.app.ui.book.read.ReadBookActivity:0,io.legado.app.ui.config.ConfigActivity:0"/>
     <package name="com.bubblesoft.android.bubbleupnp" enable="true" activityRule="*:2,com.bubblesoft.android.bubbleupnp.MainTabActivity:0"/>
     <package name="cn.toside.music.mobile" enable="true" activityRule="*:2"/>
@@ -189,4 +189,6 @@
     <package name="com.microsoft.emmx" enable="true" activityRule="*:2"/>
     <package name="com.houvven.guise" enable="true" activityRule="*:2"/>
     <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2"/>
+    <package name="com.github.android" enable="true" activityRule="*:2,com.github.android.main.MainActivity:0"/>
+    <package name="com.zwoastro.astronet" enable="true" activityRule="*:2,com.zwoastro.kit.ui.HomeActivity:0,com.zwoastro.kit.ui.user.badge.BadgeTaskActivity:0,com.zwoastro.kit.ui.contest.ContestDetailActivity:0,com.zwoastro.kit.ui.thought.PostCreateActivity:0"/>
 </NBIRules>
