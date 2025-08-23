@@ -189,5 +189,5 @@
     <package name="com.houvven.guise" enable="true" activityRule="*:2"/>
     <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2"/>
     <package name="com.github.android" enable="true" activityRule="*:2,com.github.android.main.MainActivity:0"/>
-    <package name="com.twtapp" enable="true" activityRule="*:2"/>
+    <package name="com.twtapp" enable="false" activityRule="*:2"/>
 </NBIRules>
