@@ -147,7 +147,7 @@
     <package name="com.umetrip.android.msky.app" enable="true" activityRule="*:1:-1"/>
     <package name="com.rosan.installer.x" enable="true" activityRule="*:2"/>
     <package name="com.android.email" enable="true" activityRule="*:2"/>
-    <package name="com.xiaomi.shop" enable="true" activityRule="*:2,com.xiaomi.shop2.activity.MainActivity:0"/>
+    <package name="com.xiaomi.shop" enable="true" activityRule="*:2,com.xiaomi.shop2.activity.MainActivity:0,com.xiaomi.miot.store.mirn.RNMainActivity:0,com.xiaomi.shop.sharelib.ShareDialog:0"/>
     <package name="com.iflytek.elpmobile.smartlearning" enable="true" activityRule="*:2"/>
     <package name="com.iflytek.elpmobile.marktool" enable="true" activityRule="*:2"/>
     <package name="com.iflytek.elpmobile.smartlearning" enable="true" activityRule="*:2"/>
@@ -191,4 +191,6 @@
     <package name="com.github.android" enable="true" activityRule="*:2,com.github.android.main.MainActivity:0"/>
     <package name="com.twtapp" enable="false" activityRule="*:2"/>
     <package name="com.minecraft.free" enable="true" activityRule="*:2,com.minecraft.free.MainActivity:0"/>
+    <package name="com.xiaomi.smarthome" enable="true" activityRule="com.xiaomi.miot.store.ui.MiotStoreMainActivity:2,com.xiaomi.smarthome.miio.consumables.ConsumablesCenterActivity:2"/>
+    <package name="com.mi.health" enable="true" activityRule="com.xiaomi.wearable.yrn.views.WearableRNActivity:2"/>
 </NBIRules>
