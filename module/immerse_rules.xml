@@ -158,7 +158,7 @@
     <package name="com.baidu.baidutranslate" enable="true" activityRule="*:2"/>
     <package name="com.baidu.newapp" enable="true" activityRule="*:2,CustomDrawerLayout:0"/>
     <package name="com.eg.android.AlipayGphone" enable="true" activityRule="*:2,com.eg.android.AlipayGphone.AlipayLogin:0,com.alipay.mobile.nebulax.xriver.activity.XRiverActivity:0,com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main:0,com.antfortune.wealth.stock.StockMainActivity:0"/>
-    <package name="com.tencent.mm" enable="true" activityRule="com.tencent.mm.ui.conversation.NewBizConversationUI:1:1"/>
+    <package name="com.tencent.mm" enable="true" activityRule="com.tencent.mm.ui.conversation.NewBizConversationUI:1:1,com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI:0"/>
     <package name="com.oray.sunlogin" enable="true" activityRule="*:2"/>
     <package name="com.xiwang.youke" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0"/>
     <package name="com.xiwang.zaixian" enable="true" activityRule="*:2,com.xueersi.parentsmeeting.module.home.HomeV2Activity:0"/>
