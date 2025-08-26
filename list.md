@@ -27,7 +27,7 @@
 | 学而思                | com.xueersi.parentsmeeting          | 全局填充白色            | 主页以外悬浮显示     | 少部分界面无效                       | 2025年8月21日 |
 | 淘宝                 | com.taobao.taobao                   | 小米部分适配            | 额外添加界面悬浮显示   | 效果好                           | 2025年8月22日 |
 | Bilibili           | tv.danmaku.bili                     | 小米部分适配，视频页面有Bug变黑 | 主页以外悬浮显示     | 效果好（发评论有部分遮挡）设置页面有概率变黑（更改未测试） | 2025年8月23日 |
-| 番茄免费小说             | com.dragon.read                     | 小米部分适配            | 部分页面悬浮显示     | 效果好（更改未测试）                    | 2025年8月23日 |
+| 番茄免费小说             | com.dragon.read                     | 小米部分适配            | 部分页面悬浮显示     | 效果好（更改未测试）                    | 2025年8月26日 |
 | AppShare           | info.muge.appshare                  | 大部分页面适配           | 全局悬浮显示       | 不成功                           | 2025年8月21日 |
 | 铁路12306            | com.MobileTicket                    | 全局填充白色            | 主页以外悬浮显示     | 效果好                           | 2025年8月21日 |
 | 京东                 | com.jingdong.app.mall               | 部分页面适配            | 主页以外悬浮显示     | 效果好，部分页面有概率变黑                 | 2025年8月22日 |
@@ -56,7 +56,7 @@
 | HookVip            | top.hookvip.pro                     | 设置页面固定浅色          | 全局悬浮显示       | 不成功                           | 2025年8月21日 |
 | Fuck for VIP       | com.bug.hookvip                     | 全局固定白色            | 全局悬浮显示       | 不成功                           | 2025年8月21日 |
 | 维基百科               | org.wikipedia                       | 全局固定白色            | 主页以外悬浮显示     | 不成功                           | 2025年8月21日 |
-| GitHub             | com.github.android                  | 全局固定白色            | 主页以外悬浮显示     | 效果好                           | 2025年8月22日 |
+| GitHub             | com.github.android                  | 全局固定白色            | 全局悬浮显示       | 效果好                           | 2025年8月26日 |
 | 天文社区               | com.zwoastro.astronet               | 部分页面未适配           | 大部分页面悬浮显示    | 不成功                           | 2025年8月22日 |
 | 天文通                | com.twtapp                          | 部分页面未适配           | 全局悬浮显示       | 不成功                           | 2025年8月23日 |
 | Minecraft DLC Free | com.minecraft.free                  | 全局固定白色            | 主页以外悬浮显示     | 未测试                           | 2025年8月23日 |
