@@ -22,7 +22,6 @@
     <package name="com.ygkj.chelaile.standard" enable="true" activityRule="dev.xesam.chelaile.app.module.line.gray.LineDetailActivity:0"/>
     <package name="com.jooan.qiaoanzhilian" enable="true"/>
     <package name="com.cmri.universalapp" enable="true" activityRule="com.cmri.universalapp.SmartMainProxyActivity:0"/>
-    <package name="com.baidu.searchbox" enable="true"/>
     <package name="com.wuba.zhuanzhuan" enable="true" activityRule="com.wuba.zhuanzhuan.activity.ChooseAddressActivity:1:1,com.zhuanzhuan.module.webview.page.WebContainerDialogActivity:1:1,com.zhuanzhuan.login.page.LoginActivity:1:1"/>
     <package name="com.jiongji.andriod.card" enable="true"/>
     <package name="com.bankcomm.Bankcomm" enable="false"/>
@@ -193,4 +192,5 @@
     <package name="com.minecraft.free" enable="true" activityRule="*:2,com.minecraft.free.MainActivity:0"/>
     <package name="com.xiaomi.smarthome" enable="true" activityRule="com.xiaomi.miot.store.ui.MiotStoreMainActivity:2,com.xiaomi.smarthome.miio.consumables.ConsumablesCenterActivity:2"/>
     <package name="com.mi.health" enable="true" activityRule="com.xiaomi.wearable.yrn.views.WearableRNActivity:2"/>
+    <package name="com.baidu.searchbox" enable="true" activityRule="com.baidu.sapi2.activity.AccountCenterActivity:2"/>
 </NBIRules>
