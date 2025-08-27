@@ -59,11 +59,11 @@
 | GitHub             | com.github.android                  | 全局固定白色            | 全局悬浮显示       | 效果好                           | 2025年8月26日 |
 | 天文社区               | com.zwoastro.astronet               | 部分页面未适配           | 大部分页面悬浮显示    | 不成功                           | 2025年8月22日 |
 | 天文通                | com.twtapp                          | 部分页面未适配           | 全局悬浮显示       | 不成功                           | 2025年8月23日 |
-| Minecraft DLC Free | com.minecraft.free                  | 全局固定白色            | 主页以外悬浮显示     | 未测试                           | 2025年8月23日 |
-| 米家                 | com.xiaomi.smarthome                | 部分页面未适配           | 单独适配         | 未测试                           | 2025年8月23日 |
-| 小米运动健康             | com.mi.health                       | 部分页面未适配           | 单独适配         | 未测试                           | 2025年8月23日 |
-| 百度                 | com.baidu.searchbox                 | 部分页面未适配           | 单独适配         | 未测试                           | 2025年8月26日 |
-|                    |                                     |                   |              |                               |            |
+| Minecraft DLC Free | com.minecraft.free                  | 全局固定白色            | 全局悬浮显示       | 未测试                           | 2025年8月27日 |
+| 米家                 | com.xiaomi.smarthome                | 部分页面未适配           | 单独适配         | 效果好                           | 2025年8月23日 |
+| 小米运动健康             | com.mi.health                       | 部分页面未适配           | 单独适配         | 不成功                           | 2025年8月27日 |
+| 百度                 | com.baidu.searchbox                 | 部分页面未适配           | 单独适配         | 效果好                           | 2025年8月26日 |
+| 小米社区               | com.xiaomi.vipaccount               | 部分页面未适配           | 单独适配         | 未测试                           | 2025年8月27日 |
 |                    |                                     |                   |              |                               |            |
 |                    |                                     |                   |              |                               |            |
 |                    |                                     |                   |              |                               |            |
