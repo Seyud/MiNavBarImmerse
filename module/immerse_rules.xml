@@ -194,4 +194,6 @@
     <package name="com.mi.health" enable="false" activityRule="com.xiaomi.wearable.yrn.views.WearableRNActivity:2"/>
     <package name="com.baidu.searchbox" enable="true" activityRule="com.baidu.sapi2.activity.AccountCenterActivity:2"/>
     <package name="com.xiaomi.vipaccount" enable="true" activityRule="com.xiaomi.vipaccount.newbrowser.NormalWebActivity:2"/>
+    <package name="cn.com.whty.cqt" enable="true" activityRule="*:2"/>
+    <package name="com.ubnt.usurvey" enable="true" activityRule="*:2"/>
 </NBIRules>
