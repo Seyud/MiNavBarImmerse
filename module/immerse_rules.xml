@@ -168,7 +168,7 @@
     <package name="com.dragon.read" enable="true" activityRule="com.dragon.community.impl.detail.dialog.c:2,com.dragon.read.component.biz.impl.bookshelf.bookgroup.BookGroupActivity:2,com.dragon.read.plugin.live.web.OpenLiveWebViewActivity:1:1,com.dragon.read.reader.ui.ReaderActivity:0,com.bytedance.android.openlive.plugin.OpenLiveDummyActivity:1:1,com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity:1:1,com.dragon.read.component.shortvideo.impl.ShortSeriesActivity:0,com.dragon.read.component.biz.impl.bookshelf.moredetail.BookshelfMoreDetailDialog:0"/>
     <package name="com.MobileTicket" enable="true" activityRule="*:2,com.MobileTicket.ui.activity.MainActivity:0"/>
     <package name="com.jingdong.app.mall" enable="true" activityRule="*:2,com.jingdong.app.mall.MainFrameActivity:0,com.jd.lib.ttt.page.TTTMultiPageActivity:0"/>
-    <package name="com.taobao.idlefish" enable="true" activityRule="*:2,com.taobao.idlefish.maincontainer.activity.MainActivity:0,com.taobao.idlefish.detail.DetailActivity:0"/>
+    <package name="com.taobao.idlefish" enable="true" activityRule="*:2,com.taobao.idlefish.maincontainer.activity.MainActivity:1:0,com.taobao.idlefish.detail.DetailActivity:0"/>
     <package name="com.sankuai.meituan" enable="true" activityRule="*:2,com.meituan.android.pt.homepage.activity.MainActivity:0"/>
     <package name="com.dianping.v1" enable="true" activityRule="*:2,com.dianping.v1.NovaMainActivity:0"/>
     <package name="com.mfcloudcalculate.networkdisk" enable="true" activityRule="*:2"/>
