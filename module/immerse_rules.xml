@@ -197,4 +197,5 @@
     <package name="com.ubnt.usurvey" enable="true" activityRule="*:2"/>
     <package name="com.xiaomi.vipaccount" enable="true" activityRule="com.xiaomi.vipaccount.newbrowser.NormalWebActivity:2,com.xiaomi.vipaccount.newbrowser.NormalWebActivity:2"/>
     <package name="com.xiaomi.router" enable="true" activityRule="*:1:0"/>
+    <package name="com.shenyaocn.android.usbcamera" enable="true" activityRule="*:2"/>
 </NBIRules>
