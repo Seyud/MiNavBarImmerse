@@ -7,7 +7,7 @@ MODDIR=${0%/*}
 TARGET_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.xml"
 BACKUP_FILE="${TARGET_FILE}.bak"
 
-echo "正在卸载MiNavBarImmerse..."
+echo "正在卸载 MiNavBarImmerse..."
 
 # 检查备份文件是否存在
 if [ -f "$BACKUP_FILE" ]; then
@@ -15,7 +15,7 @@ if [ -f "$BACKUP_FILE" ]; then
 
     # 恢复备份文件
     if cp -f "$BACKUP_FILE" "$TARGET_FILE"; then
-        echo "已成功恢复原始文件"
+        echo "已成功恢复原始文件！"
 
         # 设置正确权限
         chmod 600 "$TARGET_FILE"
@@ -23,13 +23,13 @@ if [ -f "$BACKUP_FILE" ]; then
 
         # 删除备份文件
         rm -f "$BACKUP_FILE"
-        echo "已删除备份文件"
+        echo "已删除备份文件！"
     else
-        echo "恢复文件失败"
+        echo "恢复文件失败！"
         exit 1
     fi
 else
-    echo "未找到备份文件，跳过恢复"
+    echo "未找到备份文件，跳过恢复！"
 fi
 
-echo "卸载完成"
+echo "卸载完成！"
