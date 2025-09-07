@@ -68,7 +68,7 @@
 | WiFiman            | com.ubnt.usurvey                    | 全局填充黑色            | 全局悬浮显示       | 效果好                           | 2025年8月31日 |
 | 小米WiFi             | com.xiaomi.router                   | 全局填充黑色            | 全局填充白色       | 效果好                           | 2025年9月5日  |
 | USB摄像头             | com.shenyaocn.android.usbcamera     | 部分界面未适配           | 全局悬浮显示       | 待测试                           | 2025年9月6日  |
-|                    |                                     |                   |              |                               |            |
+| DevCheck           | flar2.devcheck                      | 全局填充白色            | 全局悬浮显示       | 待测试                           | 2025年9月7日  |
 |                    |                                     |                   |              |                               |            |
 |                    |                                     |                   |              |                               |            |
 |                    |                                     |                   |              |                               |            |
