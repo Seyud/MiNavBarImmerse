@@ -20,3 +20,7 @@ Xiaomi HyperOS 2.2及以上版本的机型，解锁root权限，能够刷入Magi
 [点此](rule.md)查看适配说明。
 
 欢迎大家踊跃参与仓库的贡献，提出Issue或提交PR。  
+
+# 历史
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Ianzb/MiNavBarImmerse&type=Date)](https://www.star-history.com/#Ianzb/MiNavBarImmerse&Date)
