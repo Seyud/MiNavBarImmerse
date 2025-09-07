@@ -62,7 +62,7 @@
 | Minecraft DLC Free | com.minecraft.free                  | 全局固定白色            | 全局悬浮显示       | 效果好                           | 2025年8月27日 |
 | 米家                 | com.xiaomi.smarthome                | 部分页面未适配           | 单独适配         | 效果好                           | 2025年8月23日 |
 | 小米运动健康             | com.mi.health                       | 部分页面未适配           | 单独适配         | 不成功                           | 2025年8月27日 |
-| 百度                 | com.baidu.searchbox                 | 部分页面未适配           | 单独适配         | 效果好                           | 2025年8月26日 |
+| 百度                 | com.baidu.searchbox                 | 部分页面未适配           | 新增适配页面       | 待测试                           | 2025年9月7日  |
 | 小米社区               | com.xiaomi.vipaccount               | 部分页面未适配           | 单独适配         | 效果好                           | 2025年9月3日  |
 | 渝通行                | cn.com.whty.cqt                     | 全局填充黑色            | 全局悬浮显示       | 部分遮挡底栏文字                      | 2025年8月31日 |
 | WiFiman            | com.ubnt.usurvey                    | 全局填充黑色            | 全局悬浮显示       | 效果好                           | 2025年8月31日 |

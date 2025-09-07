@@ -192,7 +192,7 @@
     <package name="com.minecraft.free" enable="true" activityRule="*:2"/>
     <package name="com.xiaomi.smarthome" enable="true" activityRule="com.xiaomi.miot.store.ui.MiotStoreMainActivity:2,com.xiaomi.smarthome.miio.consumables.ConsumablesCenterActivity:2"/>
     <package name="com.mi.health" enable="false" activityRule="com.xiaomi.wearable.yrn.views.WearableRNActivity:2"/>
-    <package name="com.baidu.searchbox" enable="true" activityRule="com.baidu.sapi2.activity.AccountCenterActivity:2"/>
+    <package name="com.baidu.searchbox" enable="true" activityRule="com.baidu.sapi2.activity.AccountCenterActivity:2,com.baidu.searchbox.godeye.CodeScannerActivity:2,com.baidu.swan.apps.SwanAppActivity:2,com.baidu.searchbox.AboutBaiduSettingsActivity:2,com.baidu.searchbox.VideoPlaySettingActivity:2,com.baidu.searchbox.push.set.MsgSetActivity:2,com.baidu.payment.impl.ext.setting.PaymentSettingsActivity:2,com.baidu.searchbox.FloatingSettingActivity:2,com.baidu.searchbox.VideoAutoPlaySettingsActivity:2"/>
     <package name="cn.com.whty.cqt" enable="true" activityRule="*:2"/>
     <package name="com.ubnt.usurvey" enable="true" activityRule="*:2"/>
     <package name="com.xiaomi.vipaccount" enable="true" activityRule="com.xiaomi.vipaccount.newbrowser.NormalWebActivity:2,com.xiaomi.vipaccount.newbrowser.NormalWebActivity:2"/>
