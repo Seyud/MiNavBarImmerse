@@ -199,4 +199,5 @@
     <package name="com.shenyaocn.android.usbcamera" enable="true" activityRule="*:2"/>
     <package name="flar2.devcheck" enable="true" activityRule="*:2"/>
     <package name="com.xjcheng.musictageditor" enable="true" activityRule="*:2"/>
+    <package name="com.byd.aeri.caranywhere" enable="true" activityRule="*:2"/>
 </NBIRules>

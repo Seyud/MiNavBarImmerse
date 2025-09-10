@@ -29,7 +29,7 @@
 | Bilibili           | tv.danmaku.bili                     | 小米部分适配，视频页面有Bug变黑 | 主页以外悬浮显示     | 效果好（发评论有部分遮挡）设置页面有概率变黑（更改未测试） | 2025年8月23日 |
 | 番茄免费小说             | com.dragon.read                     | 小米部分适配            | 部分页面悬浮显示     | 效果好（更改未测试）                    | 2025年8月26日 |
 | AppShare           | info.muge.appshare                  | 大部分页面适配           | 全局悬浮显示       | 不成功                           | 2025年8月21日 |
-| 铁路12306            | com.MobileTicket                    | 全局填充白色            | 主页以外悬浮显示     | 不成功，h5页面切换时底栏变黑                           | 2025年9月8日 |
+| 铁路12306            | com.MobileTicket                    | 全局填充白色            | 主页以外悬浮显示     | 不成功，h5页面切换时底栏变黑               | 2025年9月8日  |
 | 京东                 | com.jingdong.app.mall               | 部分页面适配            | 主页以外悬浮显示     | 效果好，部分页面有概率变黑                 | 2025年8月22日 |
 | 闲鱼                 | com.taobao.idlefish                 | 小米部分适配，全局填充白色     | 主页以外悬浮显示     | 效果好                           | 2025年9月6日  |
 | 美团                 | com.sankuai.meituan                 | 小米部分适配，全局填充白色     | 主页以外悬浮显示     | 效果好                           | 2025年8月21日 |
@@ -67,9 +67,10 @@
 | 渝通行                | cn.com.whty.cqt                     | 全局填充黑色            | 全局悬浮显示       | 部分遮挡底栏文字                      | 2025年8月31日 |
 | WiFiman            | com.ubnt.usurvey                    | 全局填充黑色            | 全局悬浮显示       | 效果好                           | 2025年8月31日 |
 | 小米WiFi             | com.xiaomi.router                   | 全局填充黑色            | 全局填充白色       | 效果好                           | 2025年9月5日  |
-| USB摄像头             | com.shenyaocn.android.usbcamera     | 部分界面未适配           | 全局悬浮显示       | 待测试                           | 2025年9月6日  |
-| DevCheck           | flar2.devcheck                      | 全局填充白色            | 全局悬浮显示       | 待测试                           | 2025年9月7日  |
-| 音乐标签            | com.xjcheng.musictageditor          | 全局填充白色            | 全局悬浮显示       | 效果好                          | 2025年9月10日 |
+| USB摄像头             | com.shenyaocn.android.usbcamera     | 部分界面未适配           | 全局悬浮显示       | 效果好                           | 2025年9月6日  |
+| DevCheck           | flar2.devcheck                      | 全局填充白色            | 全局悬浮显示       | 效果好                           | 2025年9月7日  |
+| 音乐标签               | com.xjcheng.musictageditor          | 全局填充白色            | 全局悬浮显示       | 效果好                           | 2025年9月10日 |
+| 比亚迪                | com.byd.aeri.caranywhere            | 全局填充白色            | 全局悬浮显示       | 待测试                           | 2025年9月10日 |
 |                    |                                     |                   |              |                               |            |
 |                    |                                     |                   |              |                               |            |
 |                    |                                     |                   |              |                               |            |
