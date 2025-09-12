@@ -16,11 +16,12 @@
 
 # 开发
 
-[点此](list.csv)查看适配列表。  
-[点此](rule.md)查看适配说明。  
-[点此](experience.md)查看适配经验分享。  
-
-欢迎大家踊跃参与仓库的贡献，提出Issue或提交PR。  
+在[list.csv](list.csv)查看已适配应用信息。  
+在[rule.md](rule.md)查看适配教程和说明。  
+在[议题（Issue）](https://github.com/Ianzb/MiNavBarImmerse/issues)中提出适配要求，并提供信息。  
+在[讨论（Discussion）](https://github.com/Ianzb/MiNavBarImmerse/discussions)中查看适配经验分享，并分享你的经验。  
+在[拉取请求（Pull Request）](https://github.com/Ianzb/MiNavBarImmerse/pulls)中参与仓库贡献。  
+另外，如果需要频繁参与适配工作，也可发出Issue申请协作者权限。
 
 # 历史
 
