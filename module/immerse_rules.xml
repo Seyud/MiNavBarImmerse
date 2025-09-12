@@ -28,7 +28,7 @@
 
 
     <package name="cn.ninebot.ninebot" enable="true"
-             activityRule="cn.ninebot.react.NBReactActivity:2,cn.ninebot.device.dynamic.sub.DynamicListActivity:2"/>
+             activityRule="*:2,cn.ninebot.ninebot.mainshell.MainActivity:0"/>
 
 
     <package name="cn.soulapp.android" enable="true"
