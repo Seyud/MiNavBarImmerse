@@ -59,7 +59,7 @@ jobs:
             "version": "${{ steps.update_version.outputs.module_version }}",
             "versionCode": ${{ steps.update_version.outputs.module_versionCode }},
             "zipUrl": "https://github.com/${{ github.repository }}/releases/download/AutoBuild_${{ steps.update_version.outputs.module_version }}/$ZIP_NAME",
-            "changelog": "https://raw.githubusercontent.com/Ianzb/MiNavBarImmerse/main/docs/changelog.md"
+            "changelog": "https://raw.githubusercontent.com/Ianzb/MiNavBarImmerse/main/changelog.md"
           }
           EOF
 
