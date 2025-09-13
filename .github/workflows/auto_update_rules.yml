@@ -6,7 +6,7 @@ on:
 
 jobs:
   create-pr-for-rule-update:
-    if: contains(github.event.issue.labels.*.name, '规则更新')
+    if: contains(github.event.issue.labels.*.name, 'Automation:Update')
     runs-on: ubuntu-latest
     permissions:
       contents: write

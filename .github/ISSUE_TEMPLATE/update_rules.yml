@@ -1,7 +1,7 @@
 name: "更新小白条规则"
 description: "请求修改 module/immerse_rules.xml 文件，提交Issue后将会自动创建对应PR"
 title: "规则更新: [应用名]"
-labels: ["automation/update_rules"]
+labels: ["Automation:Update"]
 body:
   - type: input
     id: app_name
