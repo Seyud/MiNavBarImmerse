@@ -51,7 +51,6 @@ jobs:
               userName: context.payload.issue.user.login,
               description
             };
-          result-encoding: string
 
       - name: Checkout code
         uses: actions/checkout@v4
