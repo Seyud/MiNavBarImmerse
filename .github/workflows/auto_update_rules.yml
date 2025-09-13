@@ -39,7 +39,7 @@ jobs:
             
             // 如果没有提供邮箱，使用GitHub noreply邮箱
             let finalEmail = userEmail;
-            if (!finalEmail) {
+            if (!finalEmail || finalEmail == "_No response_") {
               finalEmail = `${context.payload.issue.user.id}+${context.payload.issue.user.login}@users.noreply.github.com`;
             }
             
