@@ -4,7 +4,7 @@ title: "规则更新: [应用名]"
 labels: ["automation/update_rules"]
 body:
   - type: input
-    id: package_name
+    id: app_name
     attributes:
       label: "应用名"
       description: "请输入应用名"
