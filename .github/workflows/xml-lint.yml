@@ -3,8 +3,14 @@ name: XML Validation
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'module/immerse_rules.xml'
+      - 'module/immerse_rules.xsd'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'module/immerse_rules.xml'
+      - 'module/immerse_rules.xsd'
 
 jobs:
   validate-xml:
