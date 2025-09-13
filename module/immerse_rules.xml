@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NBIRules>
+<NBIRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="immerse_rules.xsd">
     <!-- 斗鱼 -->
     <package name="air.tv.douyu.android" enable="true"
              activityRule="com.douyu.module.player.p.socialinteraction.functions.switch_room.AudioPlayerPagerActivity:0,com.douyu.module.list.view.activity.CustomHomeSetupBActivity:1:1,com.douyu.sdk.rn.activity.DYReactActivity:1:-1,com.douyu.module.vod.p.voddownload.VodDownloadActivity:1:1"/>
@@ -575,7 +576,7 @@
 
     <!-- 掌上无畏契约 -->
     <package name="com.tencent.apps.valorant" enable="true"
-             activityRule="com.tencent.qt.qtl.activity.ugc.UgcFriendPostDetailActivity:1:1,com.tencent.mudule_web.info.NewsDetailXmlActivity:1:1,com.tencent.container.page.activity.HalfContainerActivity:1:1,com.tencent.shortvideo.ShortVideoHomeActivity:0,com.tencent.qt.qtl.activity.barcode.BarcodeScanActivity:-16777216"/>
+             activityRule="com.tencent.qt.qtl.activity.ugc.UgcFriendPostDetailActivity:1:1,com.tencent.mudule_web.info.NewsDetailXmlActivity:1:1,com.tencent.container.page.activity.HalfContainerActivity:1:1,com.tencent.shortvideo.ShortVideoHomeActivity:0,com.tencent.qt.qtl.activity.barcode.BarcodeScanActivity:1:-16777216"/>
 
     <!-- 和平营地 -->
     <package name="com.tencent.gamehelper.pg" enable="true"
