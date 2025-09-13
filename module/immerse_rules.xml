@@ -811,4 +811,5 @@
     <package name="vegabobo.dsusideloader" enable="true"
              activityRule="*:2"/>
 
+
 </NBIRules>

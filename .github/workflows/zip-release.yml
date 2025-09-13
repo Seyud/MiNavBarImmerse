@@ -96,5 +96,10 @@ jobs:
           fi
 
           cd ${{ github.workspace }}
-          curl -F chat_id=${GROUP_ID} -F document=@"${ZIP_FILE}" -F parse_mode="HTML" -F caption="$COMMIT_MESSAGE" https://api.telegram.org/bot${BOT_TOKEN}/sendDocument
+          curl -F chat_id=${GROUP_ID} \
+               -F message_thread_id=39 \
+               -F document=@"${ZIP_FILE}" \
+               -F parse_mode="MarkdownV2" \
+               -F caption="$COMMIT_MESSAGE" \
+               https://api.telegram.org/bot${BOT_TOKEN}/sendDocument
 
