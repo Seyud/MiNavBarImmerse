@@ -12,6 +12,10 @@ on:
         description: '指定版本号（留空为RunID）'
         required: false
         default: ''
+      post_to_telegram:
+        description: '是否上传到Telegram'
+        required: false
+        type: boolean
 
 permissions:
   contents: write
@@ -63,13 +67,30 @@ jobs:
           }
           EOF
 
-      - name: Push "update.json"
+      - name: Clean "gh-pages" branch
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages || git checkout --orphan gh-pages
+          git rm -rf .
+          git clean -fxd
+
+      - name: Push "update.json" to "gh-pages"
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f update.json
+          ZIP_NAME="MiNavBarImmerse_${{ steps.update_version.outputs.module_version }}.zip"
+          cat <<EOF > update.json
+          {
+            "version": "${{ steps.update_version.outputs.module_version }}",
+            "versionCode": ${{ steps.update_version.outputs.module_versionCode }},
+            "zipUrl": "https://github.com/${{ github.repository }}/releases/download/${{ steps.update_version.outputs.module_version }}/$ZIP_NAME",
+            "changelog": "https://raw.githubusercontent.com/${{ github.repository }}/main/changelog.md"
+          }
+          EOF
+          git add update.json
           git commit -m "Version ${{ steps.update_version.outputs.module_version }}_${{ steps.update_version.outputs.module_versionCode }}" || echo "No changes"
-          git push
+          git push origin gh-pages --force
+
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -78,8 +99,9 @@ jobs:
           tag_name: AutoBuild_${{ steps.update_version.outputs.module_version }}
           files: MiNavBarImmerse_${{ steps.update_version.outputs.module_version }}.zip
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Post to Telegram Channel
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.post_to_telegram == true)
         env:
           GROUP_ID: ${{ secrets.CHANNEL_ID }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
@@ -88,11 +110,13 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             COMMIT_MESSAGE="Manually run by ${{ github.actor }}"
           else
-            COMMIT_MESSAGE="New push to GitHub
+            read -r -d '' COMMIT_MESSAGE << EOM
+            New push to GitHub
             \`\`\`
             ${{ github.event.head_commit.message }}
             \`\`\`by \`${{ github.event.head_commit.author.name }}\`
-            See commit detail [here](${{ github.event.head_commit.url }})"
+            See commit detail [here](${{ github.event.head_commit.url }})
+          EOM
           fi
 
           cd ${{ github.workspace }}

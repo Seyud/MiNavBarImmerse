@@ -4,4 +4,4 @@ version=1.0.0
 versionCode=1
 author=Ianzb
 description=通过Xiaomi HyperOS 2.2内置第三方应用小白条配置文件，实现小白条沉浸优化。
-updateJson=https://raw.githubusercontent.com/Ianzb/MiNavBarImmerse/main/update.json
+updateJson=https://Ianzb.github.io/MiNavBarImmerse/update.json

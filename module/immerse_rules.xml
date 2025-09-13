@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NBIRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="immerse_rules.xsd">
+                xsi:noNamespaceSchemaLocation="immerse_rules.xsd">
     <!-- 斗鱼 -->
     <package name="air.tv.douyu.android" enable="true"
              activityRule="com.douyu.module.player.p.socialinteraction.functions.switch_room.AudioPlayerPagerActivity:0,com.douyu.module.list.view.activity.CustomHomeSetupBActivity:1:1,com.douyu.sdk.rn.activity.DYReactActivity:1:-1,com.douyu.module.vod.p.voddownload.VodDownloadActivity:1:1"/>
