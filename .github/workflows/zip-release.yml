@@ -95,5 +95,6 @@ jobs:
             See commit detail [here](${{ github.event.head_commit.url }})"
           fi
 
+          cd ${{ github.workspace }}
           curl -F chat_id=${GROUP_ID} -F document=@"${ZIP_FILE}" -F parse_mode="HTML" -F caption="$COMMIT_MESSAGE" https://api.telegram.org/bot${BOT_TOKEN}/sendDocument
 
