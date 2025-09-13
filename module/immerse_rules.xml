@@ -82,7 +82,7 @@
 
     <!-- 高德地图 -->
     <package name="com.autonavi.minimap" enable="true"
-             activityRule="*:1:0,"/>
+             activityRule="*:1:0"/>
 
     <!-- 百度地图 -->
     <package name="com.baidu.BaiduMap" enable="true"
