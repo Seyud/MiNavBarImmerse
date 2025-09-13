@@ -19,9 +19,9 @@ jobs:
       
     - name: Validate XML files
       run: |
-        if [ -f ".github/scripts/immerse_rules.xsd" ]; then
+        if [ -f "module/immerse_rules.xsd" ]; then
           echo "Validating XML against XSD schema..."
-          xmllint --schema .github/scripts/immerse_rules.xsd --noout module/immerse_rules.xml
+          xmllint --schema module/immerse_rules.xsd --noout module/immerse_rules.xml
         else
           echo "XSD schema file not found!"
           exit 1
