@@ -2,6 +2,11 @@
 
 小米小白条沉浸优化（MiNavBarImmerse）是一个通过替换Xiaomi HyperOS 2.2内置第三方应用小白条配置文件，实现小白条沉浸优化的Magisk模块。
 
+# 交流 & 反馈群组
+加入我们所创建的群组以反馈问题或是了解最新情况。
+
+[![badge_trguild]][trguild_url]
+
 # 使用
 
 在Release下载最新打包的.zip文件。
@@ -26,3 +31,10 @@
 # 历史
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Ianzb/MiNavBarImmerse&type=Date)](https://www.star-history.com/#Ianzb/MiNavBarImmerse&Date)
+
+
+
+
+[trguild_url]: https://t.me/MiNavBarImmerse
+
+[badge_trguild]: https://img.shields.io/badge/TG-频道-4991D3?style=for-the-badge&logo=telegram
