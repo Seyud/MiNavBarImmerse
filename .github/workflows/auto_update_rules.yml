@@ -145,7 +145,7 @@ jobs:
             
             此PR由自动化工作流创建
           branch: ${{ env.BRANCH_NAME }}
-          base: feat/ci
+          base: main
           labels: |
             自动化
             更新规则
