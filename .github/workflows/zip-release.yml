@@ -12,10 +12,6 @@ on:
         description: '指定版本号（留空为RunID）'
         required: false
         default: ''
-      post_to_telegram:
-        description: '是否上传到Telegram'
-        required: false
-        type: boolean
 
 permissions:
   contents: write
@@ -62,22 +58,18 @@ jobs:
           {
             "version": "${{ steps.update_version.outputs.module_version }}",
             "versionCode": ${{ steps.update_version.outputs.module_versionCode }},
-            "zipUrl": "https://github.com/${{ github.repository }}/releases/download/${{ steps.update_version.outputs.module_version }}/$ZIP_NAME",
-            "changelog": "https://raw.githubusercontent.com/${{ github.repository }}/main/changelog.md"
+            "zipUrl": "https://github.com/${{ github.repository }}/releases/download/AutoBuild_${{ steps.update_version.outputs.module_version }}/$ZIP_NAME",
+            "changelog": "https://raw.githubusercontent.com/Ianzb/MiNavBarImmerse/main/changelog.md"
           }
           EOF
 
       - name: Push "update.json"
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  
-          publish_branch: gh-pages
-          allow_empty_commit: true
-          keep_files: false
-          include: 'update.json'
-          exclude: '*'
-          commit_message: 'Version ${{ steps.update_version.outputs.module_version }}_${{ steps.update_version.outputs.module_versionCode }}'
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f update.json
+          git commit -m "Version ${{ steps.update_version.outputs.module_version }}_${{ steps.update_version.outputs.module_versionCode }}" || echo "No changes"
+          git push
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -86,9 +78,8 @@ jobs:
           tag_name: AutoBuild_${{ steps.update_version.outputs.module_version }}
           files: MiNavBarImmerse_${{ steps.update_version.outputs.module_version }}.zip
           token: ${{ secrets.GITHUB_TOKEN }}
-
+      
       - name: Post to Telegram Channel
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.post_to_telegram == true)
         env:
           GROUP_ID: ${{ secrets.CHANNEL_ID }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
@@ -106,7 +97,7 @@ jobs:
 
           cd ${{ github.workspace }}
           curl -F chat_id=${GROUP_ID} \
-               -F message_thread_id=2 \
+               -F message_thread_id=39 \
                -F document=@"${ZIP_FILE}" \
                -F parse_mode="MarkdownV2" \
                -F caption="$COMMIT_MESSAGE" \
