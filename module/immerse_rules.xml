@@ -353,7 +353,7 @@
 
     <!-- Edge -->
     <package name="com.microsoft.emmx" enable="true"
-             activityRule="*:2,org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
+             activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
 
     <!-- To Do -->
     <package name="com.microsoft.todos" enable="true"
@@ -595,7 +595,7 @@
 
     <!-- QQ -->
     <package name="com.tencent.mobileqq" enable="true"
-             activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2"/>
+             activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2,com.tencent.mobileqq.activity.PublicFragmentActivity:2"/>
 
     <!-- QQ浏览器 -->
     <package name="com.tencent.mtt" enable="false"/>

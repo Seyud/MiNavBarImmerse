@@ -33,7 +33,7 @@ NBIRules标签内为应用列表，格式为：
 
 你可以在这里获取针对特定应用的[一些经验](https://github.com/Ianzb/MiNavBarImmerse/discussions)中查看适配经验分享，并分享你的经验。
 
-由于作者精力有限，不会主动适配不常用或者自己不用的软件。提交Issue时请给出截图、应用包名、必需的Activity适配信息和具体适配要求；PR时建议在本地提前进行验证，填写适配列表表格的项目。
+由于作者精力有限，不会主动适配不常用或者自己不用的软件。提交Issue时请给出截图、应用包名、必需的Activity适配信息和具体适配要求；PR时建议在本地提前进行验证，填写[list.csv](list.csv)，修改[changelog.md](changelog.md)。
 对于部分大厂软件可能无法生效。
 
 ### 悬浮显示
