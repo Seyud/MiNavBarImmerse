@@ -1,0 +1,28 @@
+name: XML Validation
+
+on:
+  push:
+    branches: [ main, feat/ci ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-xml:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install libxml2-utils
+      run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      
+    - name: Validate XML files
+      run: |
+        if [ -f ".github/scripts/immerse_rules.xsd" ]; then
+          echo "Validating XML against XSD schema..."
+          xmllint --schema .github/scripts/immerse_rules.xsd --noout module/immerse_rules.xml
+        else
+          echo "XSD schema file not found!"
+          exit 1
+        fi
