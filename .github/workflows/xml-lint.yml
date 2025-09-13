@@ -2,7 +2,7 @@ name: XML Validation
 
 on:
   push:
-    branches: [ main, feat/ci ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 

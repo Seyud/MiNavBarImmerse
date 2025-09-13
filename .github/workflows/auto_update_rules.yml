@@ -6,7 +6,7 @@ on:
 
 jobs:
   create-pr-for-rule-update:
-    if: contains(github.event.issue.labels.*.name, 'Automation:Update')
+    if: contains(github.event.issue.labels.*.name, '自动化') && contains(github.event.issue.labels.*.name, '规则更新')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -147,7 +147,8 @@ jobs:
           branch: ${{ env.BRANCH_NAME }}
           base: feat/ci
           labels: |
-            Automation:Update
+            自动化
+            更新规则
 
       - name: Associate PR with Issue
         if: steps.create-pr.outputs.pull-request-number != ''
