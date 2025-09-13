@@ -755,7 +755,7 @@
 
     <!-- Seestar -->
     <package name="com.zwo.seestar" enable="true"
-             activityRule="*:2,com.lxj.xpopup.core.FullScreenDialog:1:-15066071"/>
+             activityRule="*:2,com.lxj.xpopup.core.FullScreenDialog:1:-15066071,com.zwo.commiscope.web.ComTitleWebNativeActivity:1:-15461354"/>
 
     <!-- 志愿汇 -->
     <package name="com.zzw.october" enable="true"
