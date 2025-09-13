@@ -541,6 +541,10 @@
     <package name="com.tal.imonkey.chinese" enable="true"
              activityRule="*:2,com.tal.imonkey.business.launch.activity.MainActivity:0"/>
 
+    <!-- 一木记账 -->
+    <package name="com.wangc.bill" enable="true"
+             activityRule="*:2,com.wangc.bill.activity.MainActivity:0,com.wangc.bill.activity.BillInfoActivity:0,com.wangc.bill.dialog.t2:0,com.wangc.bill.activity.AddBillActivity:0"/>
+
     <!-- 一淘 -->
     <package name="com.taobao.etao" enable="true"
              activityRule="com.taobao.etao.detail.EtaoGoodsDetailNAActivity:1:1"/>
