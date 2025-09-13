@@ -126,7 +126,6 @@ jobs:
           commit_message="Update rules based on issue #${{ github.event.issue.number }}"
           co_author_line="Co-authored-by: $ISSUE_AUTHOR_NAME <$ISSUE_AUTHOR_EMAIL>"
           echo -e "$commit_message\n\n$co_author_line" | git commit -F -
-          git push -f origin ${{ env.BRANCH_NAME }}
 
       - name: Create Pull Request
         id: create-pr
@@ -146,7 +145,7 @@ jobs:
             
             此PR由自动化工作流创建
           branch: ${{ env.BRANCH_NAME }}
-          base: main
+          base: feat/ci
           labels: |
             Automation:Update
 
