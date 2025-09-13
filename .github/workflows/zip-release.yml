@@ -97,6 +97,7 @@ jobs:
 
           cd ${{ github.workspace }}
           curl -F chat_id=${GROUP_ID} \
+               -F message_thread_id=1 \
                -F document=@"${ZIP_FILE}" \
                -F parse_mode="MarkdownV2" \
                -F caption="$COMMIT_MESSAGE" \
