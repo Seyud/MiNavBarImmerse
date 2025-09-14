@@ -63,40 +63,55 @@ def sort_csv(csv_path: Path) -> bool:
         print(f"Empty CSV: {csv_path}")
         return False
 
-    # Use csv module to parse rows reliably
+    # Use csv module to parse rows reliably, but preserve group headers / empty lines.
     reader = list(csv.reader(lines))
+    if not reader:
+        print(f"Empty CSV: {csv_path}")
+        return False
+
     header = reader[0]
     rows = reader[1:]
 
-    # Keep only rows that have a package name (second column non-empty)
-    entries = [r for r in rows if len(r) > 1 and r[1].strip()]
+    # We'll treat any row with no second column or empty second column as a group header/separator.
+    out_rows = []
+    out_rows.append(header)
 
-    if not entries:
-        print(f"No data rows with package names in {csv_path}")
-        return False
+    group = []
 
-    # Sort by application name (first column), fallback to package name
-    def key_fn(r):
-        name = r[0].strip() if r and r[0] else ''
-        pkg = r[1].strip() if len(r) > 1 else ''
-        return (name.lower(), pkg.lower())
+    def flush_group(g):
+        # Sort group data rows by application name (first column) then package name
+        if not g:
+            return
+        def key_fn(r):
+            name = r[0].strip() if r and r[0] else ''
+            pkg = r[1].strip() if len(r) > 1 else ''
+            return (name.lower(), pkg.lower())
 
-    entries_sorted = sorted(entries, key=key_fn)
+        sorted_g = sorted(g, key=key_fn)
+        out_rows.extend(sorted_g)
 
-    # Reconstruct CSV: header followed by sorted entries
-    out_lines = []
-    out = []
-    out.append(header)
-    out.extend(entries_sorted)
+    for r in rows:
+        # Normalize length
+        if len(r) <= 1 or (len(r) > 1 and not r[1].strip()):
+            # This is a group header or separator: flush previous group then append this header as-is
+            flush_group(group)
+            group = []
+            out_rows.append(r)
+        else:
+            group.append(r)
+
+    flush_group(group)
 
     # Write back using csv.writer to preserve quoting
     out_path = csv_path
     with out_path.open('w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
-        for row in out:
+        for row in out_rows:
             writer.writerow(row)
 
-    print(f"Sorted {len(entries_sorted)} rows in {csv_path}")
+    # Count sorted data rows (exclude headers and separators)
+    data_rows_count = sum(1 for r in out_rows[1:] if len(r) > 1 and r[1].strip())
+    print(f"Sorted {data_rows_count} data rows in {csv_path}")
     return True
 
 
