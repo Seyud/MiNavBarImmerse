@@ -65,7 +65,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add module/immerse_rules.xml list.csv update.json
           if ! git diff --cached --quiet; then
-            git commit -m "chore: sort immerse_rules.xml/list.csv and update.json [skip ci]"
+            git commit -m "sort module files and update version ${{ steps.update_version.outputs.module_version }}"
             git push
           else
             echo "No changes to commit"
