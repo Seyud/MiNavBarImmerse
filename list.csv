@@ -67,7 +67,7 @@ F
 番茄免费小说,com.dragon.read,小米部分适配,部分页面悬浮显示,好（更新待测试）,2025-09-14,
 
 G
-GitHub,com.github.android,全局固定白色,全局悬浮显示,好,2025-08-26,
+GitHub,com.github.android,全局固定白色,主页以外悬浮显示,1.225.0后失效,2025-09-14,
 Google Play,com.android.vending,未适配,,,,
 Google Play 服务,com.google.android.gms,未适配 / 无需适配,,,,
 Guise,com.houvven.guise,全局固定浅色,全局悬浮显示,好,2025-08-21,

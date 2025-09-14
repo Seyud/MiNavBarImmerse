@@ -162,7 +162,7 @@
     <package name="com.fenbi.android.servant" enable="true" activityRule="com.fenbi.android.ti.pdf.DownloadPdfListActivity:1:1"/>
 
     <!-- Github -->
-    <package name="com.github.android" enable="true" activityRule="*:2"/>
+    <package name="com.github.android" enable="true" activityRule="*:2,com.github.android.main.MainActivity:0"/>
 
     <!-- Kernel Flasher -->
     <package name="com.github.capntrips.kernelflasher" enable="true" activityRule="*:2"/>
