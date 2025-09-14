@@ -18,7 +18,7 @@ Activity Manager,com.activitymanager,全局固定白色,全局悬浮显示,好,2
 B
 BubbleUPnP,com.bubblesoft.android.bubbleupnp,全局固定取色,主页以外悬浮显示,好,2025-08-21,
 百词斩,com.jiongji.andriod.card,根据深浅模式填充,主页以外悬浮显示,一般,2025-09-11,
-百度,com.baidu.searchbox,部分页面未适配,更新待测试,一般,2025-09-12,
+百度,com.baidu.searchbox,部分页面未适配,手动适配,一般,2025-09-12,
 百度地图,com.baidu.BaiduMap,全局填充白色,全局悬浮显示,好,2025-08-21,
 百度翻译,com.baidu.baidutranslate,全局填充白色,主页以外悬浮显示,好,2025-08-21,
 百度极速版,com.baidu.searchbox.lite,未适配,,,,
@@ -34,7 +34,7 @@ C
 车来了,com.ygkj.chelaile.standard,小米部分适配,,,,
 
 D
-DevCheck,flar2.devcheck,全局填充白色,全局悬浮显示,未测试,2025-09-07,
+DevCheck,flar2.devcheck,全局填充白色,全局悬浮显示,好,2025-09-07,
 DSU Sideloader,vegabobo.dsusideloader,填充颜色不一致,全局悬浮显示,好,2025-08-21,
 大麦,cn.damai,小米部分适配,,,,
 蛋花免费小说,com.eggflower.read,小米部分适配,,,,
@@ -232,7 +232,7 @@ X
 Y
 易班,com.yiban.app,全局填充白色,主页以外悬浮显示,好,2025-09-11,
 移动爱家,com.cmri.universalapp,小米部分适配,,,,
-一木记账,com.wangc.bill,半透明白色,主页以外悬浮显示,待测试,2025-09-13,
+一木记账,com.wangc.bill,半透明白色,主页以外悬浮显示,无效,2025-09-14,
 萤石云视频,com.videogo,小米部分适配,,,,
 应用宝,com.tencent.android.qqdownloader,小米部分适配,,,,
 音乐标签,com.xjcheng.musictageditor,全局填充白色,全局悬浮显示,好,2025-09-10,

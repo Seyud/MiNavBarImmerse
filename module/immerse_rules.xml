@@ -519,7 +519,7 @@
     <package name="com.videogo" enable="true" activityRule="com.videogo.reactnative.activity.EZReactBizActivity:1:-1,com.videogo.main.MainTabActivity:0"/>
 
     <!-- 一木记账 -->
-    <package name="com.wangc.bill" enable="true" activityRule="*:2,com.wangc.bill.activity.MainActivity:0,com.wangc.bill.activity.BillInfoActivity:0,com.wangc.bill.dialog.t2:0,com.wangc.bill.activity.AddBillActivity:0"/>
+    <package name="com.wangc.bill" enable="false" activityRule="*:2,com.wangc.bill.activity.MainActivity:0,com.wangc.bill.activity.BillInfoActivity:0,com.wangc.bill.dialog.t2:0,com.wangc.bill.activity.AddBillActivity:0"/>
 
     <!-- 今日校园 -->
     <package name="com.wisedu.cpdaily" enable="false"/>
