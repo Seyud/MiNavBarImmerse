@@ -18,11 +18,13 @@ import csv
 import sys
 from pathlib import Path
 from collections import defaultdict
+
 try:
     from pypinyin import lazy_pinyin, Style
 except ImportError:
     print("Missing pypinyin, installing...")
     import subprocess
+
     subprocess.run([sys.executable, '-m', 'pip', 'install', 'pypinyin'], check=True)
     from pypinyin import lazy_pinyin, Style
 
@@ -197,7 +199,8 @@ def sort_csv(csv_path: Path) -> bool:
 
         def py_sort_key(r):
             name = r[0].strip()
-            py_full = ''.join(lazy_pinyin(name)).lower()
+            # 拼接每个字的首字母拼音后整体排序
+            py_full = ''.join(lazy_pinyin(name, style=Style.FIRST_LETTER)).lower()
             return py_full
 
         others_sorted = sorted(others, key=py_sort_key)
