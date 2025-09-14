@@ -32,36 +32,52 @@ except ImportError:
 def sort_xml(xml_path: Path) -> bool:
     text = xml_path.read_text(encoding='utf-8')
 
-    # Find all package blocks including preceding comments
+    # Find all package blocks including preceding comments. Support self-closing <package .../>.
     pattern = re.compile(r'(?:\s*(?:<!--.*?-->\s*)*)\s*<package\b[^>]*?/>', re.DOTALL)
     matches = list(pattern.finditer(text))
     if not matches:
         print(f"No <package/> blocks found in {xml_path}")
         return False
 
-    header_start = 0
-    header_end = matches[0].start()
-    footer_start = matches[-1].end()
+    header = text[: matches[0].start()]
+    footer = text[matches[-1].end():]
 
-    header = text[header_start:header_end]
-    footer = text[footer_start:]
+    blocks = []
+    for m in matches:
+        blk = m.group(0)
+        # split into comment part and package part
+        pkg_idx = blk.rfind('<package')
+        comment_part = blk[:pkg_idx]
+        pkg_part = blk[pkg_idx:]
 
-    blocks = [m.group(0) for m in matches]
+        # Extract comments and normalize each as a single indented line
+        comments = re.findall(r'<!--(.*?)-->', comment_part, re.DOTALL)
+        comment_lines = ''
+        for c in comments:
+            c_text = ' '.join(line.strip() for line in c.splitlines())
+            comment_lines += '    <!-- ' + c_text + ' -->\n'
 
-    def pkg_name(block: str) -> str:
-        m = re.search(r'name\s*=\s*"([^"]+)"', block)
+        # Normalize package line indentation and ensure single-line
+        pkg_line = '    ' + ' '.join(pkg_part.split()) + '\n'
+
+        normalized = comment_lines + pkg_line + '\n'
+        blocks.append((normalized, pkg_part))
+
+    def extract_name(raw_pkg: str) -> str:
+        m = re.search(r'name\s*=\s*"([^"]+)"', raw_pkg)
         return m.group(1) if m else ''
 
-    sorted_blocks = sorted(blocks, key=lambda b: pkg_name(b).lower())
+    blocks_sorted = sorted(blocks, key=lambda t: extract_name(t[1]).lower())
 
-    new_text = header + ''.join(sorted_blocks) + footer
+    # Rebuild file: keep header, then sorted normalized blocks, then footer
+    new_text = header.rstrip() + '\n\n' + ''.join(b[0] for b in blocks_sorted) + footer.lstrip()
 
     if new_text != text:
         xml_path.write_text(new_text, encoding='utf-8')
-        print(f"Sorted {len(blocks)} <package/> blocks in {xml_path}")
+        print(f"Formatted and sorted {len(blocks_sorted)} <package/> blocks in {xml_path}")
         return True
     else:
-        print(f"{xml_path} already sorted")
+        print(f"{xml_path} already formatted and sorted")
         return False
 
 
@@ -71,7 +87,6 @@ def sort_csv(csv_path: Path) -> bool:
     if not lines:
         print(f"Empty CSV: {csv_path}")
         return False
-
     # Use csv module to parse rows reliably
     reader = list(csv.reader(lines))
     if not reader:
@@ -79,36 +94,37 @@ def sort_csv(csv_path: Path) -> bool:
         return False
 
     header = reader[0]
-    rows = reader[1:]
+    raw_rows = reader[1:]
 
-    # 只保留有包名的数据行
-    entries = [r for r in rows if len(r) > 1 and r[1].strip()]
-    # 拼音首字母分组
+    # Remove useless blank rows (rows where all cells are empty)
+    entries = [r for r in raw_rows if any((cell and cell.strip()) for cell in r)]
+
+    # Global reorder: group all entries by pinyin initial
     groups = defaultdict(list)
     for r in entries:
-        name = r[0].strip()
+        name = (r[0].strip() if len(r) > 0 else '')
         if not name:
             continue
-        # 获取首字母（中文转拼音，非中文直接取首字母）
         py = lazy_pinyin(name, style=Style.FIRST_LETTER)
         initial = py[0].upper() if py and py[0].isalpha() else name[0].upper()
         groups[initial].append(r)
 
-    # 按首字母排序分组，组内按拼音排序
+    sorted_initials = sorted(groups.keys())
+
+    # Rebuild CSV: header, then for each group: blank line, initial header, group rows sorted by full pinyin
     out_rows = [header]
-    first_group = True
-    for initial in sorted(groups.keys()):
-        # 在每个分组标头前插入一个空行（跳过第一个分组以避免文件首部空行）
-        if not first_group:
-            out_rows.append([])
-        first_group = False
-        # 插入首字母分组标头
+    first = True
+    for initial in sorted_initials:
+        if not first:
+            out_rows.append([])  # blank line
+        first = False
         out_rows.append([initial])
-        # 组内排序：按拼音全拼
+
         def py_sort_key(r):
             name = r[0].strip()
             py_full = ''.join(lazy_pinyin(name)).lower()
             return py_full
+
         sorted_group = sorted(groups[initial], key=py_sort_key)
         out_rows.extend(sorted_group)
 
@@ -119,7 +135,7 @@ def sort_csv(csv_path: Path) -> bool:
         for row in out_rows:
             writer.writerow(row)
 
-    print(f"Sorted {sum(len(g) for g in groups.values())} data rows in {csv_path} by pinyin initial.")
+    print(f"Formatted and globally sorted {sum(len(g) for g in groups.values())} data rows in {csv_path}")
     return True
 
 
