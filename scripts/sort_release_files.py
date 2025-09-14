@@ -85,33 +85,37 @@ def sort_csv(csv_path: Path) -> bool:
     # 读取 CSV 内容并按行拆分
     text = csv_path.read_text(encoding='utf-8')
     lines = text.splitlines()
-    # First, remove duplicate single-character header lines (e.g. 'A' or 'K,,,,,,')
-    # Keep only the first occurrence of each allowed header (0-9, A-Z).
-    import re as _re
+
+    # 先基于 csv 解析识别并去除重复的单字符组头（支持带逗号的形式，如 "A,,,"），仅保留首次出现
+    reader_rows = list(csv.reader(lines))
     seen_headers = set()
-    new_lines = []
+    new_rows = []
     changed_headers = False
-    header_pattern = _re.compile(r'^\s*([A-Za-z0-9])(?:\s*,\s*)*$')
-    for ln in lines:
-        m = header_pattern.match(ln)
-        if m:
-            ch = m.group(1).upper()
+    for row in reader_rows:
+        if len(row) >= 1 and row[0] and len(row[0].strip()) == 1 and (row[0].strip().isdigit() or row[0].strip().upper().isalpha()) and all((not c or not str(c).strip()) for c in row[1:]):
+            ch = row[0].strip().upper()
             if ch in seen_headers:
                 changed_headers = True
                 continue
             seen_headers.add(ch)
-            new_lines.append(ln)
+            new_rows.append(row)
         else:
-            new_lines.append(ln)
+            new_rows.append(row)
     if changed_headers:
-        # 如果发现重复的单字符头则写回清理后的文件并刷新内存内容
-        csv_path.write_text('\n'.join(new_lines) + ('\n' if new_lines and not new_lines[-1].endswith('\n') else ''), encoding='utf-8')
-        text = '\n'.join(new_lines)
+        # 写回清理后的 CSV 内容
+        with csv_path.open('w', encoding='utf-8', newline='') as f:
+            writer = csv.writer(f)
+            for r in new_rows:
+                writer.writerow(r)
+        # 刷新文本与行
+        text = csv_path.read_text(encoding='utf-8')
         lines = text.splitlines()
+
     if not lines:
         print(f"Empty CSV: {csv_path}")
         return False
-    # Use csv module to parse rows reliably
+
+    # 使用 csv 模块解析行
     reader = list(csv.reader(lines))
     if not reader:
         print(f"Empty CSV: {csv_path}")
@@ -122,45 +126,36 @@ def sort_csv(csv_path: Path) -> bool:
     raw_rows = reader[1:]
 
     # 去除全为空的空行
-    cleaned = [r for r in raw_rows if any((cell and cell.strip()) for cell in r)]
-    # Also ignore previously-inserted single-character header rows (0-9 or A-Z)
+    cleaned = [r for r in raw_rows if any((cell and str(cell).strip()) for cell in r)]
+
+    # 忽略之前可能插入的单字符组头行：第一列为单字符字母/数字，其余列为空
     entries = []
     for r in cleaned:
-        # A header row we previously inserted is a single non-empty cell whose value is a single char 0-9/A-Z
-        if len(r) == 1 and r[0] and len(r[0].strip()) == 1:
-            ch = r[0].strip().upper()
-            if ch.isdigit() or ('A' <= ch <= 'Z'):
-                # skip this header row as data
-                continue
+        if len(r) >= 1 and r[0] and len(str(r[0]).strip()) == 1 and (str(r[0]).strip().isdigit() or str(r[0]).strip().upper().isalpha()) and all((not str(c).strip()) for c in r[1:]):
+            continue
         entries.append(r)
 
-    # Global reorder: group all entries by a single-character header.
-    # Allowed headers: digits 0-9 and uppercase A-Z. Everything else maps to 'Z'.
     # 按单字符分组（0-9 / A-Z / Z）
     groups = defaultdict(list)
     for r in entries:
         name = (r[0].strip() if len(r) > 0 else '')
         if not name:
             continue
-        # Detect if name starts with ASCII letter or digit - prefer grouping by that
         first = name[0]
         if first.isascii() and (first.isalpha() or first.isdigit()):
-            header = first.upper()
+            header_char = first.upper()
         else:
-            # For non-ascii (likely Chinese), use pinyin first letter if possible
             try:
                 py = lazy_pinyin(name, style=Style.FIRST_LETTER)
                 candidate = (py[0] if py and py[0] else '')
             except Exception:
                 candidate = ''
-
             candidate = (candidate or name[0]).upper()
             if len(candidate) == 1 and (candidate.isdigit() or ('A' <= candidate <= 'Z')):
-                header = candidate
+                header_char = candidate
             else:
-                header = 'Z'
-
-        groups[header].append(r)
+                header_char = 'Z'
+        groups[header_char].append(r)
 
     sorted_initials = sorted(groups.keys())
 
@@ -168,24 +163,29 @@ def sort_csv(csv_path: Path) -> bool:
     def _is_single_char_group(hrow):
         try:
             return len(hrow) == 1 and isinstance(hrow[0], str) and len(hrow[0].strip()) == 1 and (
-                    hrow[0].strip().isdigit() or ('A' <= hrow[0].strip().upper() <= 'Z')
+                hrow[0].strip().isdigit() or ('A' <= hrow[0].strip().upper() <= 'Z')
             )
         except Exception:
             return False
 
     header_is_real = not _is_single_char_group(header)
 
-    # 重建输出行：仅当原始 header 真实存在时才写回
-    out_rows = [header] if header_is_real else []
-    first = True
-    for initial in sorted_initials:
-        if not first:
-            out_rows.append([])  # blank line
-        first = False
-        out_rows.append([initial])
+    # 确定输出列数：优先使用真实表头列数，否则使用文件中最大的行列数，默认 6
+    if header_is_real:
+        col_count = len(header)
+    else:
+        col_count = max((len(r) for r in reader), default=6)
 
-        # Within a group, put ASCII-starting names (A-Z/0-9) first, sorted by ASCII order,
-        # then put the others (likely Chinese) sorted by full pinyin.
+    # 重建输出：可选真实表头，然后按组输出。空行与组头均填充为 col_count 列，便于 GitHub 预览
+    out_rows = [header] if header_is_real else []
+    first_group = True
+    for initial in sorted_initials:
+        if not first_group:
+            out_rows.append([''] * col_count)
+        first_group = False
+        out_rows.append([initial] + [''] * (col_count - 1))
+
+        # 组内排序：ASCII/数字开头的先按 ASCII 排序，中文按每字首字母拼接排序
         ascii_items = []
         others = []
         for r in groups[initial]:
@@ -199,20 +199,32 @@ def sort_csv(csv_path: Path) -> bool:
 
         def py_sort_key(r):
             name = r[0].strip()
-            # 拼接每个字的首字母拼音后整体排序
-            py_full = ''.join(lazy_pinyin(name, style=Style.FIRST_LETTER)).lower()
-            return py_full
+            # 拼接每个字的首字母后进行排序
+            return ''.join(lazy_pinyin(name, style=Style.FIRST_LETTER)).lower()
 
         others_sorted = sorted(others, key=py_sort_key)
         sorted_group = ascii_items_sorted + others_sorted
-        out_rows.extend(sorted_group)
 
-    # 写回文件（使用 csv.writer 以保留必要的引号）
+        # 填充/截断每行以匹配 col_count
+        for rr in sorted_group:
+            rr_list = list(rr)
+            if len(rr_list) < col_count:
+                rr_list += [''] * (col_count - len(rr_list))
+            else:
+                rr_list = rr_list[:col_count]
+            out_rows.append(rr_list)
+
+    # 写回文件
     out_path = csv_path
     with out_path.open('w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
         for row in out_rows:
-            writer.writerow(row)
+            row_to_write = list(row)
+            if len(row_to_write) < col_count:
+                row_to_write += [''] * (col_count - len(row_to_write))
+            else:
+                row_to_write = row_to_write[:col_count]
+            writer.writerow(row_to_write)
 
     print(f"Formatted and globally sorted {sum(len(g) for g in groups.values())} data rows in {csv_path}")
     return True
