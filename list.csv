@@ -1,6 +1,4 @@
-应用名称,应用包名,适配前,适配后,适配效果,更新时间,
 1
-1 - 9,,,,,,
 123云盘,com.mfcloudcalculate.networkdisk,部分页面适配,主页以外悬浮显示,好,2025-09-11,
 
 2
@@ -10,7 +8,6 @@
 58同城,com.wuba,小米部分适配,,,,
 
 A
-A,,,,,,
 Activity Manager,com.activitymanager,全局固定白色,全局悬浮显示,好,2025-08-21,
 爱奇艺,com.qidian.QDReader,未适配,,,,
 爱奇艺极速版,com.qiyi.video.lite,未适配,,,,
@@ -19,7 +16,7 @@ Activity Manager,com.activitymanager,全局固定白色,全局悬浮显示,好,2
 安居客,com.anjuke.android.app,小米部分适配,,,,
 
 B
-B,,,,,,
+BubbleUPnP,com.bubblesoft.android.bubbleupnp,全局固定取色,主页以外悬浮显示,好,2025-08-21,
 百词斩,com.jiongji.andriod.card,根据深浅模式填充,主页以外悬浮显示,一般,2025-09-11,
 百度,com.baidu.searchbox,部分页面未适配,更新待测试,一般,2025-09-12,
 百度地图,com.baidu.BaiduMap,全局填充白色,全局悬浮显示,好,2025-08-21,
@@ -32,16 +29,13 @@ B,,,,,,
 比亚迪,com.byd.aeri.caranywhere,小米部分适配,部分页面单独适配,未测试,2025-09-13,
 不背单词,cn.com.langeasy.LangEasyLexis,未适配,,,,
 
-BUBBLEUPNP
-BubbleUPnP,com.bubblesoft.android.bubbleupnp,全局固定取色,主页以外悬浮显示,好,2025-08-21,
-
 C
-C,,,,,,
 菜鸟,com.cainiao.wireless,小米完美适配,,好,2025-09-13,
 车来了,com.ygkj.chelaile.standard,小米部分适配,,,,
 
 D
-D,,,,,,
+DevCheck,flar2.devcheck,全局填充白色,全局悬浮显示,未测试,2025-09-07,
+DSU Sideloader,vegabobo.dsusideloader,填充颜色不一致,全局悬浮显示,好,2025-08-21,
 大麦,cn.damai,小米部分适配,,,,
 蛋花免费小说,com.eggflower.read,小米部分适配,,,,
 倒数日-Days Matter,com.clover.daysmatter,未适配,,,,
@@ -60,20 +54,12 @@ D,,,,,,
 抖音极速版,com.ss.android.ugc.aweme.lite,小米部分适配,,,,
 抖音商城,com.ss.android.ugc.livelite,小米部分适配,,,,
 斗鱼直播,air.tv.douyu.android,小米部分适配,,,,
-DSU Sideloader,vegabobo.dsusideloader,填充颜色不一致,全局悬浮显示,好,2025-08-21,
-
-DEVCHECK
-DevCheck,flar2.devcheck,全局填充白色,全局悬浮显示,未测试,2025-09-07,
 
 E
-E,,,,,,
+Edge,com.microsoft.emmx,主界面固定取色,主页以外悬浮显示,一般,2025-09-13,
 饿了么,me.ele,根据深浅模式填充,主页以外悬浮显示,一般,2025-09-11,
 
-EDGE
-Edge,com.microsoft.emmx,主界面固定取色,主页以外悬浮显示,一般,2025-09-13,
-
 F
-F,,,,,,
 番茄 ToDo,com.plan.kot32.tomatotime,根据深浅模式填充,主页以外悬浮显示,好,2025-09-11,
 番茄畅听,com.xs.fm,小米部分适配,,,,
 番茄畅听音乐版,com.xs.fm.lite,小米部分适配,,,,
@@ -81,18 +67,12 @@ F,,,,,,
 粉笔,com.fenbi.android.servant,小米部分适配,,,,
 
 G
-G,,,,,,
+GitHub,com.github.android,全局固定白色,全局悬浮显示,好,2025-08-26,
 Google Play,com.android.vending,未适配,,,,
 Google Play 服务,com.google.android.gms,未适配 / 无需适配,,,,
-
-GITHUB
-GitHub,com.github.android,全局固定白色,全局悬浮显示,好,2025-08-26,
-
-GUISE
 Guise,com.houvven.guise,全局固定浅色,全局悬浮显示,好,2025-08-21,
 
 H
-H,,,,,,
 哈啰,com.jingyao.easybike,小米部分适配,,,,
 航旅纵横,com.umetrip.android.msky.app,全局填充黑色,全局悬浮显示,BUG,2025-09-11,
 好看视频,com.baidu.haokan,小米部分适配,,,,
@@ -105,14 +85,10 @@ H,,,,,,
 虎扑,com.hupu.games,小米部分适配,,,,
 
 I
-I,,,,,,
 iDaily-每日环球视野,com.clover.idaily,根据深浅模式填充,全局悬浮显示,好,2025-09-11,
-
-INSTALLERX
 InstallerX,com.rosan.installer.x,填充颜色不一致,全局悬浮显示,好,2025-08-19,
 
 J
-J,,,,,,
 交管12123,com.tmri.app.main,全局白底显示,,,,
 交互百词斩,com.jiongji.andriod.card,根据深浅模式填充,主页以外悬浮显示,一般,2025-09-11,
 交通银行,com.bankcomm.Bankcomm,未适配,,,,
@@ -124,7 +100,7 @@ J,,,,,,
 九号出行,cn.ninebot.ninebot,根据深浅模式填充,部分悬浮显示,一般,2025-09-10,
 
 K
-K,,,,,,
+Keep,com.gotokeep.keep,小米部分适配,,,,
 Kernel Flasher,com.github.capntrips.kernelflasher,颜色稍微浅一点点,全局悬浮显示,好,2025-08-21,
 快手,com.smile.gifmaker,小米部分适配,,,,
 快手极速版,com.kuaishou.nebula,小米部分适配,,,,
@@ -132,18 +108,13 @@ Kernel Flasher,com.github.capntrips.kernelflasher,颜色稍微浅一点点,全�
 夸克,com.quark.browser,小米部分适配,,,,
 酷狗音乐,com.kugou.android,小米部分适配,,,,
 
-KEEP
-Keep,com.gotokeep.keep,小米部分适配,,,,
-
 L
-L,,,,,,
+Legado,io.legado.app.release,小米部分适配,,,,
 LX Music,cn.toside.music.mobile,全局固定白色,全局悬浮显示,好,2025-08-21,
 
-LEGADO
-Legado,io.legado.app.release,小米部分适配,,,,
-
 M
-M,,,,,,
+Minecraft DLC Free,com.minecraft.free,全局固定白色,全局悬浮显示,好,2025-08-27,
+MT 管理器,bin.mt.plus,全局固定白色,全局悬浮显示,好,2025-08-21,
 芒果TV,com.hunantv.imgo.activity,小米部分适配,,,,
 猫眼,com.sankuai.movie,小米部分适配,,,,
 美团,com.sankuai.meituan,小米部分适配,部分页面单独适配,一般,2025-09-11,
@@ -153,27 +124,23 @@ M,,,,,,
 美柚,com.lingan.seeyou,小米部分适配,,,,
 咪咕视频,com.cmcc.cmvideo,未适配,,,,
 米家,com.xiaomi.smarthome,部分页面未适配,部分页面单独适配,好,2025-08-23,
-Minecraft DLC Free,com.minecraft.free,全局固定白色,全局悬浮显示,好,2025-08-27,
 米游社,com.mihoyo.hyperion,小米部分适配,部分页面悬浮显示,好,2025-09-13,
-MT 管理器,bin.mt.plus,全局固定白色,全局悬浮显示,好,2025-08-21,
 
 N
-N,,,,,,
 NGA 玩家社区,gov.pianzong.androidnga,根据深浅模式填充,主页以外悬浮显示,未测试,2025-09-11,
 牛客,com.nowcoder.app.florida,根据深浅模式填充,主页以外悬浮显示,未测试,2025-09-11,
 
-O
-O,,,,,,
-
 P
-P,,,,,,
 拼多多,com.xunmeng.pinduoduo,小米部分适配,部分页面单独适配,好,2025-09-12,
 平安口袋银行,com.pingan.paces.ccms,未适配,,,,
 平安证券,com.hundsun.winner.pazq,小米部分适配,,,,
 皮皮虾,com.sup.android.superb,小米部分适配,,,,
 
 Q
-Q,,,,,,
+QQ,com.tencent.mobileqq,部分页面未适配,部分页面悬浮显示,好,2025-09-13,
+QQ浏览器,com.tencent.mtt,未适配,,,,
+QQ邮箱,com.tencent.androidqqmail,小米部分适配,,,,
+QQ音乐,com.tencent.qqlive,小米部分适配,,,,
 前程无忧51Job,com.job.android,未适配,,,,
 钱迹,com.mutangtech.qianji,根据深浅模式填充,全局悬浮显示,好,2025-09-11,
 乔安智联,com.jooan.qiaoanzhilian,未适配,,,,
@@ -186,17 +153,13 @@ Q,,,,,,
 去哪儿,com.Qunar,小米部分适配,,,,
 趣智校园,com.klcxkj.zqxy,小米部分适配,,,,
 
-QQ
-QQ,com.tencent.mobileqq,部分页面未适配,部分页面悬浮显示,好,2025-09-13,
-QQ浏览器,com.tencent.mtt,未适配,,,,
-QQ音乐,com.tencent.qqlive,小米部分适配,,,,
-QQ邮箱,com.tencent.androidqqmail,小米部分适配,,,,
-
-R
-R,,,,,,
-
 S
-S,,,,,,
+Scene,com.omarea.vtools,全局固定白色,全局悬浮显示,好,2025-08-21,
+Seestar,com.zwo.seestar,部分界面填充,全局悬浮显示,好,2025-09-13,
+Seetong,com.seetong.app.seetong,小米部分适配,,,,
+SmartSports,com.hz.smartsports,小米部分适配,,,,
+Soul,cn.soulapp.android,小米部分适配,,,,
+Steam,com.valvesoftware.android.steam.community,未适配,,,,
 识货,com.hupu.shihuo,小米部分适配,,,,
 水印相机,com.tencent.zebra,未适配,,,,
 顺丰速运,com.sf.activity,小米部分适配,,,,
@@ -204,26 +167,12 @@ S,,,,,,
 搜狐视频,com.sohu.sohuvideo,小米部分适配,,,,
 搜狐新闻,com.sohu.newsclient,小米部分适配,,,,
 
-SCENE
-Scene,com.omarea.vtools,全局固定白色,全局悬浮显示,好,2025-08-21,
-
-SEESTAR
-Seestar,com.zwo.seestar,部分界面填充,全局悬浮显示,好,2025-09-13,
-
-SEETONG
-Seetong,com.seetong.app.seetong,小米部分适配,,,,
-
-SMARTSPORTS
-SmartSports,com.hz.smartsports,小米部分适配,,,,
-
-SOUL
-Soul,cn.soulapp.android,小米部分适配,,,,
-
-STEAM
-Steam,com.valvesoftware.android.steam.community,未适配,,,,
-
 T
-T,,,,,,
+TapTap,com.taptap,小米部分适配,,,,
+Telegram,org.telegram.messenger,根据深浅模式填充,全局悬浮显示,无效,2025-09-13,
+Thanox,github.tornaco.android.thanos,根据深浅模式填充,全局悬浮显示,好,2025-09-11,
+To Do,com.microsoft.todos,根据深浅模式填充,全局悬浮显示,好,2025-09-11,
+Twitter,com.twitter.android,小米部分适配,,,,
 淘宝,com.taobao.taobao,小米部分适配,部分页面悬浮显示,一般,2025-09-11,
 淘宝特价版,com.taobao.litetao,小米部分适配,,,,
 淘宝直播,com.taobao.live,小米部分适配,,,,
@@ -231,37 +180,19 @@ T,,,,,,
 天猫,com.tmall.wireless,小米部分适配,,,,
 天文通,com.twtapp,全局悬浮显示,,,,
 铁路 12306,com.MobileTicket,全局填充白色,全局垫高显示,好,2025-09-11,
-To Do,com.microsoft.todos,根据深浅模式填充,全局悬浮显示,好,2025-09-11,
 同花顺,com.hexin.plat.android,根据深浅模式填充,主页以外悬浮显示,未测试,2025-09-11,
 
-TAPTAP
-TapTap,com.taptap,小米部分适配,,,,
-
-TELEGRAM
-Telegram,org.telegram.messenger,根据深浅模式填充,全局悬浮显示,无效,2025-09-13,
-
-THANOX
-Thanox,github.tornaco.android.thanos,根据深浅模式填充,全局悬浮显示,好,2025-09-11,
-
-TWITTER
-Twitter,com.twitter.android,小米部分适配,,,,
-
 U
-U,,,,,,
 U 校园 AI 版,cn.unipus.cloud,小米部分适配,,,,
+UC浏览器,com.UCMobile,小米部分适配,,,,
 USB 摄像头,com.shenyaocn.android.usbcamera,部分界面未适配,全局悬浮显示,好,2025-09-06,
 
-UC
-UC浏览器,com.UCMobile,小米部分适配,,,,
-
 V
-V,,,,,,
-
-VIA
 Via,mark.via,未适配 / 无需适配,,,,
 
 W
-W,,,,,,
+WiFiman,com.ubnt.usurvey,全局填充黑色,全局悬浮显示,好,2025-08-31,
+WPS Office国际版,cn.wps.moffice_eng,小米部分适配,,,,
 网易大神,com.netease.gl,小米部分适配,,,,
 网易LOFTER,com.lofter.android,小米部分适配,,,,
 网易云音乐,com.mutangtech.qianji,未适配,部分页面单独适配,,,
@@ -272,13 +203,8 @@ W,,,,,,
 微信,com.tencent.mm,部分界面填充,部分页面单独适配,尽力了,,
 微信读书,com.tencent.weread,未适配,,,,
 文小言,com.baidu.newapp,全局填充颜色,全局悬浮显示,好,2025-08-23,
-WPS Office国际版,cn.wps.moffice_eng,小米部分适配,,,,
-
-WIFIMAN
-WiFiman,com.ubnt.usurvey,全局填充黑色,全局悬浮显示,好,2025-08-31,
 
 X
-X,,,,,,
 向日葵远程控制,com.oray.sunlogin,全局填充白色,全局悬浮显示,好,2025-08-21,
 闲鱼,com.taobao.idlefish,小米部分适配,主页以外悬浮显示,好,2025-09-11,
 小黑盒,com.max.xiaoheihe,小米部分适配,,,,
@@ -304,7 +230,6 @@ X,,,,,,
 迅雷,com.xunlei.downloadprovider,小米部分适配,,,,
 
 Y
-Y,,,,,,
 易班,com.yiban.app,全局填充白色,主页以外悬浮显示,好,2025-09-11,
 移动爱家,com.cmri.universalapp,小米部分适配,,,,
 一木记账,com.wangc.bill,半透明白色,主页以外悬浮显示,待测试,2025-09-13,
@@ -319,7 +244,6 @@ Y,,,,,,
 渝通行,cn.com.whty.cqt,全局悬浮显示,,,,
 
 Z
-Z,,,,,,
 涨乐财富通,com.lphtsccft,小米部分适配,,,,
 掌上无畏契约,com.tencent.apps.valorant,小米部分适配,,,,
 支付宝,com.eg.android.AlipayGphone,全局填充颜色,部分页面单独适配,尽力了,2025-09-11,
