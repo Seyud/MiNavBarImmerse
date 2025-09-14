@@ -13,11 +13,20 @@ name (group separators or blank lines) are dropped to keep the CSV compact.
 Usage:
   python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
 """
+
 import argparse
 import re
 import csv
 import sys
 from pathlib import Path
+from collections import defaultdict
+try:
+    from pypinyin import lazy_pinyin, Style
+except ImportError:
+    print("Missing pypinyin, installing...")
+    import subprocess
+    subprocess.run([sys.executable, '-m', 'pip', 'install', 'pypinyin'], check=True)
+    from pypinyin import lazy_pinyin, Style
 
 
 def sort_xml(xml_path: Path) -> bool:
@@ -63,7 +72,7 @@ def sort_csv(csv_path: Path) -> bool:
         print(f"Empty CSV: {csv_path}")
         return False
 
-    # Use csv module to parse rows reliably, but preserve group headers / empty lines.
+    # Use csv module to parse rows reliably
     reader = list(csv.reader(lines))
     if not reader:
         print(f"Empty CSV: {csv_path}")
@@ -72,35 +81,36 @@ def sort_csv(csv_path: Path) -> bool:
     header = reader[0]
     rows = reader[1:]
 
-    # We'll treat any row with no second column or empty second column as a group header/separator.
-    out_rows = []
-    out_rows.append(header)
+    # 只保留有包名的数据行
+    entries = [r for r in rows if len(r) > 1 and r[1].strip()]
+    # 拼音首字母分组
+    groups = defaultdict(list)
+    for r in entries:
+        name = r[0].strip()
+        if not name:
+            continue
+        # 获取首字母（中文转拼音，非中文直接取首字母）
+        py = lazy_pinyin(name, style=Style.FIRST_LETTER)
+        initial = py[0].upper() if py and py[0].isalpha() else name[0].upper()
+        groups[initial].append(r)
 
-    group = []
-
-    def flush_group(g):
-        # Sort group data rows by application name (first column) then package name
-        if not g:
-            return
-        def key_fn(r):
-            name = r[0].strip() if r and r[0] else ''
-            pkg = r[1].strip() if len(r) > 1 else ''
-            return (name.lower(), pkg.lower())
-
-        sorted_g = sorted(g, key=key_fn)
-        out_rows.extend(sorted_g)
-
-    for r in rows:
-        # Normalize length
-        if len(r) <= 1 or (len(r) > 1 and not r[1].strip()):
-            # This is a group header or separator: flush previous group then append this header as-is
-            flush_group(group)
-            group = []
-            out_rows.append(r)
-        else:
-            group.append(r)
-
-    flush_group(group)
+    # 按首字母排序分组，组内按拼音排序
+    out_rows = [header]
+    first_group = True
+    for initial in sorted(groups.keys()):
+        # 在每个分组标头前插入一个空行（跳过第一个分组以避免文件首部空行）
+        if not first_group:
+            out_rows.append([])
+        first_group = False
+        # 插入首字母分组标头
+        out_rows.append([initial])
+        # 组内排序：按拼音全拼
+        def py_sort_key(r):
+            name = r[0].strip()
+            py_full = ''.join(lazy_pinyin(name)).lower()
+            return py_full
+        sorted_group = sorted(groups[initial], key=py_sort_key)
+        out_rows.extend(sorted_group)
 
     # Write back using csv.writer to preserve quoting
     out_path = csv_path
@@ -109,9 +119,7 @@ def sort_csv(csv_path: Path) -> bool:
         for row in out_rows:
             writer.writerow(row)
 
-    # Count sorted data rows (exclude headers and separators)
-    data_rows_count = sum(1 for r in out_rows[1:] if len(r) > 1 and r[1].strip())
-    print(f"Sorted {data_rows_count} data rows in {csv_path}")
+    print(f"Sorted {sum(len(g) for g in groups.values())} data rows in {csv_path} by pinyin initial.")
     return True
 
 
