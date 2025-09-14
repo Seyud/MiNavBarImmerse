@@ -46,30 +46,11 @@ jobs:
           echo "module_version=$VERSION" >> $GITHUB_OUTPUT
           echo "module_versionCode=$VERSION_CODE" >> $GITHUB_OUTPUT
 
-      - name: Run sorting script
+      - name: Sort module files and update "update.json"
         run: |
-          python3 -m pip install --user --upgrade pip || true
-          # Ensure script is executable and run it
-          python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv || true
-          # If files changed, commit them (but avoid infinite workflow runs by only committing update.json/module.prop changes)
-          if ! git diff --quiet; then
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git add module/immerse_rules.xml list.csv || true
-            # Use [skip ci] so this commit doesn't retrigger workflows
-            git commit -m "chore: sort immerse_rules.xml and list.csv before release [skip ci]" || echo "No changes to commit"
-            git push || echo "Push failed"
-          else
-            echo "No sorting changes"
-          fi
+          python3 -m pip install --user --upgrade pip || true  
+          python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
 
-      - name: Create zip file
-        run: |
-          cd module
-          zip -r ../MiNavBarImmerse_${{ steps.update_version.outputs.module_version }}.zip . -x "*/immerse_rules.xsd" "immerse_rules.xsd"
-
-      - name: Update "update.json"
-        run: |
           ZIP_NAME="MiNavBarImmerse_${{ steps.update_version.outputs.module_version }}.zip"
           cat <<EOF > update.json
           {
@@ -80,13 +61,20 @@ jobs:
           }
           EOF
 
-      - name: Push "update.json"
-        run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f update.json
-          git commit -m "Version ${{ steps.update_version.outputs.module_version }}_${{ steps.update_version.outputs.module_versionCode }}" || echo "No changes"
-          git push
+          git add module/immerse_rules.xml list.csv update.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sort immerse_rules.xml/list.csv and update.json [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Create zip file
+        run: |
+          cd module
+          zip -r ../MiNavBarImmerse_${{ steps.update_version.outputs.module_version }}.zip . -x "*/immerse_rules.xsd" "immerse_rules.xsd"
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
