@@ -8,6 +8,9 @@
     <!-- MT管理器 -->
     <package name="bin.mt.plus" enable="true" activityRule="*:2,com.byyoung.setting.HomePage.activitys.MainActivity:0"/>
 
+    <!-- 中国广电 -->
+    <package name="com.ai.obc.cbn.app" enable="true" activityRule="*:1:-1"/>
+    
     <!-- 学信网 -->
     <package name="cn.com.chsi.chsiapp" enable="true" activityRule="*:2,cn.com.chsi.chsiapp.MainActivity:1:-1"/>
 
@@ -114,7 +117,7 @@
     <package name="com.chinamworld.bocmbci" enable="true" activityRule="com.boc.bocsoft.mobile.bocmobile.buss.customerservice.common.activity.CustomerServiceActivity:0"/>
 
     <!-- 中国建设银行 -->
-    <package name="com.chinamworld.main" enable="false"/>
+    <package name="com.chinamworld.main" enable="true" activityRule="com.ccb.start.MainActivity:1:0,com.nantian.iBank.ui.activity.container.ProgramSingleWindowActivity:2"/>
 
     <!-- 倒数日-Days Matter -->
     <package name="com.clover.daysmatter" enable="false"/>
@@ -129,13 +132,13 @@
     <package name="com.cmri.universalapp" enable="true" activityRule="com.cmri.universalapp.SmartMainProxyActivity:0"/>
 
     <!-- 中国电信 -->
-    <package name="com.ct.client" enable="false"/>
+    <package name="com.ct.client" enable="true" activityRule="*:1:0"/>
 
     <!-- 汽车之家 -->
     <package name="com.cubic.autohome" enable="true" activityRule="com.autohome.main.article.zbusiness.video.SlideVideoPageActivity:1:1,com.autohome.mainlib.business.reactnative.base.AHCommRNActivity:1:1,com.autohome.plugin.usedcarhome.imchat.ChatActivity:1:1"/>
 
     <!-- 大众点评 -->
-    <package name="com.dianping.v1" enable="true" activityRule="*:2,com.dianping.v1.NovaMainActivity:1:0,com.dianping.social.activity.NewFeedDetailActivity:1:0,com.dianping.voyager.poi.GCPOIDetailActivity:0,com.dianping.gcmrn.ssr.GCMRNSSRActivity:2,com.dianping.tuan.activity.DealDetailAgentActivity:0,com.meituan.android.mrn.container.MRNBaseActivity:0,com.meituan.android.mrn.container.MRNStandardActivity:0,com.dianping.nova.picasso.DPPicassoBoxActivity:2,com.dianping.shopshell.PexusPoiActivity:0,com.dianping.movie.trade.home.MovieMainActivity:0,com.dianping.movie.activity.DpMovieDetailActivity:2,com.meituan.android.movie.tradebase.activity.MovieCinemaListActivity:2,com.meituan.android.movie.tradebase.activity.SelectSeatActivity:0,com.meituan.android.movie.tradebase.activity.PaySeatActivity:0,com.dianping.movie.trade.MovieTitansActivity:0,com.sankuai.waimai.business.page.homepage.TakeoutActivity:0,com.sankuai.waimai.store.drug.home.NewDrugHomeActivity:0,com.meituan.msc.modules.container.MSCActivity:0,com.sankuai.xm.imui.session.SessionActivity:0,com.dianping.gcmrn.ssr.GCMRNSSRActivity:0"/>
+    <package name="com.dianping.v1" enable="true" activityRule="*:2,com.dianping.v1.NovaMainActivity:1:0,com.dianping.social.activity.NewFeedDetailActivity:1:0,com.dianping.voyager.poi.GCPOIDetailActivity:1:-1,com.dianping.gcmrn.ssr.GCMRNSSRActivity:2,com.dianping.tuan.activity.DealDetailAgentActivity:0,com.meituan.android.mrn.container.MRNBaseActivity:0,com.meituan.android.mrn.container.MRNStandardActivity:0,com.dianping.nova.picasso.DPPicassoBoxActivity:2,com.dianping.shopshell.PexusPoiActivity:0,com.dianping.movie.trade.home.MovieMainActivity:0,com.dianping.movie.activity.DpMovieDetailActivity:2,com.meituan.android.movie.tradebase.activity.MovieCinemaListActivity:2,com.meituan.android.movie.tradebase.activity.SelectSeatActivity:0,com.meituan.android.movie.tradebase.activity.PaySeatActivity:0,com.dianping.movie.trade.MovieTitansActivity:0,com.sankuai.waimai.business.page.homepage.TakeoutActivity:0,com.sankuai.waimai.store.drug.home.NewDrugHomeActivity:0,com.meituan.msc.modules.container.MSCActivity:0,com.sankuai.xm.imui.session.SessionActivity:0,com.dianping.gcmrn.ssr.GCMRNSSRActivity:0"/>
 
     <!-- 甲壳虫 ABD 助手 -->
     <package name="com.didjdk.adbhelper" enable="true" activityRule="com.didjdk.adbhelper.FastbootActivity:2"/>
@@ -162,7 +165,7 @@
     <package name="com.fenbi.android.servant" enable="true" activityRule="com.fenbi.android.ti.pdf.DownloadPdfListActivity:1:1"/>
 
     <!-- Github -->
-    <package name="com.github.android" enable="true" activityRule="*:2,com.github.android.main.MainActivity:0"/>
+    <package name="com.github.android" enable="true" activityRule="*:2,com.github.android.main.MainActivity:1:0"/>
 
     <!-- Kernel Flasher -->
     <package name="com.github.capntrips.kernelflasher" enable="true" activityRule="*:2"/>
@@ -174,7 +177,7 @@
     <package name="com.gotokeep.keep" enable="true" activityRule="com.gotokeep.keep.mo.business.store.activity.detail.GoodsDetailActivity:0"/>
 
     <!-- 中国移动 -->
-    <package name="com.greenpoint.android.mc10086.activity" enable="false"/>
+    <package name="com.greenpoint.android.mc10086.activity" enable="true" activityRule="*:2,com.mc10086.cmcc.view.tabs.AppTabFragment:1:-1"/>
 
     <!-- 同花顺 -->
     <package name="com.hexin.plat.android" enable="true" activityRule="*:2,com.hexin.plat.android.Hexin:1:0,com.hexin.android.bank.funddetail.funddetail.ui.main.FundDetailActivity:1:0"/>
@@ -196,6 +199,12 @@
 
     <!-- 识货 -->
     <package name="com.hupu.shihuo" enable="true" activityRule="com.shizhuang.duapp.modules.rn.mini.MiniReactActivity$MiniUIXReactActivity:0"/>
+
+    <!-- 西窗烛 -->
+    <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2"/>
+    <!--
+    <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2,com.hustzp.com.xichuangzhu.MainActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CommentListVpAct:1:0,com.hustzp.com.xichuangzhu.me.MyHomePageActivity:1:0,com.hustzp.com.xichuangzhu.books.BookIntroActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CatagoryListAct:1:0,com.hustzp.com.xichuangzhu.poetry.TopicGameDetActivity:1:0,com.hustzp.com.xichuangzhu.poetry.TopicCommListActivity:1:0,com.hustzp.com.xichuangzhu.poetry.PoetryListActivity:1:0,com.hustzp.com.xichuangzhu.market.MarketActivity:1:0,"/>
+    -->
 
     <!-- SmartSports / 其实我也不知道是什么，根本查不到 -->
     <package name="com.hz.smartsports" enable="true" activityRule="*:2,com.hz.smartsports.ui.activity.MainActivity:1:-1"/>
@@ -279,7 +288,7 @@
     <package name="com.mi.health" enable="true" activityRule="*:2,com.xiaomi.fitness.main.MainActivity:2,com.xiaomi.wearable.yrn.views.WearableRNActivity:2"/>
 
     <!-- Edge -->
-    <package name="com.microsoft.emmx" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
+    <package name="com.microsoft.emmx" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2,org.chromium.chrome.browser.customtabs.CustomTabActivity:2"/>
 
     <!-- To Do -->
     <package name="com.microsoft.todos" enable="true" activityRule="*:2"/>
@@ -338,9 +347,15 @@
     <!-- 夸克 -->
     <package name="com.quark.browser" enable="true" activityRule="com.ucpro.BrowserActivity:0"/>
 
+    <!-- 取件助手 -->
+    <package name="com.qujianzhushou" enable="true" activityRule=":1:-1"/>
+
     <!-- 去哪儿 -->
     <package name="com.Qunar" enable="true" activityRule="com.mqunar.react.base.stack.container.QReactNativeActivity2:1:1,com.mqunar.react.base.stack.container.QReactNativeActivity3:1:1,com.mqunar.react.base.stack.container.QReactNativeActivity1:1:1"/>
 
+    <!-- 最会买 -->
+    <package name="com.ruanmei.zuihuimai" enable="true" activityRule="*:2,com.ruanmei.zuihuimai.activity.MainActivity:1:0,com.ruanmei.zuihuimai.activity.DetailFanliActivity:1:0"/>
+    
     <!-- InstallerX -->
     <package name="com.rosan.installer.x" enable="true" activityRule="*:2"/>
 
@@ -384,10 +399,13 @@
     <package name="com.sina.weibo" enable="true" activityRule="com.sina.weibo.story.gallery.feed.StoryFeedCommentsActivity2:1:1,com.sina.weibo.page.ProfileInfoActivity:0,com.sina.weibo.weiyou.chat.group.setting.MessageGroupManageActivity:1:-1,com.sina.weibo.account.recommend.RecommendActivity:1:1,com.sina.weibo.weiyou.chat.single.DMSingleChatActivity:1:-1,com.sina.weibo.MainTabActivity:1:1,com.sina.weibo.preview.MediaPreviewActivity:2,com.sina.weibo.weiyou.chat.group.DMGroupChatActivity:1:-1,com.sina.weibo.feed.SubCommentActiity:1:1"/>
 
     <!-- 中国联通 -->
-    <package name="com.sinovatech.unicom.ui" enable="false"/>
+    <package name="com.sinovatech.unicom.ui" enable="true" activityRule="*:2,com.sinovatech.unicom.basic.ui.activity.MainActivity:1:0"/>
 
     <!-- 快手 -->
     <package name="com.smile.gifmaker" enable="true" activityRule="com.yxcorp.gifshow.camera.record.CameraActivity:0,com.kuaishou.live.core.basic.activity.LiveSlideActivity:0,com.yxcorp.gifshow.detail.PhotoDetailActivityTablet:0,com.yxcorp.gifshow.message.imchat.acivity.IMChatActivity:1:1,com.yxcorp.gifshow.v3.EditorActivity:0,com.kwai.kds.krn.api.page.KwaiRnActivity:1:1,com.kuaishou.merchant.transaction.detail.detailv2.MerchantDetailV2Activity:1:1,com.yxcorp.gifshow.HomeActivity:0,com.kuaishou.merchant.transaction.live.dynamic.page.MerchantPurchasePanelContainerV2Activity:0,com.yxcorp.gifshow.detail.PhotoDetailActivity:0"/>
+
+    <!-- 什么值得买 -->
+    <package name="com.smzdm.client.android" enable="true" activityRule="*:2,com.smzdm.client.android.app.HomeActivity:0,com.smzdm.client.android.module.community.module.articledetail.ArticleDetailLongActivity:1:0,com.smzdm.client.android.module.community.module.bask.BaskDetailActivity:1:0,com.smzdm.client.android.module.haojia.detail.mini.HaojiaMiniDetailActivity:1:0,com.smzdm.client.android.module.business.ai.AiZhiActivity:0,com.smzdm.core.editor.component.main.converge.EditorConvergeMainActivity:1:0,com.smzdm.client.android.module.haojia.detail.HaojiaDetailActivity:1:0"/>
 
     <!-- 搜狐新闻 -->
     <package name="com.sohu.newsclient" enable="true" activityRule="com.sohu.newsclient.videodetail.ImmersiveVideoActivity:1:1,com.sohu.newsclient.listensquare.ListenNewsSquareActivity:1:1"/>
@@ -465,7 +483,7 @@
     <package name="com.tencent.karaoke" enable="true" activityRule="com.tencent.karaoke.module.billboard.ui.SingleDetailsActivity:0,com.tencent.karaoke.module.main.ui.MainTabActivity:0"/>
 
     <!-- 微信 -->
-    <package name="com.tencent.mm" enable="true" activityRule="*:2,com.tencent.mm.ui.conversation.NewBizConversationUI:1:1,com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI:0,com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI:1:0,com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI:0,com.tencent.mm.plugin.lite.ui.WxaLiteAppSheetUI:1:0,com.tencent.mm.ui.LauncherUI:0"/>
+    <package name="com.tencent.mm" enable="true" activityRule="*:2,com.tencent.mm.ui.conversation.NewBizConversationUI:1:1,com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI:0,com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI:1:0,com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI:0,com.tencent.mm.plugin.lite.ui.WxaLiteAppSheetUI:1:0,com.tencent.mm.ui.LauncherUI:0,com.tencent.mm.plugin.appbrand.ui.AppBrandUI00:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI01:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI02:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI03:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI04:2,"/>
 
     <!-- QQ -->
     <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2,com.tencent.mobileqq.activity.PublicFragmentActivity:2"/>
@@ -575,6 +593,9 @@
     <!-- 拼多多 -->
     <package name="com.xunmeng.pinduoduo" enable="true" activityRule="*:2,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity:1:0"/>
 
+    <!-- 创建快捷方式 -->
+    <package name="com.x7890.shortcutcreator" enable="true" activityRule="*:2"/>
+
     <!-- 车来了 -->
     <package name="com.ygkj.chelaile.standard" enable="true" activityRule="dev.xesam.chelaile.app.module.line.gray.LineDetailActivity:0"/>
 
@@ -590,6 +611,9 @@
     <!-- 知乎 -->
     <package name="com.zhihu.android" enable="true" activityRule="com.zhihu.android.videox.VideoXHostActivity:0,com.zhihu.android.comment.ui.activity.CommentListActivity:1:1,com.zhihu.android.zvideo_publish.editor.DbEditorHostActivity:1:1,com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity:1:1"/>
 
+    <!-- 知乎日报-->
+    <package name="com.zhihu.daily.android" enable="true" activityRule="com.zhihu.daily.android.epic.MainActivity:2,com.zhihu.daily.android.epic.activity.FavoritesActivity:2,com.zhihu.daily.android.epic.activity.NotificationsActivity:2,com.zhihu.daily.android.epic.activity.BrowserActivity:2,com.zhihu.android.library.sharecore.activity.ShareHostActivity:2"/>
+    
     <!-- 自动点击器 -->
     <package name="com.zidongdianji" enable="true" activityRule="com.autoclicker.clicker.MainActivity:1:-328966"/>
 
@@ -612,7 +636,7 @@
     <package name="flar2.devcheck" enable="true" activityRule="*:2"/>
 
     <!-- Thanox -->
-    <package name="github.tornaco.android.thanos" enable="true" activityRule="*:1:0"/>
+    <package name="github.tornaco.android.thanos" enable="true" activityRule="*:2"/>
 
     <!-- NGA玩家社区 -->
     <package name="gov.pianzong.androidnga" enable="true" activityRule="*:2"/>
