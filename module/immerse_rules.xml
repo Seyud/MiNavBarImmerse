@@ -389,11 +389,11 @@
     <!-- 快手 -->
     <package name="com.smile.gifmaker" enable="true" activityRule="com.yxcorp.gifshow.camera.record.CameraActivity:0,com.kuaishou.live.core.basic.activity.LiveSlideActivity:0,com.yxcorp.gifshow.detail.PhotoDetailActivityTablet:0,com.yxcorp.gifshow.message.imchat.acivity.IMChatActivity:1:1,com.yxcorp.gifshow.v3.EditorActivity:0,com.kwai.kds.krn.api.page.KwaiRnActivity:1:1,com.kuaishou.merchant.transaction.detail.detailv2.MerchantDetailV2Activity:1:1,com.yxcorp.gifshow.HomeActivity:0,com.kuaishou.merchant.transaction.live.dynamic.page.MerchantPurchasePanelContainerV2Activity:0,com.yxcorp.gifshow.detail.PhotoDetailActivity:0"/>
 
+    <!-- 搜狐新闻 -->
+    <package name="com.sohu.newsclient" enable="true" activityRule="com.sohu.newsclient.videodetail.ImmersiveVideoActivity:1:1,com.sohu.newsclient.listensquare.ListenNewsSquareActivity:1:1"/>
+
     <!-- 搜狐视频 -->
     <package name="com.sohu.sohuvideo" enable="true" activityRule="com.sohu.qfsdk.live.ui.activity.LiveActivity:0"/>
-
-     <!-- 搜狐新闻 -->
-    <package name="com.sohu.newsclient" enable="true" activityRule="com.sohu.newsclient.videodetail.ImmersiveVideoActivity:1:1,com.sohu.newsclient.listensquare.ListenNewsSquareActivity:1:1"/>
 
     <!-- 今日头条极速版 -->
     <package name="com.ss.android.article.lite" enable="true" activityRule="com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity:1:1,com.ss.android.live.host.livehostimpl.OpenLivePlayerActivity:0,com.ss.android.list.news.activity.AudioNewsListActivity:0"/>
