@@ -8,9 +8,6 @@
     <!-- MT管理器 -->
     <package name="bin.mt.plus" enable="true" activityRule="*:2,com.byyoung.setting.HomePage.activitys.MainActivity:0"/>
 
-    <!-- 中国广电 -->
-    <package name="com.ai.obc.cbn.app" enable="true" activityRule="*:1:-1"/>
-    
     <!-- 学信网 -->
     <package name="cn.com.chsi.chsiapp" enable="true" activityRule="*:2,cn.com.chsi.chsiapp.MainActivity:1:-1"/>
 
@@ -49,6 +46,9 @@
 
     <!-- Activity Manager -->
     <package name="com.activitymanager" enable="true" activityRule="*:2"/>
+
+    <!-- 中国广电 -->
+    <package name="com.ai.obc.cbn.app" enable="true" activityRule="*:1:-1"/>
 
     <!-- 钉钉 -->
     <package name="com.alibaba.android.rimet" enable="false"/>
@@ -202,10 +202,8 @@
 
     <!-- 西窗烛 -->
     <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2"/>
-    <!--
-    <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2,com.hustzp.com.xichuangzhu.MainActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CommentListVpAct:1:0,com.hustzp.com.xichuangzhu.me.MyHomePageActivity:1:0,com.hustzp.com.xichuangzhu.books.BookIntroActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CatagoryListAct:1:0,com.hustzp.com.xichuangzhu.poetry.TopicGameDetActivity:1:0,com.hustzp.com.xichuangzhu.poetry.TopicCommListActivity:1:0,com.hustzp.com.xichuangzhu.poetry.PoetryListActivity:1:0,com.hustzp.com.xichuangzhu.market.MarketActivity:1:0,"/>
-    -->
 
+    <!--  <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2,com.hustzp.com.xichuangzhu.MainActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CommentListVpAct:1:0,com.hustzp.com.xichuangzhu.me.MyHomePageActivity:1:0,com.hustzp.com.xichuangzhu.books.BookIntroActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CatagoryListAct:1:0,com.hustzp.com.xichuangzhu.poetry.TopicGameDetActivity:1:0,com.hustzp.com.xichuangzhu.poetry.TopicCommListActivity:1:0,com.hustzp.com.xichuangzhu.poetry.PoetryListActivity:1:0,com.hustzp.com.xichuangzhu.market.MarketActivity:1:0,"/>  -->
     <!-- SmartSports / 其实我也不知道是什么，根本查不到 -->
     <package name="com.hz.smartsports" enable="true" activityRule="*:2,com.hz.smartsports.ui.activity.MainActivity:1:-1"/>
 
@@ -353,11 +351,11 @@
     <!-- 去哪儿 -->
     <package name="com.Qunar" enable="true" activityRule="com.mqunar.react.base.stack.container.QReactNativeActivity2:1:1,com.mqunar.react.base.stack.container.QReactNativeActivity3:1:1,com.mqunar.react.base.stack.container.QReactNativeActivity1:1:1"/>
 
-    <!-- 最会买 -->
-    <package name="com.ruanmei.zuihuimai" enable="true" activityRule="*:2,com.ruanmei.zuihuimai.activity.MainActivity:1:0,com.ruanmei.zuihuimai.activity.DetailFanliActivity:1:0"/>
-    
     <!-- InstallerX -->
     <package name="com.rosan.installer.x" enable="true" activityRule="*:2"/>
+
+    <!-- 最会买 -->
+    <package name="com.ruanmei.zuihuimai" enable="true" activityRule="*:2,com.ruanmei.zuihuimai.activity.MainActivity:1:0,com.ruanmei.zuihuimai.activity.DetailFanliActivity:1:0"/>
 
     <!-- 美团 -->
     <package name="com.sankuai.meituan" enable="true" activityRule="*:2,com.meituan.android.pt.homepage.activity.MainActivity:0"/>
@@ -551,6 +549,9 @@
     <!-- 盒马 -->
     <package name="com.wudaokou.hippo" enable="true" activityRule="com.wudaokou.hippo.order.detailUltron.OrderUltronDetailActivity:1:1,com.wudaokou.hippo.detail.ultron.DetailUltronActivity:1:1"/>
 
+    <!-- 创建快捷方式 -->
+    <package name="com.x7890.shortcutcreator" enable="true" activityRule="*:2"/>
+
     <!-- 小米 WiFi -->
     <package name="com.xiaomi.router" enable="true" activityRule="*:1:0"/>
 
@@ -593,9 +594,6 @@
     <!-- 拼多多 -->
     <package name="com.xunmeng.pinduoduo" enable="true" activityRule="*:2,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity:1:0"/>
 
-    <!-- 创建快捷方式 -->
-    <package name="com.x7890.shortcutcreator" enable="true" activityRule="*:2"/>
-
     <!-- 车来了 -->
     <package name="com.ygkj.chelaile.standard" enable="true" activityRule="dev.xesam.chelaile.app.module.line.gray.LineDetailActivity:0"/>
 
@@ -611,9 +609,9 @@
     <!-- 知乎 -->
     <package name="com.zhihu.android" enable="true" activityRule="com.zhihu.android.videox.VideoXHostActivity:0,com.zhihu.android.comment.ui.activity.CommentListActivity:1:1,com.zhihu.android.zvideo_publish.editor.DbEditorHostActivity:1:1,com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity:1:1"/>
 
-    <!-- 知乎日报-->
+    <!-- 知乎日报 -->
     <package name="com.zhihu.daily.android" enable="true" activityRule="com.zhihu.daily.android.epic.MainActivity:2,com.zhihu.daily.android.epic.activity.FavoritesActivity:2,com.zhihu.daily.android.epic.activity.NotificationsActivity:2,com.zhihu.daily.android.epic.activity.BrowserActivity:2,com.zhihu.android.library.sharecore.activity.ShareHostActivity:2"/>
-    
+
     <!-- 自动点击器 -->
     <package name="com.zidongdianji" enable="true" activityRule="com.autoclicker.clicker.MainActivity:1:-328966"/>
 
