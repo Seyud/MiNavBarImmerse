@@ -141,7 +141,7 @@
     <package name="com.didjdk.adbhelper" enable="true" activityRule="com.didjdk.adbhelper.FastbootActivity:2"/>
 
     <!-- 番茄免费小说 -->
-    <package name="com.dragon.read" enable="true" activityRule="com.dragon.community.impl.detail.dialog.c:2,com.dragon.read.component.biz.impl.bookshelf.bookgroup.BookGroupActivity:2,com.dragon.read.plugin.live.web.OpenLiveWebViewActivity:1:1,com.dragon.read.reader.ui.ReaderActivity:0,com.bytedance.android.openlive.plugin.OpenLiveDummyActivity:1:1,com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity:1:1,com.dragon.read.component.shortvideo.impl.ShortSeriesActivity:0,com.dragon.read.component.biz.impl.bookshelf.moredetail.BookshelfMoreDetailDialog:0"/>
+    <package name="com.dragon.read" enable="true" activityRule="com.dragon.community.impl.detail.dialog.c:2,com.dragon.read.component.biz.impl.bookshelf.bookgroup.BookGroupActivity:2,com.dragon.read.plugin.live.web.OpenLiveWebViewActivity:2,com.dragon.read.reader.ui.ReaderActivity:0,com.bytedance.android.openlive.plugin.OpenLiveDummyActivity:1:1,com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity:1:1,com.dragon.read.component.shortvideo.impl.ShortSeriesActivity:0,com.dragon.read.component.biz.impl.bookshelf.moredetail.BookshelfMoreDetailDialog:0,com.dragon.read.hybrid.webview.WebViewActivity:2,com.bytedance.sdk.open.douyin.ui.DouYinWebAuthorizeActivity:2"/>
 
     <!-- 河马剧场 -->
     <package name="com.dz.hmjc" enable="true" activityRule="com.dz.business.main.ui.MainActivity:0"/>
