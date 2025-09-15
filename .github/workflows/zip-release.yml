@@ -46,9 +46,23 @@ jobs:
           echo "module_version=$VERSION" >> $GITHUB_OUTPUT
           echo "module_versionCode=$VERSION_CODE" >> $GITHUB_OUTPUT
 
+      - name: Validate XML against XSD
+        run: |
+          sudo apt-get update && sudo apt-get install -y libxml2-utils
+          if [ -f "module/immerse_rules.xsd" ]; then
+            echo "Validating XML against XSD schema..."
+            xmllint --schema module/immerse_rules.xsd --noout module/immerse_rules.xml
+          else
+            echo "XSD schema file not found!"
+            exit 1
+          fi
+
       - name: Sort module files and update "update.json"
         run: |
-          python3 -m pip install --user --upgrade pip || true  
+          python3 -m pip install --user --upgrade pip || true
+          pip3 install --user pypinyin || true
+
+          # 运行格式化脚本（可能修改文件）
           python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
 
           ZIP_NAME="MiNavBarImmerse_${{ steps.update_version.outputs.module_version }}.zip"
@@ -110,4 +124,3 @@ jobs:
                -F parse_mode="HTML" \
                -F caption="$COMMIT_MESSAGE" \
                https://api.telegram.org/bot${BOT_TOKEN}/sendDocument
-
