@@ -30,10 +30,10 @@
 
 ## 2025-09-14
 ### 优化
-- Github (__@IanZb__)
+- Github (__@Ianzb__)
 - 番茄免费小说 (__@Ianzb__)
 - 米游社 (__@CnBarrier404__)
-- 一木记账 (__@IanZb__)
+- 一木记账 (__@Ianzb__)
   
 ### 贡献者
 [@CnBarrier404](https://github.com/CnBarrier404)  
@@ -44,7 +44,7 @@
 ## 2025-09-13
 ### 新增
 - 米游社 (__@CnBarrier404__)
-- 一木记账 (__@IanZb__)
+- 一木记账 (__@Ianzb__)
 
 ### 优化
 - Edge (__@Ianzb__)
