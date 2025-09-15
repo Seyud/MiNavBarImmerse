@@ -33,7 +33,7 @@ def sort_xml(xml_path: Path) -> bool:
     text = xml_path.read_text(encoding='utf-8')
 
     # 查找所有 <package .../> 块（包括前置注释），支持自闭合形式。
-    pattern = re.compile(r'(?:\s*(?:<!--.*?-->\s*)*)\s*<package\b[^>]*?/>', re.DOTALL)
+    pattern = re.compile(r'\s*(?:<!--.*?-->\s*)*<package\b[^>]*?/>', re.DOTALL)
     matches = list(pattern.finditer(text))
     if not matches:
         print(f"No <package/> blocks found in {xml_path}")
@@ -82,6 +82,9 @@ def sort_xml(xml_path: Path) -> bool:
 
 
 def sort_csv(csv_path: Path) -> bool:
+    # ====== 更新：硬编码当前CSV标头 ======
+    STANDARD_HEADER = ["应用名称", "应用包名", "适配前", "适配后", "适配效果", "更新日期"]
+
     # 读取 CSV 内容并按行拆分
     text = csv_path.read_text(encoding='utf-8')
     lines = text.splitlines()
@@ -121,9 +124,28 @@ def sort_csv(csv_path: Path) -> bool:
         print(f"Empty CSV: {csv_path}")
         return False
 
-    # CSV 的第一行可能是真正的表头（包含多个字段），也可能是单字符分区头。
-    header = reader[0]
-    raw_rows = reader[1:]
+    # ====== 更新：去除所有重复表头，仅保留顶部一个 ======
+    def is_standard_header(row):
+        return [c.strip() for c in row] == [c.strip() for c in STANDARD_HEADER]
+
+    # 收集所有非表头行，统计表头出现次数
+    filtered_rows = []
+    header_found = False
+    for row in reader:
+        if is_standard_header(row):
+            if not header_found:
+                header_found = True
+                filtered_rows.append(STANDARD_HEADER)
+            # 跳过后续所有表头
+            continue
+        filtered_rows.append(row)
+    if not header_found:
+        # 顶部插入标准表头
+        filtered_rows = [STANDARD_HEADER] + filtered_rows
+
+    # 重新赋值 header, raw_rows
+    header = filtered_rows[0]
+    raw_rows = filtered_rows[1:]
 
     # 去除全为空的空行
     cleaned = [r for r in raw_rows if any((cell and str(cell).strip()) for cell in r)]
@@ -177,12 +199,15 @@ def sort_csv(csv_path: Path) -> bool:
         col_count = max((len(r) for r in reader), default=6)
 
     # 重建输出：可选真实表头，然后按组输出。空行与组头均填充为 col_count 列，便于 GitHub 预览
+    # 如果有真实表头，先放表头（但不立即插入分组之间的空行），后续在添加组头前统一插入空行
     out_rows = [header] if header_is_real else []
     first_group = True
     for initial in sorted_initials:
-        if not first_group:
+        # 在每个分组头之前插入一个空行：无论是第一个分组（与总表头之间）还是后续分组（与上一个分组之间）
+        if out_rows and (not out_rows[-1] or any(cell != '' for cell in out_rows[-1])):
+            # 如果最后一行不是空行，则插入空行
             out_rows.append([''] * col_count)
-        first_group = False
+        # 添加分组头
         out_rows.append([initial] + [''] * (col_count - 1))
 
         # 组内排序：ASCII/数字开头的先按 ASCII 排序，中文按每字首字母拼接排序
