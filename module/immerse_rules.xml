@@ -481,7 +481,7 @@
     <package name="com.tencent.karaoke" enable="true" activityRule="com.tencent.karaoke.module.billboard.ui.SingleDetailsActivity:0,com.tencent.karaoke.module.main.ui.MainTabActivity:0"/>
 
     <!-- 微信 -->
-    <package name="com.tencent.mm" enable="true" activityRule="*:2,com.tencent.mm.ui.conversation.NewBizConversationUI:1:1,com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI:0,com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI:1:0,com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI:0,com.tencent.mm.plugin.lite.ui.WxaLiteAppSheetUI:1:0,com.tencent.mm.ui.LauncherUI:0,com.tencent.mm.plugin.appbrand.ui.AppBrandUI00:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI01:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI02:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI03:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI04:2"/>
+    <package name="com.tencent.mm" enable="true" activityRule="*:2,com.tencent.mm.ui.conversation.NewBizConversationUI:1:1,com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI:0,com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI:1:0,com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI:0,com.tencent.mm.plugin.lite.ui.WxaLiteAppSheetUI:1:0,com.tencent.mm.ui.LauncherUI:0,com.tencent.mm.plugin.appbrand.ui.AppBrandUI00:0,com.tencent.mm.plugin.appbrand.ui.AppBrandUI01:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI02:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI03:2,com.tencent.mm.plugin.appbrand.ui.AppBrandUI04:2"/>
 
     <!-- QQ -->
     <package name="com.tencent.mobileqq" enable="true" activityRule="com.tencent.mobileqq.activity.QPublicFragmentActivity:2,com.tencent.mobileqq.activity.PublicFragmentActivity:2"/>

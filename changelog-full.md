@@ -20,7 +20,7 @@
 - Github (__@ChenXiaoming233__)
 - Thanox (__@ChenXiaoming233__)
 - 大众点评 (__@ChenXiaoming233__)
-- 微信 (__@ChenXiaoming233__)
+- 微信 (__@ChenXiaoming233 @CnBarrier404__)
 
 ### 贡献者
 [@ChenXiaoming233](https://github.com/ChenXiaoming233)  
