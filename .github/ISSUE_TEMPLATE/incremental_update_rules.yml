@@ -1,0 +1,91 @@
+name: "增量更新小白条规则"
+description: "对现有规则进行增量修改，支持添加、修改、删除特定Activity规则"
+title: "增量规则更新: [应用名]"
+labels: ["自动化请求", "增量更新"]
+body:
+  - type: input
+    id: app_name
+    attributes:
+      label: "应用名"
+      description: "请输入应用名"
+      placeholder: "Example"
+    validations:
+      required: true
+  - type: input
+    id: package_name
+    attributes:
+      label: "包名"
+      description: "请输入应用包名"
+      placeholder: "com.example.app"
+    validations:
+      required: true
+  - type: dropdown
+    id: operation_type
+    attributes:
+      label: "操作类型"
+      description: "选择要执行的操作类型"
+      options:
+        - "添加Activity规则"
+        - "修改Activity规则"
+        - "删除Activity规则"
+        - "更新包属性"
+        - "批量操作"
+    validations:
+      required: true
+  - type: textarea
+    id: activity_operations
+    attributes:
+      label: "Activity操作详情"
+      description: |
+        请根据操作类型填写相应的规则。格式说明：
+        
+        **添加Activity规则**：
+        `ADD:activity_name:rule` 例如：`ADD:com.example.MainActivity:1:-1`
+        
+        **修改Activity规则**：
+        `MODIFY:activity_name:new_rule` 例如：`MODIFY:com.example.MainActivity:2`
+        
+        **删除Activity规则**：
+        `DELETE:activity_name` 例如：`DELETE:com.example.MainActivity`
+        
+        **批量操作**（每行一个操作）：
+        ```
+        ADD:com.example.MainActivity:1:-1
+        MODIFY:com.example.Settings:2
+        DELETE:com.example.About
+        ```
+      placeholder: "ADD:com.example.MainActivity:1:-1"
+    validations:
+      required: true
+  - type: dropdown
+    id: package_enable
+    attributes:
+      label: "包启用状态"
+      description: "是否需要修改包的启用状态？"
+      options:
+        - "不修改"
+        - "启用 (true)"
+        - "禁用 (false)"
+      default: 0
+  - type: input
+    id: disable_version_code
+    attributes:
+      label: "禁用版本代码 (可选)"
+      description: "如果需要设置disableVersionCode属性，请输入版本代码"
+      placeholder: "例如：123456"
+  - type: textarea
+    id: description
+    attributes:
+      label: "修改说明"
+      description: "请详细描述此次增量修改的原因和目的"
+      placeholder: "为XX应用的YY界面添加规则适配，修复ZZ问题..."
+    validations:
+      required: true
+  - type: input
+    id: user_email
+    attributes:
+      label: "您的邮箱"
+      description: "请输入您的邮箱地址，用于在提交记录中标识贡献者"
+      placeholder: "your.email@example.com"
+    validations:
+      required: false
