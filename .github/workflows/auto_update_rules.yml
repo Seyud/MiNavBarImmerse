@@ -61,7 +61,6 @@ jobs:
       - name: Create branch
         run: |
           branch_name="automation/update-rules-${{ github.event.issue.number }}"
-          git checkout -b $branch_name
           echo "BRANCH_NAME=$branch_name" >> $GITHUB_ENV
 
       - name: Update XML file
