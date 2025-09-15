@@ -529,7 +529,7 @@
     <package name="com.unionpay" enable="true" activityRule="com.unionpay.activity.react.UPActivityReactNative:0"/>
 
     <!-- Steam -->
-    <package name="com.valvesoftware.android.steam.community" enable="false"/>
+    <package name="com.valvesoftware.android.steam.community" enable="true" activityRule="*:2"/>
 
     <!-- 萤石云视频 -->
     <package name="com.videogo" enable="true" activityRule="com.videogo.reactnative.activity.EZReactBizActivity:1:-1,com.videogo.main.MainTabActivity:0"/>
