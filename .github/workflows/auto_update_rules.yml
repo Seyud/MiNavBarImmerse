@@ -61,121 +61,73 @@ jobs:
       - name: Create branch
         run: |
           branch_name="automation/update-rules-${{ github.event.issue.number }}"
-          git checkout -b "$branch_name"
           echo "BRANCH_NAME=$branch_name" >> $GITHUB_ENV
 
-      - name: Update XML file (safe edit with Python)
-        id: update-xml
+      - name: Update XML file
+        uses: actions/github-script@v7
         env:
+          APP_NAME: ${{ fromJSON(steps.issue-body.outputs.result).appName }}
           PACKAGE_NAME: ${{ fromJSON(steps.issue-body.outputs.result).packageName }}
           ACTIVITY_RULE: ${{ fromJSON(steps.issue-body.outputs.result).activityRule }}
-          APP_NAME: ${{ fromJSON(steps.issue-body.outputs.result).appName }}
-        run: |
-          set -euo pipefail
-          PYTHONPATH=""
-          xml_path="module/immerse_rules.xml"
-          if [ ! -f "$xml_path" ]; then
-            echo "Error: $xml_path not found"
-            exit 1
-          fi
+        with:
+          script: |
+            const fs = require('fs').promises;
+            const path = require('path');
+            
+            // 读取并解析XML文件
+            const xmlPath = path.join(process.env.GITHUB_WORKSPACE, 'module', 'immerse_rules.xml');
+            let xmlContent = await fs.readFile(xmlPath, 'utf8');
+            
+            // 检查包是否已存在
+            const packagePattern = new RegExp(`<package name="${process.env.PACKAGE_NAME}"[^>]*>`);
+            const packageExists = packagePattern.test(xmlContent);
+            
+            if (packageExists) {
+              // 更新现有包的规则 - 先查找注释
+              const commentPattern = new RegExp(`(<!--\\s*${process.env.PACKAGE_NAME}[\\s\\S]*?-->\\s*)?<package name="${process.env.PACKAGE_NAME}"[^>]*>[\\s\\S]*?<\\/package>`);
+              
+              let replacement = `<package name="${process.env.PACKAGE_NAME}" enable="true"\n             activityRule="${process.env.ACTIVITY_RULE}"/>`;
+              
+              // 如果有应用名，添加或更新注释
+              if (process.env.APP_NAME) {
+                replacement = `<!-- ${process.env.APP_NAME} (${process.env.PACKAGE_NAME}) -->\n  ${replacement}`;
+              }
+              
+              xmlContent = xmlContent.replace(
+                commentPattern,
+                replacement
+              );
+            } else {
+              // 添加新包规则
+              let newPackage = `<package name="${process.env.PACKAGE_NAME}" enable="true"\n             activityRule="${process.env.ACTIVITY_RULE}"/>`;
+              
+              // 如果有应用名，添加注释
+              if (process.env.APP_NAME) {
+                newPackage = `<!-- ${process.env.APP_NAME} -->\n  ${newPackage}`;
+              }
+              
+              // 在最后一个package标签后添加新内容
+              xmlContent = xmlContent.replace(/<\/NBIRules>/, `  ${newPackage}\n<\/NBIRules>`);
+            }
+            
+            // 写回文件
+            await fs.writeFile(xmlPath, xmlContent, 'utf8');
+            console.log('成功更新XML文件');
 
-          python3 - <<'PY'
-          import os, sys
-          from xml.etree import ElementTree as ET
-          from xml.dom import minidom
-
-          xml_path = os.path.join(os.getcwd(), "module", "immerse_rules.xml")
-          pkg = os.environ.get("PACKAGE_NAME", "").strip()
-          activity_rule = os.environ.get("ACTIVITY_RULE", "").strip()
-          app = os.environ.get("APP_NAME", "").strip()
-
-          if not pkg or not activity_rule:
-              print("PACKAGE_NAME and ACTIVITY_RULE must be provided", file=sys.stderr)
-              sys.exit(1)
-
-          # Parse XML
-          parser = ET.XMLParser(target=ET.TreeBuilder(insert_comments=True))
-          tree = ET.parse(xml_path, parser=parser)
-          root = tree.getroot()
-
-          # Find package node (exact match on name)
-          found = None
-          for i, child in enumerate(list(root)):
-              if child.tag == 'package' and child.get('name') == pkg:
-                  found = (i, child)
-                  break
-
-          if found:
-              idx, elem = found
-              # update attributes
-              elem.set('enable', 'true')
-              elem.set('activityRule', activity_rule)
-              # update or insert a comment immediately before the package if APP_NAME provided
-              if app:
-                  comment_text = f"{app} ({pkg})"
-                  # check existing preceding comment
-                  prev = None
-                  if idx-1 >= 0:
-                      prev = root[idx-1]
-                      # xml.etree represents comments as ET.Comment nodes with tag 'comment' depending on parser, fallback to textual check
-                      # To keep it robust, always insert a fresh comment before the package (avoid duplicates: remove any existing exact comment)
-                      # remove duplicates that exactly match
-                      # Iterate and remove any comment nodes whose text equals comment_text and which are immediately before this package
-                      # Because handling comments in ElementTree is inconsistent across versions, attempt safe approach: remove adjacent comment if present
-                      try:
-                          # In this parser, comments are instances of ET.Comment (their tag is ET.Comment)
-                          if isinstance(prev.tag, str) and prev.tag == ET.Comment:
-                              if (prev.text or "").strip() == comment_text:
-                                  pass  # already the expected comment
-                      except Exception:
-                          pass
-                  # Insert comment before the package
-                  root.insert(idx, ET.Comment(comment_text))
-          else:
-              # create and append new package (with optional comment before)
-              new_pkg = ET.Element('package')
-              new_pkg.set('name', pkg)
-              new_pkg.set('enable', 'true')
-              new_pkg.set('activityRule', activity_rule)
-              if app:
-                  root.append(ET.Comment(f"{app} ({pkg})"))
-              root.append(new_pkg)
-
-          # Pretty-print and write back
-          rough_string = ET.tostring(root, encoding='utf-8')
-          reparsed = minidom.parseString(rough_string)
-          pretty = reparsed.toprettyxml(indent="  ", encoding='utf-8')
-
-          with open(xml_path, "wb") as f:
-              f.write(pretty)
-          print("XML updated")
-          PY
-
-      - name: Commit changes (only if file changed)
-        id: commit-changes
+      - name: Commit changes
         env:
           ISSUE_AUTHOR_NAME: ${{ fromJSON(steps.issue-body.outputs.result).userName }}
           ISSUE_AUTHOR_EMAIL: ${{ fromJSON(steps.issue-body.outputs.result).userEmail }}
         run: |
-          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add module/immerse_rules.xml || true
-
-          if git diff --staged --quiet --exit-code; then
-            echo "CHANGES=false" >> $GITHUB_ENV
-            echo "No changes to commit"
-          else
-            commit_message="Update rules based on issue #${{ github.event.issue.number }}"
-            co_author_line="Co-authored-by: $ISSUE_AUTHOR_NAME <$ISSUE_AUTHOR_EMAIL>"
-            git commit -m "$commit_message" -m "$co_author_line"
-            git push -f -u origin automation/update-rules-${{ github.event.issue.number }}
-            echo "CHANGES=true" >> $GITHUB_ENV
-          fi
+          git add module/immerse_rules.xml
+          commit_message="Update rules based on issue #${{ github.event.issue.number }}"
+          co_author_line="Co-authored-by: $ISSUE_AUTHOR_NAME <$ISSUE_AUTHOR_EMAIL>"
+          echo -e "$commit_message\n\n$co_author_line" | git commit -F -
 
       - name: Create Pull Request
         id: create-pr
-        if: env.CHANGES == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           title: "规则更新: ${{ fromJSON(steps.issue-body.outputs.result).packageName }}"
@@ -200,11 +152,11 @@ jobs:
       - name: Associate PR with Issue
         if: steps.create-pr.outputs.pull-request-number != ''
         uses: actions/github-script@v7
-        env:
-          PULL_REQUEST_NUMBER: ${{ steps.create-pr.outputs.pull-request-number }}
         with:
           script: |
-            const prNumber = process.env.PULL_REQUEST_NUMBER;
+            // 使用创建PR步骤的输出获取PR信息
+            const prNumber = ${{ steps.create-pr.outputs.pull-request-number }};
+            
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
