@@ -38,8 +38,8 @@
 
 
 
-[XMl Validation]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/xml-lint.yml/badge.svg
-[XML Validation_url]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/xml-lint.yml
+[XML Validation]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/Check%20&%20Release.yml/badge.svg
+[XML Validation_url]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/Check%20&%20Release.yml
 
 [badge_trguild]: https://img.shields.io/badge/TG-群组-4991D3?style=for-the-badge&logo=telegram
 [trguild_url]: https://t.me/MiNavBarImmerse
