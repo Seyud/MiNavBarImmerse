@@ -83,7 +83,7 @@ def sort_xml(xml_path: Path) -> bool:
 
 def sort_csv(csv_path: Path) -> bool:
     # ====== 更新：硬编码当前CSV标头 ======
-    STANDARD_HEADER = ["应用名称", "应用包名", "适配前", "适配后", "适配效果", "更新日期"]
+    STANDARD_HEADER = ["应用名称", "应用包名", "适配前", "适配后", "适配效果", "更新日期", ""]
 
     # 读取 CSV 内容并按行拆分
     text = csv_path.read_text(encoding='utf-8')
