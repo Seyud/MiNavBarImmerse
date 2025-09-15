@@ -203,7 +203,7 @@
     <!-- 西窗烛 -->
     <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2"/>
 
-    <!--  <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2,com.hustzp.com.xichuangzhu.MainActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CommentListVpAct:1:0,com.hustzp.com.xichuangzhu.me.MyHomePageActivity:1:0,com.hustzp.com.xichuangzhu.books.BookIntroActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CatagoryListAct:1:0,com.hustzp.com.xichuangzhu.poetry.TopicGameDetActivity:1:0,com.hustzp.com.xichuangzhu.poetry.TopicCommListActivity:1:0,com.hustzp.com.xichuangzhu.poetry.PoetryListActivity:1:0,com.hustzp.com.xichuangzhu.market.MarketActivity:1:0,"/>  -->
+    <!-- <package name="com.hustzp.com.xichuangzhu" enable="true" activityRule="*:2,com.hustzp.com.xichuangzhu.MainActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CommentListVpAct:1:0,com.hustzp.com.xichuangzhu.me.MyHomePageActivity:1:0,com.hustzp.com.xichuangzhu.books.BookIntroActivity:1:0,com.hustzp.com.xichuangzhu.poetry.CatagoryListAct:1:0,com.hustzp.com.xichuangzhu.poetry.TopicGameDetActivity:1:0,com.hustzp.com.xichuangzhu.poetry.TopicCommListActivity:1:0,com.hustzp.com.xichuangzhu.poetry.PoetryListActivity:1:0,com.hustzp.com.xichuangzhu.market.MarketActivity:1:0,"/> -->
     <!-- SmartSports / 其实我也不知道是什么，根本查不到 -->
     <package name="com.hz.smartsports" enable="true" activityRule="*:2,com.hz.smartsports.ui.activity.MainActivity:1:-1"/>
 
