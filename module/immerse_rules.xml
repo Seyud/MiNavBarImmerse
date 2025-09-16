@@ -72,7 +72,7 @@
     <package name="com.autonavi.minimap" enable="true" activityRule="*:1:0"/>
 
     <!-- 百度地图 -->
-    <package name="com.baidu.BaiduMap" enable="true" activityRule="*:2"/>
+    <package name="com.baidu.BaiduMap" enable="true" activityRule="*:2,com.baidu.baidumaps.MapsActivity:0"/>
 
     <!-- 百度翻译 -->
     <package name="com.baidu.baidutranslate" enable="true" activityRule="*:2"/>
