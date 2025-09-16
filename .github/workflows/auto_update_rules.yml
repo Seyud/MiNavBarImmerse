@@ -99,15 +99,15 @@ jobs:
               );
             } else {
               // 添加新包规则
-              let newPackage = `<package name="${process.env.PACKAGE_NAME}" enable="true"\n             activityRule="${process.env.ACTIVITY_RULE}"/>`;
+              let newPackage = `<package name="${process.env.PACKAGE_NAME}" enable="true" activityRule="${process.env.ACTIVITY_RULE}"/>`;
               
               // 如果有应用名，添加注释
               if (process.env.APP_NAME) {
-                newPackage = `<!-- ${process.env.APP_NAME} -->\n  ${newPackage}`;
+                newPackage = `<!-- ${process.env.APP_NAME} -->\n    ${newPackage}`;
               }
               
               // 在最后一个package标签后添加新内容
-              xmlContent = xmlContent.replace(/<\/NBIRules>/, `  ${newPackage}\n<\/NBIRules>`);
+              xmlContent = xmlContent.replace(/<\/NBIRules>/, `    ${newPackage}\n<\/NBIRules>`);
             }
             
             // 写回文件
@@ -128,7 +128,7 @@ jobs:
 
       - name: Create Pull Request
         id: create-pr
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           title: "规则更新: ${{ fromJSON(steps.issue-body.outputs.result).packageName }}"
           body: |
