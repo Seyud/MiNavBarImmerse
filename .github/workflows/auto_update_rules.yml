@@ -84,13 +84,13 @@ jobs:
             
             if (packageExists) {
               // 更新现有包的规则 - 先查找注释
-              const commentPattern = new RegExp(`(<!--\\s*${process.env.PACKAGE_NAME}[\\s\\S]*?-->\\s*)?<package name="${process.env.PACKAGE_NAME}"[^>]*>[\\s\\S]*?<\\/package>`);
+              const commentPattern = new RegExp(`(<!--\\s*${process.env.APP_NAME}[\\s\\S]*?-->\\s*)?<package name="${process.env.PACKAGE_NAME}"[^>]*>[\\s\\S]*?<\\/package>`);
               
-              let replacement = `<package name="${process.env.PACKAGE_NAME}" enable="true"\n             activityRule="${process.env.ACTIVITY_RULE}"/>`;
+              let replacement = `<package name="${process.env.PACKAGE_NAME}" enable="true" activityRule="${process.env.ACTIVITY_RULE}"/>`;
               
               // 如果有应用名，添加或更新注释
               if (process.env.APP_NAME) {
-                replacement = `<!-- ${process.env.APP_NAME} (${process.env.PACKAGE_NAME}) -->\n  ${replacement}`;
+                replacement = `<!-- ${process.env.APP_NAME} -->\n    ${replacement}`;
               }
               
               xmlContent = xmlContent.replace(
