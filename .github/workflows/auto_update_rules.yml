@@ -130,6 +130,7 @@ jobs:
         id: create-pr
         uses: peter-evans/create-pull-request@v7
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           title: "规则更新: ${{ fromJSON(steps.issue-body.outputs.result).packageName }}"
           body: |
             close #${{ github.event.issue.number }}
