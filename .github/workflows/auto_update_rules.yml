@@ -85,7 +85,7 @@ jobs:
             if (packageExists) {
               // 更新现有包的规则 - 先查找注释
               // const commentPattern = new RegExp(`(<!--\\s*${process.env.APP_NAME}[\\s\\S]*?-->\\s*)?<package name="${process.env.PACKAGE_NAME}"[^>]*>[\\s\\S]*?<\\/package>`);
-              const commentPattern = new RegExp(`(<!--.*?-->\n\\s*)?<package name="${process.env.PACKAGE_NAME}"[^>]*\\/>`, 's');
+              const commentPattern = new RegExp(`(\\n\\s*<!--.*?-->)\\s*<package name="${process.env.PACKAGE_NAME}"[^>]*\\/>`, 's');
               
               let replacement = `<package name="${process.env.PACKAGE_NAME}" enable="true" activityRule="${process.env.ACTIVITY_RULE}"/>`;
               
