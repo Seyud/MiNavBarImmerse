@@ -1,0 +1,134 @@
+name: Check & Release
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'module/immerse_rules.xml'
+      - 'module/immerse_rules.xsd'
+      - 'list.csv'
+
+  push:
+    branches: [ main ]
+    paths:
+      - 'module/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  Validate-XML:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install libxml2-utils
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+      - name: Validate XML files
+        run: |
+          if [ -f "module/immerse_rules.xsd" ]; then
+            echo "Validating XML against XSD schema..."
+            xmllint --schema module/immerse_rules.xsd --noout module/immerse_rules.xml
+          else
+            echo "XSD schema file not found!"
+            exit 1
+          fi
+
+  Sort-And-Build:
+    runs-on: ubuntu-latest
+    needs: Validate-XML
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Sort and update
+        id: sort_and_update
+        run: |
+          FILE=module/module.prop
+
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+          else
+            VERSION=$(date +'%Y%m%d%H%M')
+          fi
+          VERSION_CODE=${{ github.run_number }}
+
+          sed -i "s/^version=.*/version=$VERSION/" $FILE
+          sed -i "s/^versionCode=.*/versionCode=$VERSION_CODE/" $FILE
+
+          python3 -m pip install --upgrade pip || true
+          pip3 install pypinyin || true
+          python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
+
+          ZIP_NAME="MiNavBarImmerse_${VERSION}.zip"
+          cat <<EOF > update.json
+          {
+            "version": "$VERSION",
+            "versionCode": $VERSION_CODE,
+            "zipUrl": "https://github.com/${{ github.repository }}/releases/download/AutoBuild_${VERSION}/$ZIP_NAME",
+            "changelog": "https://raw.githubusercontent.com/Ianzb/MiNavBarImmerse/main/changelog.md"
+          }
+          EOF
+
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add module/module.prop module/immerse_rules.xml list.csv update.json
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Release Version: $VERSION" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+          echo "module_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "module_versionCode=$VERSION_CODE" >> $GITHUB_OUTPUT
+
+
+      - name: Create zip file
+        run: |
+          cd module
+          zip -r ../MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}.zip . -x "*/immerse_rules.xsd" "immerse_rules.xsd"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}
+          tag_name: AutoBuild_${{ steps.sort_and_update.outputs.module_version }}
+          files: MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Post to Telegram Channel
+        env:
+          GROUP_ID: ${{ secrets.CHANNEL_ID }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ZIP_FILE: "MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}.zip"
+        
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          COMMIT_MESSAGE="Manually run by ${{ github.actor }}"
+          else
+          RAW_MSG="${{ github.event.head_commit.message }}"
+          TRIMMED_MSG=$(echo "$RAW_MSG" | sed -e '1{/^$/d}' -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+
+          COMMIT_MESSAGE="New push to GitHub
+          <pre>$TRIMMED_MSG</pre>
+          by <code>${{ github.event.head_commit.author.name }}</code>
+          See commit detail <a href='${{ github.event.head_commit.url }}'>here</a>"
+          fi
+
+          cd ${{ github.workspace }}
+          curl -F chat_id=${GROUP_ID} \
+               -F message_thread_id=39 \
+               -F document=@"${ZIP_FILE}" \
+               -F parse_mode="HTML" \
+               -F caption="$COMMIT_MESSAGE" \
+               https://api.telegram.org/bot${BOT_TOKEN}/sendDocument
