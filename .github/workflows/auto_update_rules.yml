@@ -159,5 +159,17 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: ${{ github.event.issue.number }},
-              body: `已自动创建PR [#${prNumber}](https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${prNumber}) 来处理此请求。`
+              body: `已自动创建/修改PR #${prNumber} 来处理此请求。`
+            });
+      
+      - name: Notify on failure
+        if: always() && (job.status == 'failure' || steps.create-pr.outputs.pull-request-number == '')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ github.event.issue.number }},
+              body: `工作流运行错误，请联系项目管理员或协作者以解决该问题！`
             });
