@@ -23,7 +23,7 @@ body:
     id: activity_rule
     attributes:
       label: "Activity规则"
-      description: "请输入Activity规则，格式为 Activity ID:适配方式，参见[适配规则](/rule.md)"
+      description: "请输入Activity规则，格式为 Activity ID:适配方式，参见[适配规则](https://github.com/Ianzb/MiNavBarImmerse/blob/main/rule.md)"
       placeholder: "*:2,com.example.MainActivity:1:-16777216"
     validations:
       required: true
@@ -31,7 +31,7 @@ body:
     id: description
     attributes:
       label: "修改说明"
-      description: "请描述此次修改的原因和目的。可选。"
+      description: "请描述此次修改的原因和目的。可选"
       placeholder: "为XX应用添加规则适配..."
   - type: input
     id: user_email
