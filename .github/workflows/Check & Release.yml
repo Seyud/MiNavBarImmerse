@@ -24,18 +24,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install libxml2-utils
-        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
-
-      - name: Validate XML files
+      - name: Install python deps for XML validation
         run: |
-          if [ -f "module/immerse_rules.xsd" ]; then
-            echo "Validating XML against XSD schema..."
-            xmllint --schema module/immerse_rules.xsd --noout module/immerse_rules.xml
-          else
-            echo "XSD schema file not found!"
-            exit 1
-          fi
+          python3 -m pip install --upgrade pip || true
+          pip3 install xmlschema --no-cache-dir
+
+      - name: Validate XML files (python)
+        run: |
+          python3 scripts/validate_xml.py --xsd module/immerse_rules.xsd --xml module/immerse_rules.xml
 
   Sort-And-Build:
     runs-on: ubuntu-latest
@@ -48,20 +44,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Install libxml2-utils (for packaging)
-        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
-
-      - name: Validate XML (packaging) using xmllint
-        id: xmllint-pack
-        run: |
-          if [ -f "module/immerse_rules.xsd" ]; then
-            echo "Validating XML against XSD schema before formatting..."
-            xmllint --schema module/immerse_rules.xsd --noout module/immerse_rules.xml
-          else
-            echo "XSD schema file not found!"
-            exit 1
-          fi
 
       - name: Prepare Python deps
         run: |
@@ -129,7 +111,7 @@ jobs:
           tag_name: AutoBuild_${{ steps.sort_and_update.outputs.module_version }}
           files: MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}.zip
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Post to Telegram Channel
         env:
           GROUP_ID: ${{ secrets.CHANNEL_ID }}
