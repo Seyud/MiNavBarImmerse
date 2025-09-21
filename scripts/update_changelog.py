@@ -381,6 +381,22 @@ def main():
     current_text = LIST_CSV.read_text(encoding='utf-8')
     prev_text = git_show('list.csv')
 
+    # 如果 git_show 返回 None，可能是因为没有父提交或文件在父提交中不存在。
+    # 为避免在手动运行（无父提交可比对）时把所有条目误判为新增：
+    # - 如果仓库没有父提交（HEAD^ 不存在），则将 prev_text 设为 current_text（认为无变更）；
+    # - 如果父提交存在但文件在父提交中确实不存在，则保留 prev_text=''（表示文件首次加入），此时新增列表应包含所有条目。
+    if prev_text is None:
+        try:
+            # 检查是否存在父提交
+            subprocess.check_output(['git', 'rev-parse', '--verify', 'HEAD^'], cwd=ROOT, stderr=subprocess.DEVNULL)
+            # 父提交存在，但 git_show 未能读取 list.csv（可能文件在父提交中不存在）
+            prev_text = ''
+            print('Previous list.csv not found in parent commit; treating as newly added file.')
+        except subprocess.CalledProcessError:
+            # 没有父提交（例如在本地手动运行、单提交仓库或 CI 的浅克隆），将 prev 视为当前，避免将所有应用标记为新增
+            prev_text = current_text
+            print('No parent commit found; treating previous list.csv as identical to current to avoid false additions.')
+
     # 读取并比对 XML
     xml_cur_text = (ROOT / 'module' / 'immerse_rules.xml').read_text(encoding='utf-8') if (ROOT / 'module' / 'immerse_rules.xml').exists() else None
     xml_prev_text = git_show('module/immerse_rules.xml')
