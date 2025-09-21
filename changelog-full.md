@@ -8,6 +8,7 @@
 ### 贡献者
 [@Ianzb](https://github.com/Ianzb)
 [@Hz6826](https://github.com/Hz6826)
+[@CnBarrier404](https://github.com/CnBarrier404)
 
 
 
