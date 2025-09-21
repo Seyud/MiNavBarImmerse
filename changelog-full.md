@@ -1,11 +1,31 @@
 # 完整更新日志
+## 2025-09-21
+### 优化
+- 自动生成更新日志 (__@Ianzb__)
+
+### 贡献者
+[@Ianzb](https://github.com/Ianzb)
+
+
+
+## 2025-09-18
+### 优化
+- 改进目标文件检查逻辑 (__@Seyud__)
+- 添加系统版本验证 (__@Seyud__)
+- 重构脚本逻辑 (__@Seyud__)
+
+### 贡献者
+[@Seyud](https://github.com/Seyud)
+
+
+
 ## 2025-09-16
 ### 优化
 - 百度地图 (__@Ianzb__)
 - 微信 (__@CnBarrier404__)
 
-### 贡献者  
-[@CnBarrier404](https://github.com/CnBarrier404)  
+### 贡献者
+[@CnBarrier404](https://github.com/CnBarrier404)
 [@Ianzb](https://github.com/Ianzb)
 
 
@@ -34,7 +54,7 @@
 - 微信 (__@ChenXiaoming233 @CnBarrier404__)
 
 ### 贡献者
-[@ChenXiaoming233](https://github.com/ChenXiaoming233)  
+[@ChenXiaoming233](https://github.com/ChenXiaoming233)
 [@CnBarrier404](https://github.com/CnBarrier404)
 
 
@@ -45,9 +65,9 @@
 - 番茄免费小说 (__@Ianzb__)
 - 米游社 (__@CnBarrier404__)
 - 一木记账 (__@Ianzb__)
-  
+
 ### 贡献者
-[@CnBarrier404](https://github.com/CnBarrier404)  
+[@CnBarrier404](https://github.com/CnBarrier404)
 [@Ianzb](https://github.com/Ianzb)
 
 
@@ -62,10 +82,10 @@
 - Seestar (__@Ianzb__)
 - 九号出行 (__@CnBarrier404__)
 - 掌上无畏契约 (__@Hz6826__)
-  
+
 ### 贡献者
-[@CnBarrier404](https://github.com/CnBarrier404)  
-[@Hz6826](https://github.com/Hz6826)  
+[@CnBarrier404](https://github.com/CnBarrier404)
+[@Hz6826](https://github.com/Hz6826)
 [@Ianzb](https://github.com/Ianzb)
 
 
@@ -102,9 +122,9 @@
 - QQ (__@ChengXiaoming233__)
 - 百度 (__@Ianzb__)
 - 微信 (__@ChengXiaoming233__)
-  
+
 ### 贡献者
-[@ChengXiaoming233](https://github.com/ChengXiaoming233)  
+[@ChengXiaoming233](https://github.com/ChengXiaoming233)
 [@Ianzb](https://github.com/Ianzb)
 
 
@@ -113,7 +133,7 @@
 ### 新增
 - 九号出行 (__@CnBarrier404__)
 - 音乐标签 (__@CnBarrier404__)
-  
+
 ### 贡献者
 [@CnBarrier404](https://github.com/CnBarrier404)
 
@@ -122,7 +142,7 @@
 ## 2025-09-08
 ### 移除
 - 铁路12306 (__@Seyud__)
-  
+
 ### 贡献者
 [@Seyud](https://github.com/Seyud)
 
@@ -134,7 +154,7 @@
 
 ### 优化
 - 百度 (__@Ianzb__)
-  
+
 ### 贡献者
 [@Ianzb](https://github.com/Ianzb)
 
@@ -146,9 +166,9 @@
 
 ### 优化
 - 闲鱼 (__@Seyud__)
-  
+
 ### 贡献者
-[@Ianzb](https://github.com/Ianzb)  
+[@Ianzb](https://github.com/Ianzb)
 [@Seyud](https://github.com/Seyud)
 
 
@@ -159,7 +179,7 @@
 
 ### 优化
 - 微信 (__@Seyud__)
-  
+
 ### 贡献者
 [@Seyud](https://github.com/Seyud)
 
@@ -169,18 +189,11 @@
 ### 新增
 - WiFiman (__@Seyud__)
 - 渝通行 (__@Seyud__)
-  
-### 贡献者
-[@Seyud](https://github.com/Seyud)
-
-
-
-## 2025-08-27
-### 新增
 - Minecraft DLC Free (__@Ianzb__)
 - 小米运动健康 (__@Ianzb__)
-  
+
 ### 贡献者
+[@Seyud](https://github.com/Seyud)
 [@Ianzb](https://github.com/Ianzb)
 
 
@@ -190,7 +203,7 @@
 - 米家 (__@Ianzb__)
 - 文小言 (__@Ianzb__)
 - 小米商城 (__@Ianzb__)
-  
+
 ### 贡献者
 [@Ianzb](https://github.com/Ianzb)
 
@@ -199,7 +212,7 @@
 ## 2025-08-22
 ### 新增
 - 甲壳虫 ADB 助手 (__@Ianzb__)
-  
+
 ### 贡献者
 [@Ianzb](https://github.com/Ianzb)
 

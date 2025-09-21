@@ -199,8 +199,13 @@ def sort_csv(csv_path: Path) -> bool:
         col_count = max((len(r) for r in reader), default=6)
 
     # 重建输出：可选真实表头，然后按组输出。空行与组头均填充为 col_count 列，便于 GitHub 预览
-    # 如果有真实表头，先放表头（但不立即插入分组之间的空行），后续在添加组头前统一插入空行
-    out_rows = [header] if header_is_real else []
+    # 如果有真实表头，先放表头，并确保表头和第一个分组之间有一个空行
+    out_rows = []
+    if header_is_real:
+        out_rows.append(header)
+        # 明确在表头后插入一个空行，保证表头和第一个分组之间有空行
+        out_rows.append([''] * col_count)
+
     first_group = True
     for initial in sorted_initials:
         # 在每个分组头之前插入一个空行：无论是第一个分组（与总表头之间）还是后续分组（与上一个分组之间）

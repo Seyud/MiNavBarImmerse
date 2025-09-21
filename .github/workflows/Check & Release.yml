@@ -49,7 +49,34 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Sort and update
+      - name: Install libxml2-utils (for packaging)
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+      - name: Validate XML (packaging) using xmllint
+        id: xmllint-pack
+        run: |
+          if [ -f "module/immerse_rules.xsd" ]; then
+            echo "Validating XML against XSD schema before formatting..."
+            xmllint --schema module/immerse_rules.xsd --noout module/immerse_rules.xml
+          else
+            echo "XSD schema file not found!"
+            exit 1
+          fi
+
+      - name: Prepare Python deps
+        run: |
+          python3 -m pip install --upgrade pip || true
+          pip3 install pypinyin || true
+
+      - name: Format and sort XML/CSV
+        run: |
+          python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
+
+      - name: Update changelog (move old entries to changelog-full and add today's changes)
+        run: |
+          python3 scripts/update_changelog.py
+
+      - name: Sort and update module props and create update.json
         id: sort_and_update
         run: |
           FILE=module/module.prop
@@ -64,10 +91,6 @@ jobs:
           sed -i "s/^version=.*/version=$VERSION/" $FILE
           sed -i "s/^versionCode=.*/versionCode=$VERSION_CODE/" $FILE
 
-          python3 -m pip install --upgrade pip || true
-          pip3 install pypinyin || true
-          python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
-
           ZIP_NAME="MiNavBarImmerse_${VERSION}.zip"
           cat <<EOF > update.json
           {
@@ -80,10 +103,11 @@ jobs:
 
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add module/module.prop module/immerse_rules.xml list.csv update.json
+          # 包含 changelog 文件到提交
+          git add module/module.prop module/immerse_rules.xml list.csv update.json changelog.md changelog-full.md || true
 
           if ! git diff --cached --quiet; then
-            git commit -m "Release Version: $VERSION" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+            git commit -m "Release Version: $VERSION" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" || true
             git push
           else
             echo "No changes to commit"
