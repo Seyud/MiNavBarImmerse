@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center" style="text-align: center">
 
 # 小米小白条沉浸优化
 ## MiNavBarImmerse
