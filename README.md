@@ -3,7 +3,7 @@
 # 小米小白条沉浸优化
 ## MiNavBarImmerse
 [官网](website_url) | [文档](
-rule.md) | [更新日志](changelog.md)
+rule.md) | [适配列表](list.csv) | [更新日志](changelog.md) | [TG群组](trguild_url)
 
 [![GitHub License](https://img.shields.io/github/license/Ianzb/MiNavBarImmerse)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/Ianzb/MiNavBarImmerse)](
@@ -54,13 +54,13 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 ### 访问计数器（仅供娱乐）
 
 ![Counter](
-https://count.getloli.com/@MiNavBarImmerse?name=MiNavBarImmerse&theme=minecraft)
+https://count.getloli.com/@MiNavBarImmerse?name=MiNavBarImmerse&theme=minecraft&darkmode=auto)
 
 
 [xml_validation]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/Check%20&%20Release.yml/badge.svg
 [xml_validation_url]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/Check%20&%20Release.yml
 
-[badge_trguild]: https://img.shields.io/badge/TG-群组-4991D3?style=for-the-badge&logo=telegram
+[badge_trguild]: https://img.shields.io/badge/TG-群组-4991D3?logo=telegram
 [trguild_url]: https://t.me/MiNavBarImmerse
 
 [website_url]:https://ianzb.github.io/project/MiNavBarImmerse.html
