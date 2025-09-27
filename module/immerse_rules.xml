@@ -304,7 +304,7 @@
     <package name="com.mutangtech.qianji" enable="true" activityRule="*:2"/>
 
     <!-- 网易云音乐 -->
-    <package name="com.netease.cloudmusic" enable="true" activityRule="*:2,com.netease.cloudmusic.activity.MainActivity:0,com.netease.cloudmusic.music.biz.search.activity.SearchActivity:0,com.netease.cloudmusic.activity.PlayListActivity:0,com.netease.cloudmusic.music.biz.comment.activity.CommentActivity:1:0"/>
+    <package name="com.netease.cloudmusic" enable="false" activityRule="*:2,com.netease.cloudmusic.activity.MainActivity:0,com.netease.cloudmusic.music.biz.search.activity.SearchActivity:0,com.netease.cloudmusic.activity.PlayListActivity:0,com.netease.cloudmusic.music.biz.comment.activity.CommentActivity:1:0"/>
 
     <!-- 中国大学MOOC -->
     <package name="com.netease.edu.ucmooc" enable="true" activityRule="*:2,com.netease.edu.ucmooc.activity.ActivityMain:1:-1,com.netease.edu.ucmooc.postgraduateexam.activity.ActivityCoursePackage:1:-1,com.netease.edu.ucmooc.postgraduateexam.activity.ActivityPostgraduateCourseDetail:1:-1,com.netease.edu.ucmooc.homepage.activity.ActivityCourseIntroduce:1:-1"/>
