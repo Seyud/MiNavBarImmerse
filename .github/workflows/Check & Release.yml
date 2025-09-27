@@ -54,10 +54,6 @@ jobs:
         run: |
           python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
 
-      - name: Update changelog (move old entries to changelog-full and add today's changes)
-        run: |
-          python3 scripts/update_changelog.py
-
       - name: Sort and update module props and create update.json
         id: sort_and_update
         run: |
@@ -85,8 +81,7 @@ jobs:
 
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          # 包含 changelog 文件到提交
-          git add module/module.prop module/immerse_rules.xml list.csv update.json changelog.md changelog-full.md || true
+          git add module/module.prop module/immerse_rules.xml list.csv update.json changelog.md || true
 
           if ! git diff --cached --quiet; then
             git commit -m "Release Version: $VERSION" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" || true
