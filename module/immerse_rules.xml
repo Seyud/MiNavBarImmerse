@@ -274,7 +274,7 @@
     <package name="com.luna.music" enable="true" activityRule="com.luna.biz.main.main.MainActivity:2"/>
 
     <!-- 小黑盒 -->
-    <package name="com.max.xiaoheihe" enable="true" activityRule="com.max.xiaoheihe.module.account.InterestInitV2Activity:1:1,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:0,com.max.xiaoheihe.module.bbs.post_edit.PostTabActivity:0,com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity:0"/>
+    <package name="com.max.xiaoheihe" enable="true" activityRule="*:2,com.max.xiaoheihe.MainActivity:0,com.max.xiaoheihe.module.account.InterestInitV2Activity:1:1,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:0,com.max.xiaoheihe.module.bbs.post_edit.PostTabActivity:0,com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity:0"/>
 
     <!-- 233乐园 -->
     <package name="com.meta.box" enable="false"/>
