@@ -14,26 +14,28 @@ on:
       - 'module/**'
   workflow_dispatch:
 
-permissions:
-  contents: write
+
 
 jobs:
   Validate-XML:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: 检出仓库文件
+        uses: actions/checkout@v5
 
-      - name: Install python deps for XML validation
+      - name: 安装依赖
         run: |
-          python3 -m pip install --upgrade pip || true
-          pip3 install xmlschema --no-cache-dir
+          pip3 install xmlschema
 
-      - name: Validate XML files (python)
+      - name: 校验XML文件
         run: |
           python3 scripts/validate_xml.py --xsd module/immerse_rules.xsd --xml module/immerse_rules.xml
 
   Sort-And-Build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     needs: Validate-XML
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
@@ -42,29 +44,24 @@ jobs:
       TZ: Asia/Shanghai
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: 检出仓库文件
+        uses: actions/checkout@v5
 
-      - name: Prepare Python deps
+      - name: 安装依赖
         run: |
-          python3 -m pip install --upgrade pip || true
-          pip3 install pypinyin || true
+          pip3 install pypinyin
 
-      - name: Format and sort XML/CSV
+      - name: 整理XML和CSV文件
         run: |
           python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
 
-      - name: Sort and update module props and create update.json
-        id: sort_and_update
+      - name: 更新模块文件
+        id: update_module_files
         run: |
           FILE=module/module.prop
 
-          if [ -n "${{ github.event.inputs.version }}" ]; then
-            VERSION="${{ github.event.inputs.version }}"
-          else
-            VERSION=$(date +'%Y%m%d%H%M')
-          fi
-          VERSION_CODE=${{ github.run_number }}
+          VERSION=$(date +'%Y%m%d%H%M')
+          VERSION_CODE="$(date +'%y%m%d')$GITHUB_RUN_NUMBER"
 
           sed -i "s/^version=.*/version=$VERSION/" $FILE
           sed -i "s/^versionCode=.*/versionCode=$VERSION_CODE/" $FILE
@@ -75,43 +72,38 @@ jobs:
             "version": "$VERSION",
             "versionCode": $VERSION_CODE,
             "zipUrl": "https://github.com/${{ github.repository }}/releases/download/AutoBuild_${VERSION}/$ZIP_NAME",
-            "changelog": "https://raw.githubusercontent.com/Ianzb/MiNavBarImmerse/main/changelog.md"
+            "changelog": "https://raw.githubusercontent.com/${{ github.repository }}/main/changelog.md"
           }
           EOF
 
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add module/module.prop module/immerse_rules.xml list.csv update.json changelog.md || true
+          git add module/module.prop module/immerse_rules.xml list.csv update.json
 
-          if ! git diff --cached --quiet; then
-            git commit -m "Release Version: $VERSION" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" || true
-            git push
-          else
-            echo "No changes to commit"
-          fi
+          git commit -m "Release Version: $VERSION" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+          git push
 
-          echo "module_version=$VERSION" >> $GITHUB_OUTPUT
-          echo "module_versionCode=$VERSION_CODE" >> $GITHUB_OUTPUT
+          echo "MODULE_VERSION=$VERSION" >> $GITHUB_OUTPUT
 
 
-      - name: Create zip file
+      - name: 压缩模块文件
         run: |
           cd module
-          zip -r ../MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}.zip . -x "*/immerse_rules.xsd" "immerse_rules.xsd"
+          zip -r ../MiNavBarImmerse_${{ steps.update_module_files.outputs.module_version }}.zip . -x "*/immerse_rules.xsd" "immerse_rules.xsd"
 
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
+      - name: 上传到Release
+        uses: softprops/action-gh-release@v2
         with:
-          name: MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}
-          tag_name: AutoBuild_${{ steps.sort_and_update.outputs.module_version }}
-          files: MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}.zip
+          name: MiNavBarImmerse_${{ steps.update_module_files.outputs.module_version }}
+          tag_name: AutoBuild_${{ steps.update_module_files.outputs.module_version }}
+          files: MiNavBarImmerse_${{ steps.update_module_files.outputs.module_version }}.zip
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Post to Telegram Channel
+      - name: 上传到Telegram
         env:
-          GROUP_ID: ${{ secrets.CHANNEL_ID }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          ZIP_FILE: "MiNavBarImmerse_${{ steps.sort_and_update.outputs.module_version }}.zip"
+          ZIP_FILE: "${{ github.workspace }}/MiNavBarImmerse_${{ steps.update_module_files.outputs.module_version }}.zip"
         
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
@@ -126,8 +118,7 @@ jobs:
           See commit detail <a href='${{ github.event.head_commit.url }}'>here</a>"
           fi
 
-          cd ${{ github.workspace }}
-          curl -F chat_id=${GROUP_ID} \
+          curl -F chat_id=${CHANNEL_ID} \
                -F message_thread_id=39 \
                -F document=@"${ZIP_FILE}" \
                -F parse_mode="HTML" \
