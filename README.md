@@ -1,6 +1,6 @@
 **Lang:** 
-[![zh_CN](https://img.shields.io/badge/README.md-简体中文-blue)](README.md)
-[![en_US](https://img.shields.io/badge/README.md-English%20(US)-blue)](doc/README-EN-US.md)
+[![zh_CN](https://img.shields.io/badge/README.md-简体中文-blue)](/README.md)
+[![en_US](https://img.shields.io/badge/README.md-English%20(US)-blue)](/doc/en_us/README.md)
 
 ---
 
