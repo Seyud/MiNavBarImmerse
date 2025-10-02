@@ -1,7 +1,7 @@
 id=MiNavBarImmerse
 name=小米小白条沉浸优化
-version=202509291322
-versionCode=19
+version=202510021805
+versionCode=25100220
 author=Ianzb
 description=通过Xiaomi HyperOS 2.2内置第三方应用小白条配置文件，实现小白条沉浸优化。
 updateJson=https:///raw.githubusercontent.com/Ianzb/MiNavBarImmerse/main/update.json
