@@ -140,7 +140,7 @@
     <!-- 大众点评 -->
     <package name="com.dianping.v1" enable="true" activityRule="*:2,com.dianping.v1.NovaMainActivity:1:0,com.dianping.social.activity.NewFeedDetailActivity:1:0,com.dianping.voyager.poi.GCPOIDetailActivity:1:-1,com.dianping.gcmrn.ssr.GCMRNSSRActivity:2,com.dianping.tuan.activity.DealDetailAgentActivity:0,com.meituan.android.mrn.container.MRNBaseActivity:0,com.meituan.android.mrn.container.MRNStandardActivity:0,com.dianping.nova.picasso.DPPicassoBoxActivity:2,com.dianping.shopshell.PexusPoiActivity:0,com.dianping.movie.trade.home.MovieMainActivity:0,com.dianping.movie.activity.DpMovieDetailActivity:2,com.meituan.android.movie.tradebase.activity.MovieCinemaListActivity:2,com.meituan.android.movie.tradebase.activity.SelectSeatActivity:0,com.meituan.android.movie.tradebase.activity.PaySeatActivity:0,com.dianping.movie.trade.MovieTitansActivity:0,com.sankuai.waimai.business.page.homepage.TakeoutActivity:0,com.sankuai.waimai.store.drug.home.NewDrugHomeActivity:0,com.meituan.msc.modules.container.MSCActivity:0,com.sankuai.xm.imui.session.SessionActivity:0,com.dianping.gcmrn.ssr.GCMRNSSRActivity:0"/>
 
-    <!-- 甲壳虫 ABD 助手 -->
+    <!-- 甲壳虫 ADB 助手 -->
     <package name="com.didjdk.adbhelper" enable="true" activityRule="com.didjdk.adbhelper.FastbootActivity:2"/>
 
     <!-- 番茄免费小说 -->

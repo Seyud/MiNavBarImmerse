@@ -1,11 +1,15 @@
-
-**Lang:** 
+**Lang:**
 [![zh_CN](https://img.shields.io/badge/rule.md-简体中文-blue)](/rule.md)
 [![en_US](https://img.shields.io/badge/rule.md-English%20(US)-blue)](/doc/en_us/rule.md)
 
 ---
 
 # 适配说明
+
+由于作者精力有限，不会主动适配不常用或者自己不用的软件。提交Issue时请给出截图、应用包名、必需的Activity适配信息和具体适配要求；PR时建议在本地提前进行验证，填写[list.csv](list.csv)，修改[changelog.md](changelog.md)。
+对于部分大厂软件可能无法生效。
+
+你可以在这里获取针对特定应用的[一些经验](https://github.com/Ianzb/MiNavBarImmerse/discussions)，并分享你的经验。
 
 ## 原理
 
@@ -37,11 +41,7 @@ NBIRules标签内为应用列表，格式为：
 ## 推荐
 
 对于大多数应用可以全局应用悬浮显示+主界面默认/取色，来快速适配。
-
-你可以在这里获取针对特定应用的[一些经验](https://github.com/Ianzb/MiNavBarImmerse/discussions)，并分享你的经验。
-
-由于作者精力有限，不会主动适配不常用或者自己不用的软件。提交Issue时请给出截图、应用包名、必需的Activity适配信息和具体适配要求；PR时建议在本地提前进行验证，填写[list.csv](list.csv)，修改[changelog.md](changelog.md)。
-对于部分大厂软件可能无法生效。
+* 少部分应用自带的适配会导致无法被模块覆盖，暂时无解。部分应用会在部分页面卡出变黑等Bug，请果断放弃适配。
 
 ### 悬浮显示
 
@@ -53,6 +53,4 @@ NBIRules标签内为应用列表，格式为：
 * 对于有底栏的Activity，可以使用底栏背景颜色取色。
 * 由于不支持动态取色，请不要在支持主题/皮肤/深浅色的界面使用。
 * 如果仅对应用自带的颜色填充适配不满意，但是又无法使用取色适配多种颜色，先维持默认。
-
-* 少部分应用自带的适配会导致无法被模块覆盖，暂时无解。部分应用会在部分页面卡出变黑等Bug，请果断放弃适配。
 
