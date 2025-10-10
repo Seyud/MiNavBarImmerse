@@ -287,12 +287,15 @@
 
     <!-- Edge -->
     <package name="com.microsoft.emmx" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
-<!-- Edge Canary -->
-    <package name="com.microsoft.emmx.canary" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
-<!-- Edge Dev-->
-    <package name="com.microsoft.emmx.dev" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
-<!-- Edge Beta-->
+
+    <!-- Edge Beta -->
     <package name="com.microsoft.emmx.beta" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
+
+    <!-- Edge Canary -->
+    <package name="com.microsoft.emmx.canary" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
+
+    <!-- Edge Dev -->
+    <package name="com.microsoft.emmx.dev" enable="true" activityRule="org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity:2"/>
 
     <!-- To Do -->
     <package name="com.microsoft.todos" enable="true" activityRule="*:2"/>
