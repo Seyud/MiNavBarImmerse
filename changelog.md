@@ -1,78 +1,103 @@
 # 更新日志
+
+## 2025-10-10
+
+### 新增
+
+- Edge Beta (__@Ianzb__)
+- Edge Canary (__@Ianzb__)
+- Edge Dev (__@Ianzb__)
+
+### 优化
+
+- Edge (__@Ianzb__)
+
+### 贡献者
+
+[@Ianzb](https://github.com/Ianzb)
+
 ## 2025-10-06
+
 - 哔哩哔哩 - 浏览器页面上滑底栏变黑 (__@Ianzb__)
 
 ### 贡献者
+
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-09-29
+
 - 云班课 (__@QNquenan__)
 
 ### 贡献者
+
 [@QNquenan](https://github.com/QNquenan)
 
-
-
 ## 2025-09-28
+
 ### 新增
+
 - 小黑盒 (__@CnBarrier404__)
 
 ### 移除
+
 - 网易云音乐 - 主页底栏显示异常 (__@CnBarrier404__)
 
 ### 贡献者
+
 [@CnBarrier404](https://github.com/CnBarrier404)
 
-
-
 ## 2025-09-27
+
 ### 优化
+
 - 哔哩哔哩 - 直播间无法发送弹幕 (__@CnBarrier404__)
 
 ### 贡献者
+
 [@CnBarrier404](https://github.com/CnBarrier404)
 
-
-
 ## 2025-09-21
+
 ### 优化
+
 - 自动生成更新日志 (__@Ianzb__)
 - 修复自动更新xml的工作流 (__@Hz6826__)
 - 修改XML格式检测方式 (__@Ianzb__)
 
 ### 贡献者
+
 [@Ianzb](https://github.com/Ianzb)
 [@Hz6826](https://github.com/Hz6826)
 [@CnBarrier404](https://github.com/CnBarrier404)
 
-
-
 ## 2025-09-18
+
 ### 优化
+
 - 改进目标文件检查逻辑 (__@Seyud__)
 - 添加系统版本验证 (__@Seyud__)
 - 重构脚本逻辑 (__@Seyud__)
 
 ### 贡献者
+
 [@Seyud](https://github.com/Seyud)
 
-
-
 ## 2025-09-16
+
 ### 优化
+
 - 百度地图 (__@Ianzb__)
 - 微信 (__@CnBarrier404__)
 
 ### 贡献者
+
 [@CnBarrier404](https://github.com/CnBarrier404)
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-09-15
+
 ### 新增
+
 - KonaBess (__@CnBarrier404__)
 - Steam (__@CnBarrier404__)
 - 创建快捷方式 (__@ChenXiaoming233__)
@@ -88,6 +113,7 @@
 - 知乎日报 (__@ChenXiaoming233__)
 
 ### 优化
+
 - Edge (__@ChenXiaoming233__)
 - Github (__@ChenXiaoming233__)
 - Thanox (__@ChenXiaoming233__)
@@ -95,44 +121,48 @@
 - 微信 (__@ChenXiaoming233 @CnBarrier404__)
 
 ### 贡献者
+
 [@ChenXiaoming233](https://github.com/ChenXiaoming233)
 [@CnBarrier404](https://github.com/CnBarrier404)
 
-
-
 ## 2025-09-14
+
 ### 优化
+
 - Github (__@Ianzb__)
 - 番茄免费小说 (__@Ianzb__)
 - 米游社 (__@CnBarrier404__)
 - 一木记账 (__@Ianzb__)
 
 ### 贡献者
+
 [@CnBarrier404](https://github.com/CnBarrier404)
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-09-13
+
 ### 新增
+
 - 米游社 (__@CnBarrier404__)
 - 一木记账 (__@Ianzb__)
 
 ### 优化
+
 - Edge (__@Ianzb__)
 - Seestar (__@Ianzb__)
 - 九号出行 (__@CnBarrier404__)
 - 掌上无畏契约 (__@Hz6826__)
 
 ### 贡献者
+
 [@CnBarrier404](https://github.com/CnBarrier404)
 [@Hz6826](https://github.com/Hz6826)
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-09-12
+
 ### 新增
+
 - 123云盘 (__@ChengXiaoming233__)
 - Edge (__@ChengXiaoming233__)
 - Thanox (__@ChengXiaoming233__)
@@ -160,107 +190,120 @@
 - 志愿汇 (__@ChengXiaoming233__)
 
 ### 优化
+
 - QQ (__@ChengXiaoming233__)
 - 百度 (__@Ianzb__)
 - 微信 (__@ChengXiaoming233__)
 
 ### 贡献者
+
 [@ChengXiaoming233](https://github.com/ChengXiaoming233)
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-09-10
+
 ### 新增
+
 - 九号出行 (__@CnBarrier404__)
 - 音乐标签 (__@CnBarrier404__)
 
 ### 贡献者
+
 [@CnBarrier404](https://github.com/CnBarrier404)
 
-
-
 ## 2025-09-08
+
 ### 移除
+
 - 铁路12306 (__@Seyud__)
 
 ### 贡献者
+
 [@Seyud](https://github.com/Seyud)
 
-
-
 ## 2025-09-07
+
 ### 新增
+
 - DevCheck (__@Ianzb__)
 
 ### 优化
+
 - 百度 (__@Ianzb__)
 
 ### 贡献者
+
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-09-06
+
 ### 新增
+
 - USB摄像头 (__@Ianzb__)
 
 ### 优化
+
 - 闲鱼 (__@Seyud__)
 
 ### 贡献者
+
 [@Ianzb](https://github.com/Ianzb)
 [@Seyud](https://github.com/Seyud)
 
-
-
 ## 2025-09-05
+
 ### 新增
+
 - 小米WiFi (__@Seyud__)
 
 ### 优化
+
 - 微信 (__@Seyud__)
 
 ### 贡献者
+
 [@Seyud](https://github.com/Seyud)
 
-
-
 ## 2025-08-27
+
 ### 新增
+
 - WiFiman (__@Seyud__)
 - 渝通行 (__@Seyud__)
 - Minecraft DLC Free (__@Ianzb__)
 - 小米运动健康 (__@Ianzb__)
 
 ### 贡献者
+
 [@Seyud](https://github.com/Seyud)
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-08-23
+
 ### 新增
+
 - 米家 (__@Ianzb__)
 - 文小言 (__@Ianzb__)
 - 小米商城 (__@Ianzb__)
 
 ### 贡献者
+
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-08-22
+
 ### 新增
+
 - 甲壳虫 ADB 助手 (__@Ianzb__)
 
 ### 贡献者
+
 [@Ianzb](https://github.com/Ianzb)
 
-
-
 ## 2025-08-21
+
 ### 新增
+
 - Activity Manager (__@Ianzb__)
 - BubbleUPnP (__@Ianzb__)
 - DSU Sideloader (__@Ianzb__)
@@ -286,4 +329,5 @@
 - 智学网学生端 (__@Ianzb__)
 
 ### 贡献者
+
 [@Ianzb](https://github.com/Ianzb)
