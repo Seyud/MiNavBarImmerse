@@ -61,7 +61,7 @@ jobs:
           FILE=module/module.prop
 
           VERSION=$(date +'%Y%m%d%H%M')
-          VERSION_CODE="$(date +'%y%m%d')$GITHUB_RUN_NUMBER"
+          VERSION_CODE=${{ github.run_number }}
 
           sed -i "s/^version=.*/version=$VERSION/" $FILE
           sed -i "s/^versionCode=.*/versionCode=$VERSION_CODE/" $FILE
