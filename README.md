@@ -39,7 +39,7 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 
 # ⚙️ 适配范围
 
-搭载Xiaomi HyperOS 2.2 - 3的机型，解锁root权限，能够刷入Magisk标准的模块。
+搭载Xiaomi HyperOS 2.2的机型，解锁root权限，能够刷入Magisk标准的模块。暂不支持HyperOS 3。
 
 # 🛠️ 贡献
 
