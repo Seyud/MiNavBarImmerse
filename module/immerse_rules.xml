@@ -16,6 +16,18 @@
 
     <!-- 渝通行 -->
     <package name="cn.com.whty.cqt" enable="true" activityRule="*:2"/>
+ <!-- RoseLink -->
+    <package name="cn.ikaile.ruoshui.client" enable="true" activityRule="*:2"/>
+    <!-- Fuck for VIP -->
+    <package name="com.bug.hookvip" enable="true" activityRule="*:2"/>
+     <!-- 哔哩漫游 -->
+    <package name="me.iacn.biliroaming" enable="true" activityRule="*:2"/>
+      <!-- QAuxiliary -->
+    <package name="io.github.qauxv" enable="true" activityRule="*:2"/>
+      <!-- WAuxiliary -->
+    <package name="me.hd.wauxv" enable="true" activityRule="*:2"/>
+ <!-- 设置 -->
+    <package name="com.android.settings" enable="true" activityRule="rikka.sui.SuiActivity:2"/>
 
     <!-- 大麦 -->
     <package name="cn.damai" enable="true" activityRule="cn.damai.filmdetail.activity.DMFilmDetailActivity:1:1,cn.damai.discover.media.MediaPagerActivity:1:1"/>

@@ -16,6 +16,12 @@
 - Startum (__@Ianzb__)
 - 一个木函 (__@Ianzb__)
 - 钱包 (__@Ianzb__)
+- RoseLink (__@Ianzb__)
+- 设置（Sui模块） (__@Ianzb__)
+- Fuck for VIP (__@Ianzb__)
+- 哔哩漫游 (__@Ianzb__)
+- QAuxiliary (__@Ianzb__)
+- WAuxiliary (__@Ianzb__)
 
 ### 优化
 
