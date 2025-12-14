@@ -8,6 +8,20 @@
 - Xbox (__@Ianzb__)
 - YouTube (__@Ianzb__)
 - Google Earth (__@Ianzb__)
+- 澎湃工具箱 (__@Ianzb__)
+- 阅读 (__@Ianzb__)
+- 资源猫 (__@Ianzb__)
+- 淘客猫 (__@Ianzb__)
+- Reqable (__@Ianzb__)
+- Startum (__@Ianzb__)
+- 一个木函 (__@Ianzb__)
+- 钱包 (__@Ianzb__)
+
+### 优化
+
+- BubbleUPnP (__@Ianzb__)
+- 信号检测仪 (__@Ianzb__)
+- 123云盘 (__@Ianzb__)
 
 ### 贡献者
 
