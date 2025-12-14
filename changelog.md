@@ -1,5 +1,18 @@
 # 更新日志
 
+## 2025-12-14
+
+### 新增
+
+- Epic Games (__@Ianzb__)
+- Xbox (__@Ianzb__)
+- YouTube (__@Ianzb__)
+- Google Earth (__@Ianzb__)
+
+### 贡献者
+
+[@Ianzb](https://github.com/Ianzb)
+
 ## 2025-10-19
 
 ### 优化
