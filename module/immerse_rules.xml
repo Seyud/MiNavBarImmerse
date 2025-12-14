@@ -16,24 +16,15 @@
 
     <!-- 渝通行 -->
     <package name="cn.com.whty.cqt" enable="true" activityRule="*:2"/>
- <!-- RoseLink -->
-    <package name="cn.ikaile.ruoshui.client" enable="true" activityRule="*:2"/>
-    <!-- Fuck for VIP -->
-    <package name="com.bug.hookvip" enable="true" activityRule="*:2"/>
-     <!-- 哔哩漫游 -->
-    <package name="me.iacn.biliroaming" enable="true" activityRule="*:2"/>
-      <!-- QAuxiliary -->
-    <package name="io.github.qauxv" enable="true" activityRule="*:2"/>
-      <!-- WAuxiliary -->
-    <package name="me.hd.wauxv" enable="true" activityRule="*:2"/>
- <!-- 设置 -->
-    <package name="com.android.settings" enable="true" activityRule="rikka.sui.SuiActivity:2"/>
 
     <!-- 大麦 -->
     <package name="cn.damai" enable="true" activityRule="cn.damai.filmdetail.activity.DMFilmDetailActivity:1:1,cn.damai.discover.media.MediaPagerActivity:1:1"/>
 
     <!-- 智汇福大 -->
     <package name="cn.edu.fzu.fdxypa" enable="true" activityRule="*:2"/>
+
+    <!-- RoseLink -->
+    <package name="cn.ikaile.ruoshui.client" enable="true" activityRule="*:2"/>
 
     <!-- 九号出行 -->
     <package name="cn.ninebot.ninebot" enable="true" activityRule="*:2,cn.ninebot.ninebot.mainshell.MainActivity:0"/>
@@ -74,6 +65,9 @@
     <!-- 小米电子邮件 -->
     <package name="com.android.email" enable="true" activityRule="*:2"/>
 
+    <!-- 设置 -->
+    <package name="com.android.settings" enable="true" activityRule="rikka.sui.SuiActivity:2"/>
+
     <!-- 谷歌应用商店 -->
     <package name="com.android.vending" enable="false"/>
 
@@ -112,6 +106,9 @@
 
     <!-- BlueUPnP -->
     <package name="com.bubblesoft.android.bubbleupnp" enable="true" activityRule="*:2"/>
+
+    <!-- Fuck for VIP -->
+    <package name="com.bug.hookvip" enable="true" activityRule="*:2"/>
 
     <!-- 比亚迪 -->
     <package name="com.byd.aeri.caranywhere" enable="true" activityRule="*:2,com.byd.business.mall.activity.shopDetails.ShopDetailsActivity:1:1,com.byd.business.community.activity.DyCommunityDetailActivity:1:1,com.byd.business.mall.activity.aftersales.AfterSalesDetailsActivity:1:1"/>
@@ -696,6 +693,9 @@
     <!-- NGA玩家社区 -->
     <package name="gov.pianzong.androidnga" enable="true" activityRule="*:2"/>
 
+    <!-- QAuxiliary -->
+    <package name="io.github.qauxv" enable="true" activityRule="*:2"/>
+
     <!-- Legado -->
     <package name="io.legado.app.release" enable="true" activityRule="*:2,io.legado.app.ui.main.MainActivity:0,io.legado.app.ui.book.read.ReadBookActivity:0,io.legado.app.ui.config.ConfigActivity:0"/>
 
@@ -707,6 +707,12 @@
 
     <!-- 饿了吗 -->
     <package name="me.ele" enable="true" activityRule="*:2,me.ele.application.ui.Launcher.LauncherActivity:1:-1,me.ele.muise.page.WeexPageActivity:2,me.ele.im.limoo.activity.LIMActivity:1:-1,me.ele.shopdetailv2.lmagex.ShopDetailV3Activity:1:-1,me.ele.android.emagex.container.EMagexActivity:1:-1"/>
+
+    <!-- WAuxiliary -->
+    <package name="me.hd.wauxv" enable="true" activityRule="*:2"/>
+
+    <!-- 哔哩漫游 -->
+    <package name="me.iacn.biliroaming" enable="true" activityRule="*:2"/>
 
     <!-- Telegram -->
     <package name="org.telegram.messenger" enable="false"/>
