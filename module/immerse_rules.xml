@@ -133,10 +133,6 @@
 
     <!-- iDaily -->
     <package name="com.clover.idaily" enable="true" activityRule="*:2"/>
-<!-- 天学网学生 -->
-    <package name="com.up366.mobile" enable="true" activityRule="*:2"/>
-<!-- 天学网学生 -->
-    <package name="com.up366.mobileTeacher" enable="true" activityRule="*:2"/>
 
     <!-- 咪咕视频 -->
     <package name="com.cmcc.cmvideo" enable="false"/>
@@ -582,6 +578,12 @@
 
     <!-- 云闪付 -->
     <package name="com.unionpay" enable="true" activityRule="com.unionpay.activity.react.UPActivityReactNative:0"/>
+
+    <!-- 天学网学生 -->
+    <package name="com.up366.mobile" enable="true" activityRule="*:2"/>
+
+    <!-- 天学网学生 -->
+    <package name="com.up366.mobileTeacher" enable="true" activityRule="*:2"/>
 
     <!-- Steam -->
     <package name="com.valvesoftware.android.steam.community" enable="true" activityRule="*:2"/>
