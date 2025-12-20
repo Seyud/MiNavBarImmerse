@@ -133,6 +133,10 @@
 
     <!-- iDaily -->
     <package name="com.clover.idaily" enable="true" activityRule="*:2"/>
+<!-- 天学网学生 -->
+    <package name="com.up366.mobile" enable="true" activityRule="*:2"/>
+<!-- 天学网学生 -->
+    <package name="com.up366.mobileTeacher" enable="true" activityRule="*:2"/>
 
     <!-- 咪咕视频 -->
     <package name="com.cmcc.cmvideo" enable="false"/>
@@ -334,7 +338,7 @@
     <package name="com.minecraft.free" enable="true" activityRule="*:2"/>
 
     <!-- 钱包 -->
-    <package name="com.mipay.wallet" enable="true" activityRule="*:2"/>
+    <package name="com.mipay.wallet" enable="true" activityRule="*:2,com.mipay.wallet.app.settings.MiuiStyleSettingActivity:0"/>
 
     <!-- 铁路12306 -->
     <package name="com.MobileTicket" enable="true" activityRule="*:1:0,com.MobileTicket.ui.activity.MainActivity:1:0,com.MobileTicket.scan.as.tool.ToolsCaptureActivity:2"/>
@@ -604,7 +608,7 @@
     <package name="com.wudaokou.hippo" enable="true" activityRule="com.wudaokou.hippo.order.detailUltron.OrderUltronDetailActivity:1:1,com.wudaokou.hippo.detail.ultron.DetailUltronActivity:1:1"/>
 
     <!-- 创建快捷方式 -->
-    <package name="com.x7890.shortcutcreator" enable="true" activityRule="*:2"/>
+    <package name="com.x7890.shortcutcreator" enable="false" activityRule="*:2"/>
 
     <!-- 小米 WiFi -->
     <package name="com.xiaomi.router" enable="true" activityRule="*:1:0"/>

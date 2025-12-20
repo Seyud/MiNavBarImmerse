@@ -4,6 +4,25 @@
 
 ### 新增
 
+- 天学网学生 (__@Ianzb__)
+- 天学网教师 (__@Ianzb__)
+
+### 优化
+
+- 钱包 (__@Ianzb__)
+
+### 移除
+
+- 创建快捷方式 - 底栏显示异常 (__@Ianzb__)
+
+### 贡献者
+
+[@Ianzb](https://github.com/Ianzb)
+
+## 2025-12-14
+
+### 新增
+
 - Epic Games (__@Ianzb__)
 - Xbox (__@Ianzb__)
 - YouTube (__@Ianzb__)
