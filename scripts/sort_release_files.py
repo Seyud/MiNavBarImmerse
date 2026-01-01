@@ -1,23 +1,34 @@
 #!/usr/bin/env python3
 """
-按规则格式化并排序 `module/immerse_rules.xml` 与 `list.csv`。
-
-目标：在发布前统一排序以保证分发的 zip 内容稳定。
+按规则格式化并排序 NBI JSON 配置文件 与 CSV 文件。
 
 功能概述：
-- 对 XML：只重排 `<package .../>` 自闭合节点（包含它们前面的注释），保留文件头/尾。
-- 对 CSV：处理应用列表，按分组（0-9 / A-Z / Z）排序，支持中文按拼音排序，并将英文/数字开头的条目放在组内前面。
+- 对 JSON：按照特定顺序排序字段，确保可读性和一致性
+- 对 CSV：处理应用列表，按分组（0-9 / A-Z / Z）排序，支持中文按拼音排序
+
+排序规则：
+  JSON:
+    1. 顶层字段：dataVersion, modules, modifyApps, NBIRules
+    2. NBIRules 内部：按包名排序
+    3. 每个应用内部：name (第一), enable (第二), activityRules (第三)
+    4. activityRules 内部：按活动名称排序，通配符 * 排在最前
+    5. 活动规则内部：mode, color
+
+  CSV:
+    1. 按分组（0-9 / A-Z / Z）排序
+    2. 支持中文按拼音排序
+    3. 英文/数字开头的条目放在组内前面
 
 用法：
-    python3 scripts/sort_release_files.py module/immerse_rules.xml list.csv
+    python3 scripts/sort_release_files.py config.json list.csv
 """
 
 import argparse
-import re
+import json
 import csv
 import sys
 from pathlib import Path
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 
 try:
     from pypinyin import lazy_pinyin, Style
@@ -25,68 +36,196 @@ except ImportError:
     print("Missing pypinyin, installing...")
     import subprocess
 
-    subprocess.run([sys.executable, '-m', 'pip', 'install', 'pypinyin'], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "pypinyin"], check=True)
     from pypinyin import lazy_pinyin, Style
 
 
-def sort_xml(xml_path: Path) -> bool:
-    text = xml_path.read_text(encoding='utf-8')
+def sort_json(json_path: Path) -> bool:
+    """
+    排序 JSON 配置文件
 
-    # 查找所有 <package .../> 块（包括前置注释），支持自闭合形式。
-    pattern = re.compile(r'\s*(?:<!--.*?-->\s*)*<package\b[^>]*?/>', re.DOTALL)
-    matches = list(pattern.finditer(text))
-    if not matches:
-        print(f"No <package/> blocks found in {xml_path}")
-        return False
+    Returns:
+        bool: 文件是否被修改
+    """
+    try:
+        # 读取 JSON 文件
+        text = json_path.read_text(encoding="utf-8")
+        data = json.loads(text)
 
-    header = text[: matches[0].start()]
-    footer = text[matches[-1].end():]
+        # 备份原始数据用于比较
+        original_data = json.loads(json.dumps(data))
 
-    blocks = []
-    for m in matches:
-        blk = m.group(0)
-        # 分割注释部分和 package 部分
-        pkg_idx = blk.rfind('<package')
-        comment_part = blk[:pkg_idx]
-        pkg_part = blk[pkg_idx:]
+        # 排序整个 JSON 结构
+        sorted_data = sort_nbi_config(data)
 
-        # 提取注释并规范为单行、缩进格式
-        comments = re.findall(r'<!--(.*?)-->', comment_part, re.DOTALL)
-        comment_lines = ''
-        for c in comments:
-            c_text = ' '.join(line.strip() for line in c.splitlines())
-            comment_lines += '    <!-- ' + c_text + ' -->\n'
+        # 转换为 JSON 字符串
+        sorted_text = json.dumps(sorted_data, ensure_ascii=False, indent=2)
 
-        # 规范 package 行的缩进并压成单行
-        pkg_line = '    ' + ' '.join(pkg_part.split()) + '\n'
+        # 添加尾随换行符
+        if not sorted_text.endswith("\n"):
+            sorted_text += "\n"
 
-        normalized = comment_lines + pkg_line + '\n'
-        blocks.append((normalized, pkg_part))
+        # 检查是否有变化
+        if text == sorted_text:
+            print(f"{json_path} already sorted")
+            return False
 
-    def extract_name(raw_pkg: str) -> str:
-        m = re.search(r'name\s*=\s*"([^"]+)"', raw_pkg)
-        return m.group(1) if m else ''
-
-    blocks_sorted = sorted(blocks, key=lambda t: extract_name(t[1]).lower())
-
-    # 重建 XML 文件：保留原始头部，插入已排序的 blocks，再加上尾部。
-    new_text = header.rstrip() + '\n\n' + ''.join(b[0] for b in blocks_sorted) + footer.lstrip()
-
-    if new_text != text:
-        xml_path.write_text(new_text, encoding='utf-8')
-        print(f"Formatted and sorted {len(blocks_sorted)} <package/> blocks in {xml_path}")
+        # 写回文件
+        json_path.write_text(sorted_text, encoding="utf-8")
+        print(f"Sorted {json_path}")
         return True
-    else:
-        print(f"{xml_path} already formatted and sorted")
+
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON in {json_path}: {e}")
         return False
+    except Exception as e:
+        print(f"Error processing {json_path}: {e}")
+        return False
+
+
+def sort_nbi_config(config):
+    """
+    排序 NBI 配置的各个层级
+    """
+    if not isinstance(config, dict):
+        return config
+
+    sorted_config = OrderedDict()
+
+    # 1. 顶层字段排序
+    top_level_order = ["dataVersion", "modules", "modifyApps", "NBIRules"]
+
+    # 先按顺序添加已知字段
+    for key in top_level_order:
+        if key in config:
+            if key == "NBIRules":
+                sorted_config[key] = sort_nbi_rules(config[key])
+            else:
+                sorted_config[key] = config[key]
+
+    # 添加其他字段（按字母顺序）
+    other_keys = [k for k in config.keys() if k not in top_level_order]
+    for key in sorted(other_keys):
+        sorted_config[key] = config[key]
+
+    return sorted_config
+
+
+def sort_nbi_rules(nbi_rules):
+    """
+    排序 NBIRules
+    """
+    if not isinstance(nbi_rules, dict):
+        return nbi_rules
+
+    sorted_rules = OrderedDict()
+
+    # 按包名排序
+    for package_name in sorted(nbi_rules.keys()):
+        package_config = nbi_rules[package_name]
+        sorted_rules[package_name] = sort_package_config(package_config)
+
+    return sorted_rules
+
+
+def sort_package_config(package_config):
+    """
+    排序单个应用的配置
+    """
+    if not isinstance(package_config, dict):
+        return package_config
+
+    sorted_config = OrderedDict()
+
+    # 字段顺序：name, enable, activityRules, 其他字段
+    field_order = ["name", "enable", "activityRules"]
+
+    # 先按顺序添加已知字段
+    for field in field_order:
+        if field in package_config:
+            if field == "activityRules":
+                sorted_config[field] = sort_activity_rules(package_config[field])
+            else:
+                sorted_config[field] = package_config[field]
+
+    # 添加其他字段（按字母顺序）
+    other_keys = [k for k in package_config.keys() if k not in field_order]
+    for key in sorted(other_keys):
+        sorted_config[key] = package_config[key]
+
+    return sorted_config
+
+
+def sort_activity_rules(activity_rules):
+    """
+    排序活动规则
+    """
+    if not isinstance(activity_rules, dict):
+        return activity_rules
+
+    sorted_rules = OrderedDict()
+
+    # 获取所有活动名称，* 排在最前
+    activity_names = list(activity_rules.keys())
+
+    # 将 * 放在最前面
+    if "*" in activity_names:
+        activity_names.remove("*")
+        activity_names.insert(0, "*")
+
+    # 按字母顺序排序其他活动
+    non_wildcard = [name for name in activity_names if name != "*"]
+    sorted_non_wildcard = sorted(non_wildcard)
+
+    # 构建最终顺序：* 在前，然后是其他排序后的活动
+    final_order = []
+    if "*" in activity_names:
+        final_order.append("*")
+    final_order.extend(sorted_non_wildcard)
+
+    # 按顺序添加并排序每个活动的配置
+    for activity_name in final_order:
+        if activity_name in activity_rules:
+            rule_config = activity_rules[activity_name]
+            sorted_rules[activity_name] = sort_activity_rule(rule_config)
+
+    return sorted_rules
+
+
+def sort_activity_rule(rule_config):
+    """
+    排序单个活动规则
+    """
+    if not isinstance(rule_config, dict):
+        return rule_config
+
+    sorted_config = OrderedDict()
+
+    # 活动规则的字段顺序：mode, color
+    field_order = ["mode", "color"]
+
+    # 先添加 mode 和 color
+    for field in field_order:
+        if field in rule_config:
+            sorted_config[field] = rule_config[field]
+
+    # 添加其他字段（按字母顺序）
+    other_keys = [k for k in rule_config.keys() if k not in field_order]
+    for key in sorted(other_keys):
+        sorted_config[key] = rule_config[key]
+
+    return sorted_config
 
 
 def sort_csv(csv_path: Path) -> bool:
+    """
+    排序 CSV 文件
+    """
     # ====== 更新：硬编码当前CSV标头 ======
     STANDARD_HEADER = ["应用名称", "应用包名", "适配前", "适配后", "适配效果", "更新日期", ""]
 
     # 读取 CSV 内容并按行拆分
-    text = csv_path.read_text(encoding='utf-8')
+    text = csv_path.read_text(encoding="utf-8")
     lines = text.splitlines()
 
     # 先基于 csv 解析识别并去除重复的单字符组头（支持带逗号的形式，如 "A,,,"），仅保留首次出现
@@ -106,12 +245,12 @@ def sort_csv(csv_path: Path) -> bool:
             new_rows.append(row)
     if changed_headers:
         # 写回清理后的 CSV 内容
-        with csv_path.open('w', encoding='utf-8', newline='') as f:
+        with csv_path.open("w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
             for r in new_rows:
                 writer.writerow(r)
         # 刷新文本与行
-        text = csv_path.read_text(encoding='utf-8')
+        text = csv_path.read_text(encoding="utf-8")
         lines = text.splitlines()
 
     if not lines:
@@ -160,7 +299,7 @@ def sort_csv(csv_path: Path) -> bool:
     # 按单字符分组（0-9 / A-Z / Z）
     groups = defaultdict(list)
     for r in entries:
-        name = (r[0].strip() if len(r) > 0 else '')
+        name = (r[0].strip() if len(r) > 0 else "")
         if not name:
             continue
         first = name[0]
@@ -169,14 +308,14 @@ def sort_csv(csv_path: Path) -> bool:
         else:
             try:
                 py = lazy_pinyin(name, style=Style.FIRST_LETTER)
-                candidate = (py[0] if py and py[0] else '')
+                candidate = (py[0] if py and py[0] else "")
             except Exception:
-                candidate = ''
+                candidate = ""
             candidate = (candidate or name[0]).upper()
-            if len(candidate) == 1 and (candidate.isdigit() or ('A' <= candidate <= 'Z')):
+            if len(candidate) == 1 and (candidate.isdigit() or ("A" <= candidate <= "Z")):
                 header_char = candidate
             else:
-                header_char = 'Z'
+                header_char = "Z"
         groups[header_char].append(r)
 
     sorted_initials = sorted(groups.keys())
@@ -185,7 +324,7 @@ def sort_csv(csv_path: Path) -> bool:
     def _is_single_char_group(hrow):
         try:
             return len(hrow) == 1 and isinstance(hrow[0], str) and len(hrow[0].strip()) == 1 and (
-                hrow[0].strip().isdigit() or ('A' <= hrow[0].strip().upper() <= 'Z')
+                    hrow[0].strip().isdigit() or ("A" <= hrow[0].strip().upper() <= "Z")
             )
         except Exception:
             return False
@@ -204,16 +343,16 @@ def sort_csv(csv_path: Path) -> bool:
     if header_is_real:
         out_rows.append(header)
         # 明确在表头后插入一个空行，保证表头和第一个分组之间有空行
-        out_rows.append([''] * col_count)
+        out_rows.append([""] * col_count)
 
     first_group = True
     for initial in sorted_initials:
         # 在每个分组头之前插入一个空行：无论是第一个分组（与总表头之间）还是后续分组（与上一个分组之间）
-        if out_rows and (not out_rows[-1] or any(cell != '' for cell in out_rows[-1])):
+        if out_rows and (not out_rows[-1] or any(cell != "" for cell in out_rows[-1])):
             # 如果最后一行不是空行，则插入空行
-            out_rows.append([''] * col_count)
+            out_rows.append([""] * col_count)
         # 添加分组头
-        out_rows.append([initial] + [''] * (col_count - 1))
+        out_rows.append([initial] + [""] * (col_count - 1))
 
         # 组内排序：ASCII/数字开头的先按 ASCII 排序，中文按每字首字母拼接排序
         ascii_items = []
@@ -230,7 +369,7 @@ def sort_csv(csv_path: Path) -> bool:
         def py_sort_key(r):
             name = r[0].strip()
             # 拼接每个字的首字母后进行排序
-            return ''.join(lazy_pinyin(name, style=Style.FIRST_LETTER)).lower()
+            return "".join(lazy_pinyin(name, style=Style.FIRST_LETTER)).lower()
 
         others_sorted = sorted(others, key=py_sort_key)
         sorted_group = ascii_items_sorted + others_sorted
@@ -239,19 +378,19 @@ def sort_csv(csv_path: Path) -> bool:
         for rr in sorted_group:
             rr_list = list(rr)
             if len(rr_list) < col_count:
-                rr_list += [''] * (col_count - len(rr_list))
+                rr_list += [""] * (col_count - len(rr_list))
             else:
                 rr_list = rr_list[:col_count]
             out_rows.append(rr_list)
 
     # 写回文件
     out_path = csv_path
-    with out_path.open('w', encoding='utf-8', newline='') as f:
+    with out_path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         for row in out_rows:
             row_to_write = list(row)
             if len(row_to_write) < col_count:
-                row_to_write += [''] * (col_count - len(row_to_write))
+                row_to_write += [""] * (col_count - len(row_to_write))
             else:
                 row_to_write = row_to_write[:col_count]
             writer.writerow(row_to_write)
@@ -261,24 +400,30 @@ def sort_csv(csv_path: Path) -> bool:
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('xml', help='path to immerse_rules.xml')
-    parser.add_argument('csv', help='path to list.csv')
+    parser = argparse.ArgumentParser(
+        description="排序 NBI JSON 配置文件和 CSV 文件"
+    )
+    parser.add_argument("json", help="JSON 配置文件路径")
+    parser.add_argument("csv", help="CSV 文件路径")
+
     args = parser.parse_args()
 
-    xml_path = Path(args.xml)
+    json_path = Path(args.json)
     csv_path = Path(args.csv)
 
     changed = False
-    if xml_path.exists():
+
+    # 处理 JSON 文件
+    if json_path.exists():
         try:
-            changed |= sort_xml(xml_path)
+            changed |= sort_json(json_path)
         except Exception as e:
-            print(f"Error sorting XML: {e}")
+            print(f"Error sorting JSON: {e}")
             sys.exit(2)
     else:
-        print(f"XML file not found: {xml_path}")
+        print(f"JSON file not found: {json_path}")
 
+    # 处理 CSV 文件（保持原始逻辑不变）
     if csv_path.exists():
         try:
             changed |= sort_csv(csv_path)
@@ -291,5 +436,8 @@ def main():
     sys.exit(0 if changed else 0)
 
 
-if __name__ == '__main__':
+# 添加必要的类型定义
+from typing import Dict, Any
+
+if __name__ == "__main__":
     main()

@@ -1,9 +1,9 @@
 #!/system/bin/sh
 
 # MODDIR 变量由调用脚本定义
-CUSTOM_FILE="${MODDIR}/immerse_rules.xml"
-TARGET_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.xml"
-BACKUP_FILE="${TARGET_FILE}.bak"
+CUSTOM_FILE="${MODDIR}/immerse_rules.json"
+TARGET_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.json"
+BACKUP_FILE="old_${CUSTOM_FILE}.bak"
 
 # 检查系统版本是否符合要求
 check_system_version() {
@@ -34,28 +34,18 @@ check_system_version() {
     MAJOR=$(echo "$VERSION_CORE" | cut -d. -f1)
     PATCH=$(echo "$VERSION_CORE" | cut -d. -f3)
     
-    # 检查版本是否符合要求（2.0.200及以上）
+    # 检查版本是否符合要求（os3及以上）
     if [ -z "$MAJOR" ] || [ -z "$PATCH" ]; then
         echo "错误: 无法完整解析版本号！"
         return 1
     elif [ "$MAJOR" -ge 3 ]; then
         echo "系统版本符合要求！"
         return 0
-    elif [ "$MAJOR" -lt 2 ]; then
-        echo "错误: 系统版本过低（需要 2.0.200 或更高版本）"
+    elif [ "$MAJOR" -lt 3 ]; then
+        echo "错误: 系统版本过低（需要 os3 或更高版本）"
         echo "当前版本: $VERSION_CORE"
         echo "模块不支持当前系统版本！"
         return 1
-    elif [ "$MAJOR" -eq 2 ]; then
-        if [ "$PATCH" -lt 200 ]; then
-            echo "错误: 系统版本过低（需要 2.0.200 或更高版本）"
-            echo "当前版本: $VERSION_CORE"
-            echo "模块不支持当前系统版本！"
-            return 1
-        else
-            echo "系统版本符合要求！"
-            return 0
-        fi
     else
         echo "系统版本符合要求！"
         return 0

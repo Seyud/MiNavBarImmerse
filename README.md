@@ -16,12 +16,14 @@ rule.md) | [适配列表](list.csv) | [更新日志](changelog.md) | [TG群组](
 https://github.com/Ianzb/MiNavBarImmerse/issues)
 [![GitHub PRs](https://img.shields.io/github/issues-pr/Ianzb/MiNavBarImmerse)](
 https://github.com/Ianzb/MiNavBarImmerse/pulls)
-[![xml_validation]][xml_validation_url]
+[![json_validation]][json_validation_url]
 [![GitHub Downloads)](https://img.shields.io/github/downloads/Ianzb/MiNavBarImmerse/latest/total)](https://github.com/Ianzb/MiNavBarImmerse/releases/latest)
 
 </div>
 
-**小米小白条沉浸优化（MiNavBarImmerse）** 是一个通过替换 **Xiaomi HyperOS 2.2** 内置第三方应用小白条配置文件，实现小白条沉浸优化的 **Magisk模块** 。
+**小米小白条沉浸优化（MiNavBarImmerse）** 是一个通过替换 **Xiaomi HyperOS 3** 内置第三方应用小白条配置文件，实现小白条沉浸优化的 **Magisk模块** 。
+
+若要下载
 
 ---
 
