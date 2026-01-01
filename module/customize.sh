@@ -7,14 +7,19 @@ MODDIR=$MODPATH
 
 echo "正在初始化 MiNavBarImmerse 配置..."
 
+# 检查配置文件类型并设置正确的文件路径
+check_config_file || abort "检查配置文件失败"
+
+echo "检测到配置类型: $CONFIG_TYPE"
+echo "自定义文件: $CUSTOM_FILE"
+echo "目标文件: $TARGET_FILE"
+
 # 检查必要文件
 check_files_exist || abort "检查必要文件失败"
 
-if [ ! -f "$TARGET_FILE" ]; then
-    # 目标文件不存在时检查系统版本
-    check_system_version || abort "系统版本不符"
-else
-    # 目标文件存在时先备份
+# 如果目标文件存在，先备份
+if [ -f "$TARGET_FILE" ]; then
+    echo "目标文件已存在，执行备份..."
     backup_config || abort "备份配置文件失败"
 fi
 

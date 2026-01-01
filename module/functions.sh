@@ -1,55 +1,47 @@
 #!/system/bin/sh
 
 # MODDIR 变量由调用脚本定义
-CUSTOM_FILE="${MODDIR}/immerse_rules.json"
-TARGET_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.json"
-BACKUP_FILE="${CUSTOM_FILE}.bak"
+CUSTOM_JSON_FILE="${MODDIR}/immerse_rules.json"
+TARGET_JSON_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.json"
+SYSTEM_JSON_FILE="/system_ext/etc/nbi/navigation_bar_immersive_rules_list.json"
+BACKUP_JSON_FILE="${CUSTOM_JSON_FILE}.bak"
 
-# 检查系统版本是否符合要求
-check_system_version() {
-    echo "正在检查系统版本..."
-    
-    # 读取系统版本号
-    VERSION_INCREMENTAL=$(getprop ro.build.version.incremental 2>/dev/null)
-    
-    if [ -z "$VERSION_INCREMENTAL" ]; then
-        echo "错误: 无法获取系统版本号！"
-        return 1
-    fi
-    
-    echo "检测到系统版本: $VERSION_INCREMENTAL"
-    
-    CLEAN_VERSION=$(echo "$VERSION_INCREMENTAL" | sed 's/[^0-9.]*//g')
-    VERSION_CORE=$(echo "$CLEAN_VERSION" | cut -d. -f1-3)
-    echo "提取结果: $VERSION_CORE"
-    
-    if [ -z "$VERSION_CORE" ] || [ "$VERSION_CORE" = "$VERSION_INCREMENTAL" ]; then
-        echo "错误: 无法解析系统版本号格式！"
-        echo "原始版本: $VERSION_INCREMENTAL"
-        return 1
-    fi
-    
-    echo "解析到的版本号: $VERSION_CORE"
-    
-    MAJOR=$(echo "$VERSION_CORE" | cut -d. -f1)
-    PATCH=$(echo "$VERSION_CORE" | cut -d. -f3)
-    
-    # 检查版本是否符合要求（os3及以上）
-    if [ -z "$MAJOR" ] || [ -z "$PATCH" ]; then
-        echo "错误: 无法完整解析版本号！"
-        return 1
-    elif [ "$MAJOR" -ge 2 ]; then
-        echo "系统版本符合要求！"
-        return 0
-    elif [ "$MAJOR" -lt 2 ]; then
-        echo "错误: 系统版本过低（需要 os3 或更高版本）"
-        echo "当前版本: $VERSION_CORE"
-        echo "模块不支持当前系统版本！"
-        return 1
+CUSTOM_XML_FILE="${MODDIR}/immerse_rules.xml"
+TARGET_XML_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.xml"
+SYSTEM_XML_FILE="/system_ext/etc/nbi/navigation_bar_immersive_rules_list.xml"
+BACKUP_XML_FILE="${CUSTOM_XML_FILE}.bak"
+
+# 检查配置文件类型
+check_config_file() {
+    echo "正在检查配置文件..."
+
+    # 检查系统配置文件类型
+    if [ -f "$SYSTEM_JSON_FILE" ]; then
+        echo "检测到系统使用JSON格式配置文件"
+        CUSTOM_FILE="$CUSTOM_JSON_FILE"
+        TARGET_FILE="$TARGET_JSON_FILE"
+        BACKUP_FILE="$BACKUP_JSON_FILE"
+        CONFIG_TYPE="JSON"
+    elif [ -f "$SYSTEM_XML_FILE" ]; then
+        echo "检测到系统使用XML格式配置文件"
+        CUSTOM_FILE="$CUSTOM_XML_FILE"
+        TARGET_FILE="$TARGET_XML_FILE"
+        BACKUP_FILE="$BACKUP_XML_FILE"
+        CONFIG_TYPE="XML"
     else
-        echo "系统版本符合要求！"
-        return 0
+        echo "错误: 未找到系统配置文件！"
+        echo "检查路径:"
+        echo "  $SYSTEM_JSON_FILE"
+        echo "  $SYSTEM_XML_FILE"
+        return 1
     fi
+
+    echo "使用配置文件: $CUSTOM_FILE"
+    echo "目标文件: $TARGET_FILE"
+    echo "备份文件: $BACKUP_FILE"
+    echo "配置类型: $CONFIG_TYPE"
+
+    return 0
 }
 
 # 备份原始配置文件
@@ -76,11 +68,11 @@ apply_custom_config() {
     echo "正在替换配置文件..."
     if cp -f "$CUSTOM_FILE" "$TARGET_FILE"; then
         echo "配置文件替换成功！"
-        
+
         # 设置正确权限
         chmod 600 "$TARGET_FILE"
         chown system:system "$TARGET_FILE"
-        
+
         return 0
     else
         echo "配置文件替换失败！"
@@ -102,10 +94,10 @@ check_files_exist() {
 restore_backup() {
     if [ -f "$BACKUP_FILE" ]; then
         echo "找到备份文件，正在恢复..."
-        
+
         if cp -f "$BACKUP_FILE" "$TARGET_FILE"; then
             echo "已成功恢复原始文件！"
-            
+
             # 删除备份文件
             rm -f "$BACKUP_FILE"
             echo "已删除备份文件！"

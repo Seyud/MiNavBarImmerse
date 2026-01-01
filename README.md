@@ -22,7 +22,7 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 
 </div>
 
-**小米小白条沉浸优化（MiNavBarImmerse）** 是一个通过替换 **Xiaomi HyperOS 3** 内置第三方应用小白条配置文件，实现小白条沉浸优化的 **Magisk模块** 。
+**小米小白条沉浸优化（MiNavBarImmerse）** 是一个通过替换 **Xiaomi HyperOS 2.2-3** 内置第三方应用小白条配置文件，实现小白条沉浸优化的 **Magisk模块** 。
 
 若要下载
 
@@ -43,7 +43,7 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 
 # ⚙️ 适配范围
 
-搭载Xiaomi HyperOS 2.2的机型，解锁root权限，能够刷入Magisk标准的模块。暂不支持HyperOS 3。
+搭载Xiaomi HyperOS 2.2-3的机型，解锁root权限，能够刷入Magisk标准的模块。暂不支持HyperOS 3。
 
 # 🛠️ 贡献
 

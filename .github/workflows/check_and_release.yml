@@ -49,6 +49,8 @@ jobs:
       - name: 整理JSON和CSV文件
         run: |
           python3 scripts/sort_release_files.py module/immerse_rules.json list.csv
+          python3 scripts/json2xml.py module/immerse_rules.json -o module/immerse_rules.xml
+
 
       - name: 更新模块文件
         id: update_module_files
