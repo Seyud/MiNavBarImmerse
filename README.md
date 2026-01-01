@@ -1,4 +1,4 @@
-**Lang:** 
+**Lang:**
 [![zh_CN](https://img.shields.io/badge/README.md-简体中文-blue)](/README.md)
 [![en_US](https://img.shields.io/badge/README.md-English%20(US)-blue)](/doc/en_us/README.md)
 
@@ -7,7 +7,9 @@
 <div align="center" style="text-align: center">
 
 # 小米小白条沉浸优化
+
 ## MiNavBarImmerse
+
 [官网](website_url) | [文档](
 rule.md) | [适配列表](list.csv) | [更新日志](changelog.md) | [TG群组](trguild_url)
 
@@ -16,7 +18,6 @@ rule.md) | [适配列表](list.csv) | [更新日志](changelog.md) | [TG群组](
 https://github.com/Ianzb/MiNavBarImmerse/issues)
 [![GitHub PRs](https://img.shields.io/github/issues-pr/Ianzb/MiNavBarImmerse)](
 https://github.com/Ianzb/MiNavBarImmerse/pulls)
-[![json_validation]][json_validation_url]
 [![GitHub Downloads)](https://img.shields.io/github/downloads/Ianzb/MiNavBarImmerse/latest/total)](https://github.com/Ianzb/MiNavBarImmerse/releases/latest)
 
 </div>
@@ -28,6 +29,7 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 ---
 
 # 📨 交流 & 反馈群组
+
 加入我们所创建的群组以反馈问题，或了解最新情况。
 
 [![badge_trguild]][trguild_url]
@@ -35,7 +37,7 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 # 📲 使用
 
 点击
- [![GitHub Downloads)](https://img.shields.io/github/downloads/Ianzb/MiNavBarImmerse/latest/total)](https://github.com/Ianzb/MiNavBarImmerse/releases/latest) 或在Release下载最新打包的.zip文件。
+[![GitHub Downloads)](https://img.shields.io/github/downloads/Ianzb/MiNavBarImmerse/latest/total)](https://github.com/Ianzb/MiNavBarImmerse/releases/latest) 或在Release下载最新打包的.zip文件。
 
 刷入Magisk模块并重启即可生效，更新模块后需重启生效。
 
@@ -52,11 +54,12 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 在[讨论（Discussion）](https://github.com/Ianzb/MiNavBarImmerse/discussions)中查看适配经验分享，并分享你的经验。  
 在[拉取请求（Pull Request）](https://github.com/Ianzb/MiNavBarImmerse/pulls)中参与仓库贡献。  
 在[Telegram群组](https://t.me/MiNavBarImmerse)中与其他贡献者交流，并下载最新文件。  
-另外，如果需要频繁参与适配工作，也可发出Issue申请协作者权限。  
+另外，如果需要频繁参与适配工作，也可发出Issue申请协作者权限。
 
 # ⭐ 历史
 
 ### Star 趋势图
+
 [![Star History Chart](https://api.star-history.com/svg?repos=Ianzb/MiNavBarImmerse&type=Date)](https://www.star-history.com/#Ianzb/MiNavBarImmerse&Date)
 
 ### 访问计数器（仅供娱乐）
@@ -65,10 +68,8 @@ https://github.com/Ianzb/MiNavBarImmerse/pulls)
 https://count.getloli.com/@MiNavBarImmerse?name=MiNavBarImmerse&theme=minecraft&darkmode=auto)
 
 
-[xml_validation]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/Check%20&%20Release.yml/badge.svg
-[xml_validation_url]: https://github.com/Ianzb/MiNavBarImmerse/actions/workflows/Check%20&%20Release.yml
-
 [badge_trguild]: https://img.shields.io/badge/TG-群组-4991D3?logo=telegram
+
 [trguild_url]: https://t.me/MiNavBarImmerse
 
 [website_url]:https://ianzb.github.io/project/MiNavBarImmerse.html
