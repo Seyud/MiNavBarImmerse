@@ -4,12 +4,12 @@
 CUSTOM_JSON_FILE="${MODDIR}/immerse_rules.json"
 TARGET_JSON_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.json"
 SYSTEM_JSON_FILE="/system_ext/etc/nbi/navigation_bar_immersive_rules_list.json"
-BACKUP_JSON_FILE="${CUSTOM_JSON_FILE}.bak"
+BACKUP_JSON_FILE="${TARGET_JSON_FILE}.bak"
 
 CUSTOM_XML_FILE="${MODDIR}/immerse_rules.xml"
 TARGET_XML_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.xml"
 SYSTEM_XML_FILE="/system_ext/etc/nbi/navigation_bar_immersive_rules_list.xml"
-BACKUP_XML_FILE="${CUSTOM_XML_FILE}.bak"
+BACKUP_XML_FILE="${TARGET_XML_FILE}.bak"
 
 # 检查配置文件类型
 check_config_file() {
