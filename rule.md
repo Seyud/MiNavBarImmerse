@@ -1,15 +1,3 @@
-**Lang:**
-[![zh_CN](https://img.shields.io/badge/rule.md-简体中文-blue)](/rule.md)
-[![en_US](https://img.shields.io/badge/rule.md-English%20(US)-blue)](/doc/en_us/rule.md)
-
----
-
-**Lang:**
-[![zh_CN](https://img.shields.io/badge/rule.md-简体中文-blue)](/rule.md)
-[![en_US](https://img.shields.io/badge/rule.md-English%20(US)-blue)](/doc/en_us/rule.md)
-
----
-
 # 适配说明
 
 由于作者精力有限，不会主动适配不常用或者自己不用的软件。提交Issue时请给出截图、应用包名、必需的Activity适配信息和具体适配要求；PR时建议在本地提前进行验证，填写[list.csv](list.csv)，修改[changelog.md](changelog.md)。
@@ -19,7 +7,7 @@
 
 ## 原理
 
-模块通过替换`/data/system/cloudFeature_navigation_bar_immersive_rules_list.json`生效，规则位于[module/navigation_bar_immersive_rules_list.json](/module/navigation_bar_immersive_rules_list.json)，模块内的文件是基于源文件修改得来的。
+模块通过替换`/data/system/cloudFeature_navigation_bar_immersive_rules_list.json`生效，规则位于[module/immerse_rules.json](/module/immerse_rules.json)，模块内的文件是基于源文件修改得来的。
 
 新版配置文件为JSON格式，支持更灵活的沉浸式规则配置。
 
@@ -37,8 +25,8 @@
       "enable": true,
       "activityRules": {
         "Activity名称": {
-          "mode": 适配模式,
-          "color": 颜色值
+          "mode": "适配模式",
+          "color": "颜色值"
         }
       }
     }
@@ -200,7 +188,6 @@ A: 可以使用：
    - 透明：0
    - 黑色：-16777216
    - 白色：-1
-   - 灰色：-4342339 (0xFFBBBBBB)
 
 ### Q: 通配符`*`会覆盖具体Activity规则吗？
 A: 不会，具体Activity规则优先级高于通配符规则。系统会优先匹配具体的Activity名称，如果没有匹配到，才会使用通配符规则。

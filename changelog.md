@@ -4,7 +4,7 @@
 
 ###  
 
-- 适配HyperOS 3.0 (__@Ianzb__)
+- 适配HyperOS 3.0，新增格式转换脚本，支持自动切换json模式和xml模式 (__@Ianzb__)
 
 ### 贡献者
 
