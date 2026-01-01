@@ -3,7 +3,7 @@
 # MODDIR 变量由调用脚本定义
 CUSTOM_FILE="${MODDIR}/immerse_rules.json"
 TARGET_FILE="/data/system/cloudFeature_navigation_bar_immersive_rules_list.json"
-BACKUP_FILE="old_${CUSTOM_FILE}.bak"
+BACKUP_FILE="${CUSTOM_FILE}.bak"
 
 # 检查系统版本是否符合要求
 check_system_version() {
