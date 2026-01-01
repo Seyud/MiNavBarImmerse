@@ -38,10 +38,10 @@ check_system_version() {
     if [ -z "$MAJOR" ] || [ -z "$PATCH" ]; then
         echo "错误: 无法完整解析版本号！"
         return 1
-    elif [ "$MAJOR" -ge 3 ]; then
+    elif [ "$MAJOR" -ge 2 ]; then
         echo "系统版本符合要求！"
         return 0
-    elif [ "$MAJOR" -lt 3 ]; then
+    elif [ "$MAJOR" -lt 2 ]; then
         echo "错误: 系统版本过低（需要 os3 或更高版本）"
         echo "当前版本: $VERSION_CORE"
         echo "模块不支持当前系统版本！"
