@@ -1,5 +1,5 @@
 {
-  "dataVersion": "250912",
+  "dataVersion": "999999",
   "modules": "navigation_bar_immersive_application_config_new",
   "modifyApps": "modifyApps",
   "NBIRules": {
@@ -77,8 +77,8 @@
       "enable": true,
       "activityRules": {
         "cn.damai.discover.media.MediaPagerActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "cn.damai.filmdetail.activity.DMFilmDetailActivity": {
           "mode": 1,
@@ -761,8 +761,8 @@
       "enable": true,
       "activityRules": {
         "com.autohome.main.article.zbusiness.video.SlideVideoPageActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "com.autohome.mainlib.business.reactnative.base.AHCommRNActivity": {
           "mode": 1,
@@ -787,8 +787,8 @@
           "color": null
         },
         "com.dianping.movie.activity.DpMovieDetailActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         },
         "com.dianping.movie.trade.MovieTitansActivity": {
           "mode": 0,
@@ -799,7 +799,7 @@
           "color": null
         },
         "com.dianping.nova.picasso.DPPicassoBoxActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.dianping.shopshell.PexusPoiActivity": {
@@ -815,8 +815,8 @@
           "color": 1
         },
         "com.dianping.social.activity.NewFeedDetailActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         },
         "com.dianping.tuan.activity.DealDetailAgentActivity": {
           "mode": 0,
@@ -843,8 +843,8 @@
           "color": null
         },
         "com.meituan.android.movie.tradebase.activity.SelectSeatActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 0,
+          "color": null
         },
         "com.meituan.android.mrn.container.MRNBaseActivity": {
           "mode": 0,
@@ -927,8 +927,8 @@
           "color": null
         },
         "com.dragon.read.plugin.live.web.OpenLiveWebViewActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         },
         "com.dragon.read.reader.ui.ReaderActivity": {
           "mode": 0,
@@ -981,24 +981,24 @@
           "color": null
         },
         "com.alipay.android.phone.xriver.bundlex.CSGAPushActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": -1
         },
         "com.alipay.mobile.antcardsdk.cardapp.CSPushActivity": {
           "mode": 2,
           "color": null
         },
         "com.alipay.mobile.chatapp.ui.PersonalChatMsgActivity_": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         },
         "com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main": {
           "mode": 0,
           "color": null
         },
         "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity": {
-          "mode": 1,
-          "color": -1
+          "mode": 0,
+          "color": null
         },
         "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App01": {
           "mode": 0,
@@ -1037,8 +1037,8 @@
           "color": 0
         },
         "com.antfortune.wealth.stock.common.cube.page.CubePageActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         },
         "com.eg.android.AlipayGphone.AlipayLogin": {
           "mode": 0,
@@ -1400,8 +1400,8 @@
           "color": null
         },
         "com.jingdong.common.jdreactFramework.activities.JDReactNativeCommonActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         }
       }
     },
@@ -2809,8 +2809,8 @@
           "color": null
         },
         "com.ss.android.ugc.aweme.im.business.mediaselectpage.choose.MediaChooseActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         },
         "com.ss.android.ugc.aweme.im.business.mediaselectpage.edit.IMEditPreviewActivity": {
           "mode": 1,
@@ -2927,8 +2927,8 @@
           "color": null
         },
         "com.ss.android.ugc.aweme.im.business.mediaselectpage.choose.MediaChooseActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         },
         "com.ss.android.ugc.aweme.im.business.mediaselectpage.edit.IMEditPreviewActivity": {
           "mode": 1,
@@ -3134,11 +3134,11 @@
           "color": null
         },
         "com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         },
         "com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.taobao.fleamarket.business.transferMoney.activity.TransferMoneyActivity": {
@@ -3147,15 +3147,15 @@
         },
         "com.taobao.idlefish.content.PostContentActivity": {
           "mode": 1,
-          "color": 1
+          "color": 0
         },
         "com.taobao.idlefish.detail.DetailActivity": {
           "mode": 1,
-          "color": 1
+          "color": 0
         },
         "com.taobao.idlefish.maincontainer.activity.MainActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         }
       }
     },
@@ -3217,7 +3217,7 @@
         },
         "com.taobao.android.detail.wrapper.activity.DetailActivity": {
           "mode": 1,
-          "color": 1
+          "color": 0
         },
         "com.taobao.android.detail2.core.framework.NewDetailActivity": {
           "mode": 2,
@@ -3229,7 +3229,7 @@
         },
         "com.taobao.android.purchase.aura.TBBuyActivity": {
           "mode": 1,
-          "color": 1
+          "color": 0
         },
         "com.taobao.android.tbabilitykit.pop.StdPopActivityGroup": {
           "mode": 0,
@@ -3240,16 +3240,16 @@
           "color": null
         },
         "com.taobao.browser.BrowserActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.taobao.message.activity.ChatActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         },
         "com.taobao.message.activity.ChatActivityV2": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         },
         "com.taobao.message.activity.ShareShopActivity": {
           "mode": 1,
@@ -3264,7 +3264,7 @@
           "color": null
         },
         "com.taobao.search.uniform.SearchActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.taobao.tao.TBMainActivity": {
@@ -3276,23 +3276,23 @@
           "color": null
         },
         "com.taobao.taolive.room.TaoLiveVideoActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.taobao.taolivehome.TaoLiveHomepageActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         },
         "com.taobao.themis.container.app.TMSActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": -1
         },
         "com.taobao.umipublish.weex.LcWeexPublishActivity": {
           "mode": 1,
           "color": 1
         },
         "com.taobao.weex.weexv2.page.WeexV2Activity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         }
       }
@@ -3559,8 +3559,8 @@
           "color": 1
         },
         "com.tmall.wireless.themis.container.TMThemisActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         },
         "com.tmall.wireless.webview.TMCommonWebViewActivity": {
           "mode": 1,
@@ -3579,11 +3579,11 @@
       }
     },
     "com.twitter.android": {
-      "name": "Twitter",
+      "name": "X",
       "enable": true,
       "activityRules": {
         "*": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.twitter.android.search.implementation.results.SearchActivity": {
@@ -3806,7 +3806,7 @@
           "color": 1
         },
         "com.wuba.tradeline.search.NativeSearchResultActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.wuba.tribe.live.activity.TribeMultiStreamActivity": {
@@ -3933,7 +3933,7 @@
       "enable": true,
       "activityRules": {
         "*": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.xingin.alioth.search.GlobalSearchActivity": {
@@ -3954,7 +3954,7 @@
         },
         "com.xingin.matrix.detail.activity.DetailFeedActivity": {
           "mode": 1,
-          "color": 1
+          "color": 0
         },
         "com.xingin.matrix.notedetail.NoteDetailActivity": {
           "mode": 0,
@@ -4429,7 +4429,7 @@
         },
         "me.ele.android.emagex.container.EMagexActivity": {
           "mode": 1,
-          "color": 1
+          "color": -1
         },
         "me.ele.android.emagex.container.EMagexPopupActivity": {
           "mode": 1,
@@ -4452,8 +4452,8 @@
           "color": -1
         },
         "me.ele.muise.page.WeexPageActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 2,
+          "color": null
         },
         "me.ele.newretail.muise.RetailCustomWeexActivity": {
           "mode": 1,
@@ -4551,8 +4551,8 @@
           "color": null
         },
         "com.bilibili.lib.ui.ComposeActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 0
         },
         "com.bilibili.lib.ui.menu.BottomDialogMenu": {
           "mode": 0,
@@ -4563,7 +4563,7 @@
           "color": null
         },
         "com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity": {
-          "mode": 0,
+          "mode": 1,
           "color": null
         },
         "com.bilibili.upper.module.contribute.up.ui.ManuscriptUpActivityV5": {
