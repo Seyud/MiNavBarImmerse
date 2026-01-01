@@ -1,0 +1,3826 @@
+{
+  "dataVersion": "250912",
+  "modules": "navigation_bar_immersive_application_config_new",
+  "modifyApps": "modifyApps",
+  "NBIRules": {
+    "air.tv.douyu.android": {
+      "name": "斗鱼",
+      "enable": true,
+      "activityRules": {
+        "com.douyu.module.player.p.socialinteraction.functions.switch_room.AudioPlayerPagerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.douyu.module.list.view.activity.CustomHomeSetupBActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.douyu.sdk.rn.activity.DYReactActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.douyu.module.vod.p.voddownload.VodDownloadActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "bin.mt.plus": {
+      "name": "MT管理器",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.byyoung.setting.HomePage.activitys.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "cn.com.chsi.chsiapp": {
+      "name": "学信网",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "cn.com.chsi.chsiapp.MainActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "cn.com.langeasy.LangEasyLexis": {
+      "name": "不背单词",
+      "enable": false,
+      "activityRules": {}
+    },
+    "cn.com.whty.cqt": {
+      "name": "渝通行",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "cn.damai": {
+      "name": "大麦",
+      "enable": true,
+      "activityRules": {
+        "cn.damai.filmdetail.activity.DMFilmDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "cn.damai.discover.media.MediaPagerActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "cn.edu.fzu.fdxypa": {
+      "name": "智汇福大",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "cn.ikaile.ruoshui.client": {
+      "name": "RoseLink",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "cn.ninebot.ninebot": {
+      "name": "九号出行",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "cn.ninebot.ninebot.mainshell.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "cn.soulapp.android": {
+      "name": "Soul",
+      "enable": true,
+      "activityRules": {
+        "cn.soulapp.android.component.home.user.UserHomeActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "cn.soulapp.cpnt_voiceparty.soulhouse.SoulHouseActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "cn.toside.music.mobile": {
+      "name": "LX Music",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "cn.unipus.cloud": {
+      "name": "U 校园 AI 版",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "cn.unipus.cloud.mvvm.view.activity.MainActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "cn.unipus.cloud.my.student.mvvm.view.activity.UserInfoDetailActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "cn.wps.moffice_eng": {
+      "name": "WPS Office国际版",
+      "enable": true,
+      "activityRules": {
+        "cn.wps.moffice.plugin.PluginHostBridgeActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "cn.wps.moffice.main.local.HomeRootActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "cn.xuexi.android": {
+      "name": "学习强国",
+      "enable": true,
+      "activityRules": {
+        "com.alibaba.android.rimet.biz.home.activity.HomeActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.achievo.vipshop": {
+      "name": "唯品会",
+      "enable": true,
+      "activityRules": {
+        "com.achievo.vipshop.productdetail.activity.ProductDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.achievo.vipshop.userfav.activity.FavorActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.achievo.vipshop.cart.activity.VipCartActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.activitymanager": {
+      "name": "Activity Manager",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.ai.obc.cbn.app": {
+      "name": "中国广电",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.alibaba.android.rimet": {
+      "name": "学习强国",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.alibaba.wireless": {
+      "name": "阿里巴巴",
+      "enable": true,
+      "activityRules": {
+        "com.alibaba.wireless.newdetailv2.NewDetailV2Activity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.android.bankabc": {
+      "name": "中国农业银行",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.android.email": {
+      "name": "小米电子邮件",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.android.settings": {
+      "name": "设置",
+      "enable": true,
+      "activityRules": {
+        "rikka.sui.SuiActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.android.vending": {
+      "name": "谷歌应用商店",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.anjuke.android.app": {
+      "name": "安居客",
+      "enable": true,
+      "activityRules": {
+        "com.anjuke.android.app.newhouse.newhouse.building.detail.XFBuildingDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.anjuke.android.app.renthouse.activity.HouseDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.anjuke.android.app.secondhouse.broker.homev2.BrokerNewDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.anjuke.android.app.newhouse.newhouse.consultant.detail.XFConsultantHomePageActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.autonavi.minimap": {
+      "name": "高德地图",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.baidu.BaiduMap": {
+      "name": "百度地图",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.baidumaps.MapsActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.baidu.baidutranslate": {
+      "name": "百度翻译",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.baidu.haokan": {
+      "name": "好看视频",
+      "enable": true,
+      "activityRules": {
+        "com.baidu.voicesearh.voice.controller.VoiceSearchShellActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.baidu.haokan.app.activity.HomeActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.baidu.homework": {
+      "name": "作业帮",
+      "enable": true,
+      "activityRules": {
+        "com.baidu.homework.activity.web.ZybWebActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.baidu.netdisk": {
+      "name": "百度网盘",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.netdisk.ui.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.baidu.netdisk.album.AlbumServiceActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.baidu.netdisk.ui.cloudfile.MyCategoryActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.baidu.netdisk.aigc.ui.activity.CloudPieceActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.baidu.newapp": {
+      "name": "文小言",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "CustomDrawerLayout": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.baidu.searchbox": {
+      "name": "百度",
+      "enable": true,
+      "activityRules": {
+        "com.baidu.sapi2.activity.AccountCenterActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.searchbox.godeye.CodeScannerActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.swan.apps.SwanAppActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.searchbox.aibot.AIBotActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.baidu.searchbox.lite": {
+      "name": "百度极速版",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.bankcomm.Bankcomm": {
+      "name": "交通银行",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.bubblesoft.android.bubbleupnp": {
+      "name": "BlueUPnP",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.bug.hookvip": {
+      "name": "Fuck for VIP",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.byd.aeri.caranywhere": {
+      "name": "比亚迪",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.byd.business.mall.activity.shopDetails.ShopDetailsActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.byd.business.community.activity.DyCommunityDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.byd.business.mall.activity.aftersales.AfterSalesDetailsActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.byyoung.setting": {
+      "name": "MT管理器",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.cainiao.wireless": {
+      "name": "菜鸟",
+      "enable": true,
+      "activityRules": {
+        "com.cainiao.wireless.guest.GuestModeActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.chaoxing.mobile": {
+      "name": "学习通",
+      "enable": true,
+      "activityRules": {
+        "com.chaoxing.mobile.main.branch.AppSettingActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.chaoxing.mobile.main.ui.MainTabActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "*": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.chinamworld.bocmbci": {
+      "name": "中国银行",
+      "enable": true,
+      "activityRules": {
+        "com.boc.bocsoft.mobile.bocmobile.buss.customerservice.common.activity.CustomerServiceActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.chinamworld.main": {
+      "name": "中国建设银行",
+      "enable": true,
+      "activityRules": {
+        "com.ccb.start.MainActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.nantian.iBank.ui.activity.container.ProgramSingleWindowActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.clover.daysmatter": {
+      "name": "倒数日-Days Matter",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.clover.idaily": {
+      "name": "iDaily",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.up366.mobile": {
+      "name": "天学网学生",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.up366.mobileTeacher": {
+      "name": "天学网学生",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.cmcc.cmvideo": {
+      "name": "咪咕视频",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.cmri.universalapp": {
+      "name": "移动爱家",
+      "enable": true,
+      "activityRules": {
+        "com.cmri.universalapp.SmartMainProxyActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.compose.batteryinfo": {
+      "name": "澎湃工具箱",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.ct.client": {
+      "name": "中国电信",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.cubic.autohome": {
+      "name": "汽车之家",
+      "enable": true,
+      "activityRules": {
+        "com.autohome.main.article.zbusiness.video.SlideVideoPageActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.autohome.mainlib.business.reactnative.base.AHCommRNActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.autohome.plugin.usedcarhome.imchat.ChatActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.dianping.v1": {
+      "name": "大众点评",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.dianping.v1.NovaMainActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.dianping.social.activity.NewFeedDetailActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.dianping.voyager.poi.GCPOIDetailActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.dianping.gcmrn.ssr.GCMRNSSRActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dianping.tuan.activity.DealDetailAgentActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.meituan.android.mrn.container.MRNBaseActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.meituan.android.mrn.container.MRNStandardActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dianping.nova.picasso.DPPicassoBoxActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.dianping.shopshell.PexusPoiActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dianping.movie.trade.home.MovieMainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dianping.movie.activity.DpMovieDetailActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.meituan.android.movie.tradebase.activity.MovieCinemaListActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.meituan.android.movie.tradebase.activity.SelectSeatActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.meituan.android.movie.tradebase.activity.PaySeatActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dianping.movie.trade.MovieTitansActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.sankuai.waimai.business.page.homepage.TakeoutActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.sankuai.waimai.store.drug.home.NewDrugHomeActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.meituan.msc.modules.container.MSCActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.sankuai.xm.imui.session.SessionActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.didjdk.adbhelper": {
+      "name": "甲壳虫 ADB 助手",
+      "enable": true,
+      "activityRules": {
+        "com.didjdk.adbhelper.FastbootActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.dragon.read": {
+      "name": "番茄免费小说",
+      "enable": true,
+      "activityRules": {
+        "com.dragon.community.impl.detail.dialog.c": {
+          "mode": 2,
+          "color": null
+        },
+        "com.dragon.read.component.biz.impl.bookshelf.bookgroup.BookGroupActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.dragon.read.plugin.live.web.OpenLiveWebViewActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.dragon.read.reader.ui.ReaderActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.android.openlive.plugin.OpenLiveDummyActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.dragon.read.component.shortvideo.impl.ShortSeriesActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dragon.read.component.biz.impl.bookshelf.moredetail.BookshelfMoreDetailDialog": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dragon.read.hybrid.webview.WebViewActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.bytedance.sdk.open.douyin.ui.DouYinWebAuthorizeActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.dz.hmjc": {
+      "name": "河马剧场",
+      "enable": true,
+      "activityRules": {
+        "com.dz.business.main.ui.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.eastmoney.android.berlin": {
+      "name": "东方财富",
+      "enable": true,
+      "activityRules": {
+        "com.eastmoney.android.shortvideo.EMShortVideoRecActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.eastmoney.android.hybrid.internal.react.EmmaActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.eg.android.AlipayGphone": {
+      "name": "支付宝",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.eg.android.AlipayGphone.AlipayLogin": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App01": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App02": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App03": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App04": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App05": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main": {
+          "mode": 0,
+          "color": null
+        },
+        "com.antfortune.wealth.stock.StockMainActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.alipay.mobile.antcardsdk.cardapp.CSPushActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.antfortune.wealth.stock.common.cube.page.CubePageActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.alipay.android.phone.xriver.bundlex.CSGAPushActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.alipay.mobile.chatapp.ui.PersonalChatMsgActivity_": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.eggflower.read": {
+      "name": "蛋花免费小说",
+      "enable": true,
+      "activityRules": {
+        "com.dragon.read.component.comic.impl.comic.ui.ComicActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.epicgames.portal": {
+      "name": "Epic Games",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.fenbi.android.leo": {
+      "name": "小猿AI",
+      "enable": true,
+      "activityRules": {
+        "com.fenbi.android.leo.business.homewithchat.HomeWithChatActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.yuanfudao.android.leo.vip.keypoint.explain.activity.KnowledgePointVideoActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.fenbi.android.leo.business.wrongbook.activity.WrongBookHomeWebActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.yuanfudao.android.leo.vip.topic.explain.activity.LeoVipTopicExplainActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.fenbi.android.leo.business.user.grade.RoleAndGradeSettingActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.fenbi.android.leo.exercise.chinese.dictation.ChineseDictationExerciseContentSelectedListActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.fenbi.android.leo.exercise.history.StudyHistoryActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.fenbi.android.leo.exercise.english.dictation.EnglishDictationExerciseContentSelectedListActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.fenbi.android.servant": {
+      "name": "粉笔",
+      "enable": true,
+      "activityRules": {
+        "com.fenbi.android.ti.pdf.DownloadPdfListActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.github.android": {
+      "name": "Github",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.github.android.main.MainActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.github.capntrips.kernelflasher": {
+      "name": "Kernel Flasher",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.google.android.gms": {
+      "name": "Google Play 服务",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.google.android.youtube": {
+      "name": "YouTube",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.google.earth": {
+      "name": "Google Earth",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.gotokeep.keep": {
+      "name": "Keep",
+      "enable": true,
+      "activityRules": {
+        "com.gotokeep.keep.mo.business.store.activity.detail.GoodsDetailActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.greenpoint.android.mc10086.activity": {
+      "name": "中国移动",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.mc10086.cmcc.view.tabs.AppTabFragment": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.hexin.plat.android": {
+      "name": "同花顺",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.hexin.plat.android.Hexin": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.hexin.android.bank.funddetail.funddetail.ui.main.FundDetailActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.houvven.guise": {
+      "name": "Guise",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.huawei.health": {
+      "name": "华为运动健康",
+      "enable": true,
+      "activityRules": {
+        "com.huawei.health.h5pro.core.H5ProWebViewActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.hunantv.imgo.activity": {
+      "name": "芒果TV",
+      "enable": true,
+      "activityRules": {
+        "com.hunantv.imgo.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.hundsun.winner.pazq": {
+      "name": "平安证券",
+      "enable": true,
+      "activityRules": {
+        "com.hundsun.winner.pazq.business.quotation.activity.StockChartScreen": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.hupu.games": {
+      "name": "虎扑",
+      "enable": true,
+      "activityRules": {
+        "com.hupu.games.main.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.hupu.shihuo": {
+      "name": "识货",
+      "enable": true,
+      "activityRules": {
+        "com.shizhuang.duapp.modules.rn.mini.MiniReactActivity$MiniUIXReactActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.hustzp.com.xichuangzhu": {
+      "name": "西窗烛",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.hz.smartsports": {
+      "name": "SmartSports / 其实我也不知道是什么，根本查不到",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.hz.smartsports.ui.activity.MainActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.icbc": {
+      "name": "中国工商银行",
+      "enable": true,
+      "activityRules": {
+        "icbc.com.icbccustomerservice.chat.ui.CsmPublicChatActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.iflytek.elpmobile.marktool": {
+      "name": "智学网教师端",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.iflytek.elpmobile.smartlearning": {
+      "name": "智学网",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.iflytek.elpmobile.student": {
+      "name": "智学网学生端",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.jason.taokemao": {
+      "name": "淘客猫",
+      "enable": true,
+      "activityRules": {
+        "com.jason.taoke.ui.activities.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.jingdong.app.mall": {
+      "name": "京东",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.jingdong.app.mall.MainFrameActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.jd.lib.productdetail.ProductDetailActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.jd.lib.jshop.jshop.JshopMainShopActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.jingdong.common.jdreactFramework.activities.JDReactNativeCommonActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.jd.lib.ttt.page.TTTMultiPageActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.jingyao.easybike": {
+      "name": "哈啰",
+      "enable": true,
+      "activityRules": {
+        "com.hellobike.unpaid.UnpaidOrderActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.hellobike.moments.business.traveldata.TravelDataActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.hellobike.atlas.business.portal.PortalActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.alipay.mobile.nebulacore.ui.H5Activity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.jiongji.andriod.card": {
+      "name": "百词斩",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baicizhan.main.activity.MainTabActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.job.android": {
+      "name": "前程无忧51Job",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.jooan.qiaoanzhilian": {
+      "name": "乔安智联",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.klcxkj.zqxy": {
+      "name": "趣智校园",
+      "enable": true,
+      "activityRules": {
+        "com.klcxkj.zqxy.ui.main.MainActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.klcxkj.zqxy.ui.device.search.ScanCodeActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.kmxs.reader": {
+      "name": "七猫免费小说",
+      "enable": true,
+      "activityRules": {
+        "org.geometerplus.android.fbreader.FBReader": {
+          "mode": 0,
+          "color": null
+        },
+        "com.byted.live.lite.Activity_main_singleTask4": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.kuaishou.nebula": {
+      "name": "快手极速版",
+      "enable": true,
+      "activityRules": {
+        "com.yxcorp.gifshow.camera.record.CameraActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kuaishou.live.core.basic.activity.LiveSlideActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.yxcorp.gifshow.detail.PhotoDetailActivityTablet": {
+          "mode": 0,
+          "color": null
+        },
+        "com.yxcorp.gifshow.message.imchat.acivity.IMChatActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.yxcorp.gifshow.v3.EditorActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kwai.kds.krn.api.page.KwaiRnActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.kuaishou.merchant.transaction.detail.detailv2.MerchantDetailV2Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.yxcorp.gifshow.HomeActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kuaishou.merchant.transaction.live.dynamic.page.MerchantPurchasePanelContainerV2Activity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.yxcorp.gifshow.detail.PhotoDetailActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.kugou.android": {
+      "name": "酷狗音乐",
+      "enable": true,
+      "activityRules": {
+        "com.kugou.android.app.lockscreen.LockScreenActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.kugou.android.app.splash.SplashActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.kwai.theater": {
+      "name": "喜番免费短剧",
+      "enable": true,
+      "activityRules": {
+        "com.kwai.theater.api.component.HomeActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.kwai.videoeditor": {
+      "name": "快影",
+      "enable": true,
+      "activityRules": {
+        "com.kwai.krn.KrnKyActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kwai.videoeditor.vega.slideplay.v2.activity.SlidePlayActivityV2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kwai.videoeditor.activity.WebActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.larus.nova": {
+      "name": "豆包",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.lefan.signal": {
+      "name": "信号检测仪",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.lianjia.beike": {
+      "name": "贝壳找房",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.lingan.seeyou": {
+      "name": "美柚",
+      "enable": true,
+      "activityRules": {
+        "cn.meetyou.sleep.activity.SleepActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.lingan.seeyou.ui.activity.main.SeeyouActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.meiyou.ecomain.ui.detail_v3.EcoGoodsDetailActivityV3": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.meiyou.community.ui.detail.topic.activity.TopicDetailActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.lofter.android": {
+      "name": "网易LOFTER",
+      "enable": true,
+      "activityRules": {
+        "com.lofter.android.module_publish.chat.ChatAnswerPostActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.lphtsccft": {
+      "name": "涨乐财富通",
+      "enable": true,
+      "activityRules": {
+        "com.lphtsccft.zhangle.market.SearchStockActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "*": {
+          "mode": 0,
+          "color": null
+        },
+        "com.lphtsccft.zhangle.main.MainActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.luna.music": {
+      "name": "汽水音乐",
+      "enable": true,
+      "activityRules": {
+        "com.luna.biz.main.main.MainActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.max.xiaoheihe": {
+      "name": "小黑盒",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.max.xiaoheihe.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.max.xiaoheihe.module.account.InterestInitV2Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.max.xiaoheihe.module.bbs.post_edit.PostTabActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.meta.box": {
+      "name": "233乐园",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.mfcloudcalculate.networkdisk": {
+      "name": "123云盘",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.mi.health": {
+      "name": "小米运动健康",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xiaomi.fitness.main.MainActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xiaomi.wearable.yrn.views.WearableRNActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.microsoft.emmx": {
+      "name": "Edge",
+      "enable": true,
+      "activityRules": {
+        "org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.microsoft.emmx.beta": {
+      "name": "Edge Beta",
+      "enable": true,
+      "activityRules": {
+        "org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.microsoft.emmx.canary": {
+      "name": "Edge Canary",
+      "enable": true,
+      "activityRules": {
+        "org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.microsoft.emmx.dev": {
+      "name": "Edge Dev",
+      "enable": true,
+      "activityRules": {
+        "org.chromium.chrome.browser.edge_settings.EdgeSettingsActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.microsoft.todos": {
+      "name": "To Do",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.microsoft.xboxone.smartglass": {
+      "name": "Xbox",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.mihoyo.hyperion": {
+      "name": "米游社",
+      "enable": true,
+      "activityRules": {
+        "com.mihoyo.hyperion.editor.container.PublishActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.mihoyo.hyperion.post.detail.PostDetailActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.mihoyo.hyperion.post.video.PostVideoActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.mihoyo.hyperion.post.pictureDetail.v2.PostPictureDetailActivityV2": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.luck.picture.lib.PictureSelectActivity2": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.mihoyo.hyperion.web2.MiHoYoWebActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.minecraft.free": {
+      "name": "Minecraft DLC Free",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.mipay.wallet": {
+      "name": "钱包",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.mipay.wallet.app.settings.MiuiStyleSettingActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.MobileTicket": {
+      "name": "铁路12306",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.MobileTicket.ui.activity.MainActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.MobileTicket.scan.as.tool.ToolsCaptureActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.mosoink.teach": {
+      "name": "云班课",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.mosoink.teach.MainMenuActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.mosoink.teach.ClazzCourseActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.mosoink.teach.QuizBeginNewActivity": {
+          "mode": 1,
+          "color": -657931
+        }
+      }
+    },
+    "com.mutangtech.qianji": {
+      "name": "钱迹",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.netease.cloudmusic": {
+      "name": "网易云音乐",
+      "enable": false,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.netease.cloudmusic.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.netease.cloudmusic.music.biz.search.activity.SearchActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.netease.cloudmusic.activity.PlayListActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.netease.cloudmusic.music.biz.comment.activity.CommentActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.netease.edu.ucmooc": {
+      "name": "中国大学MOOC",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.netease.edu.ucmooc.activity.ActivityMain": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.netease.edu.ucmooc.postgraduateexam.activity.ActivityCoursePackage": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.netease.edu.ucmooc.postgraduateexam.activity.ActivityPostgraduateCourseDetail": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.netease.edu.ucmooc.homepage.activity.ActivityCourseIntroduce": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.netease.gl": {
+      "name": "网易大神",
+      "enable": true,
+      "activityRules": {
+        "com.netease.gl.serviceh5.ui.NormalWebActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.netease.gl.session.team.activity.TeamMessageActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.nowcoder.app.florida": {
+      "name": "牛客",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null
+        },
+        "com.nowcoder.app.nc_core.common.web.view.NCWebActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.nowcoder.app.florida.modules.message.view.NCChatSessionListActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.nowcoder.app.florida.modules.userPage.UserPageActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.omarea.vtools": {
+      "name": "Scene",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.One.WoodenLetter": {
+      "name": "一个木函",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.oray.sunlogin": {
+      "name": "向日葵远程控制",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.phoenix.read": {
+      "name": "红果免费短剧",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.pingan.paces.ccms": {
+      "name": "平安口袋银行",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.plan.kot32.tomatotime": {
+      "name": "番茄 ToDo",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.plan.kot32.tomatotime.activity.MainActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.qidian.QDReader": {
+      "name": "起点读书",
+      "enable": true,
+      "activityRules": {
+        "com.qidian.QDReader.ui.activity.CirclePostDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.qidian.QDReader.ui.activity.CirclePostCommentDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.qidian.QDReader.ui.activity.QDRecomBooksCommentsActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.qidian.QDReader.ui.activity.RecomBookListDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.qidian.QDReader.flutter.GameCenterFlutterActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.qidian.QDReader.ui.activity.QDReaderActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.qidian.QDReader.ui.activity.MainGroupActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.qiyi.video": {
+      "name": "爱奇艺",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.qiyi.video.lite": {
+      "name": "爱奇艺极速版",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.qqgame.hlddz": {
+      "name": "欢乐斗地主",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.quark.browser": {
+      "name": "夸克",
+      "enable": true,
+      "activityRules": {
+        "com.ucpro.BrowserActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.qujianzhushou": {
+      "name": "取件助手",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.Qunar": {
+      "name": "去哪儿",
+      "enable": true,
+      "activityRules": {
+        "com.mqunar.react.base.stack.container.QReactNativeActivity2": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.mqunar.react.base.stack.container.QReactNativeActivity3": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.mqunar.react.base.stack.container.QReactNativeActivity1": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.reqable.android": {
+      "name": "Reqable",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.rosan.installer.x": {
+      "name": "InstallerX",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.ruanmei.zuihuimai": {
+      "name": "最会买",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.ruanmei.zuihuimai.activity.MainActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.ruanmei.zuihuimai.activity.DetailFanliActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.sankuai.meituan": {
+      "name": "美团",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.meituan.android.pt.homepage.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.sankuai.meituan.dispatch.crowdsource": {
+      "name": "美团众包",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.sankuai.meituan.meituanwaimaibusiness": {
+      "name": "美团外卖商家版",
+      "enable": true,
+      "activityRules": {
+        "com.sankuai.wme.flutter.FlutterBaseContainerActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.sankuai.meituan.takeoutnew": {
+      "name": "美团外卖",
+      "enable": true,
+      "activityRules": {
+        "com.dianping.live.live.mrn.MLiveMRNActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.sankuai.waimai.business.page.homepage.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.meituan.msc.modules.container.MSCActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.sankuai.waimai.business.restaurant.poicontainer.WMRestaurantActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.sankuai.movie": {
+      "name": "猫眼",
+      "enable": true,
+      "activityRules": {
+        "com.sankuai.movie.movie.MovieDetailActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.sdu.didi.gsui": {
+      "name": "滴滴车主",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.sdu.didi.psnger": {
+      "name": "滴滴出行",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.didi.ride.dimina.DMActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.didi.sdk.app.MainActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.didi.sdk.scan.act.QrCodeScanActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.seetong.app.seetong": {
+      "name": "Seetong",
+      "enable": true,
+      "activityRules": {
+        "com.seetong.app.seetong.ui.AboutActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.sf.activity": {
+      "name": "顺丰速运",
+      "enable": true,
+      "activityRules": {
+        "com.sf.activity.DefaultActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.sf.activity.CustomActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.shenyaocn.android.usbcamera": {
+      "name": "USB摄像头",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.shizhuang.duapp": {
+      "name": "识货",
+      "enable": true,
+      "activityRules": {
+        "com.shizhuang.duapp.modules.du_mall_address.list_picker.activity.AddressListActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.shizhuang.duapp.modules.du_video_detail.detail.detail.VideoDetailsActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.shizhuang.duapp.modules.order_confirm.confirm_order.ui.FloatConfirmOrderActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.shizhuang.duapp.modules.rn.mini.MiniReactActivity$MiniUIXReactActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.shizhuang.duapp.modules.user.setting.user.ui.RealNameAuthenticationActivityV2": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.shizhuang.duapp.media.publish.activity.TotalPublishProcessActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.shuqi.controller": {
+      "name": "书旗小说",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.sina.weibo": {
+      "name": "微博",
+      "enable": true,
+      "activityRules": {
+        "com.sina.weibo.story.gallery.feed.StoryFeedCommentsActivity2": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.sina.weibo.page.ProfileInfoActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.sina.weibo.weiyou.chat.group.setting.MessageGroupManageActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.sina.weibo.account.recommend.RecommendActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.sina.weibo.weiyou.chat.single.DMSingleChatActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.sina.weibo.MainTabActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.sina.weibo.preview.MediaPreviewActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.sina.weibo.weiyou.chat.group.DMGroupChatActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.sina.weibo.feed.SubCommentActiity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.sinovatech.unicom.ui": {
+      "name": "中国联通",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.sinovatech.unicom.basic.ui.activity.MainActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.smile.gifmaker": {
+      "name": "快手",
+      "enable": true,
+      "activityRules": {
+        "com.yxcorp.gifshow.camera.record.CameraActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kuaishou.live.core.basic.activity.LiveSlideActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.yxcorp.gifshow.detail.PhotoDetailActivityTablet": {
+          "mode": 0,
+          "color": null
+        },
+        "com.yxcorp.gifshow.message.imchat.acivity.IMChatActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.yxcorp.gifshow.v3.EditorActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kwai.kds.krn.api.page.KwaiRnActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.kuaishou.merchant.transaction.detail.detailv2.MerchantDetailV2Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.yxcorp.gifshow.HomeActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.kuaishou.merchant.transaction.live.dynamic.page.MerchantPurchasePanelContainerV2Activity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.yxcorp.gifshow.detail.PhotoDetailActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.smzdm.client.android": {
+      "name": "什么值得买",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.smzdm.client.android.app.HomeActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.smzdm.client.android.module.community.module.articledetail.ArticleDetailLongActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.smzdm.client.android.module.community.module.bask.BaskDetailActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.smzdm.client.android.module.haojia.detail.mini.HaojiaMiniDetailActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.smzdm.client.android.module.business.ai.AiZhiActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.smzdm.core.editor.component.main.converge.EditorConvergeMainActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.smzdm.client.android.module.haojia.detail.HaojiaDetailActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.sohu.newsclient": {
+      "name": "搜狐新闻",
+      "enable": true,
+      "activityRules": {
+        "com.sohu.newsclient.videodetail.ImmersiveVideoActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.sohu.newsclient.listensquare.ListenNewsSquareActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.sohu.sohuvideo": {
+      "name": "搜狐视频",
+      "enable": true,
+      "activityRules": {
+        "com.sohu.qfsdk.live.ui.activity.LiveActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.ss.android.article.lite": {
+      "name": "今日头条极速版",
+      "enable": true,
+      "activityRules": {
+        "com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.ss.android.live.host.livehostimpl.OpenLivePlayerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.list.news.activity.AudioNewsListActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.ss.android.article.news": {
+      "name": "今日头条",
+      "enable": true,
+      "activityRules": {
+        "com.bytedance.ugc.ugc.thumb.view.ThumbPreviewActivity": {
+          "mode": 1,
+          "color": -16777216
+        },
+        "com.ss.android.detail.feature.detail2.view.NewVideoDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.novel.shortseries.router.ShortSeriesProxyActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.list.news.activity.AudioNewsListActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.article.news.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.ugc.medialib.tt.main.TTVideoPublisherActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.detail.activity.TikTokActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.android.openlive.plugin.LivePlayerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.components.comment.detail.CommentDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.android.openlive.plugin.OpenLiveDummyActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.ss.android.detail.feature.detail2.view.NewDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.ugc.UgcDetailInfoActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.ss.android.article.video": {
+      "name": "西瓜视频",
+      "enable": true,
+      "activityRules": {
+        "com.ixigua.openliveplugin.live.LivePlayerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.ss.android.article.video.activity.SplashActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ixigua.openliveplugin.live.OpenLiveDummyActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.ss.android.auto": {
+      "name": "懂车帝",
+      "enable": true,
+      "activityRules": {
+        "com.ss.android.auto.lynx.LynxActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.ss.android.auto.ugc.video.activity.UgcVideoDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.auto.activity.UploadBrowserActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.auto.activity.SplashActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.ss.android.ugc.aweme": {
+      "name": "抖音",
+      "enable": true,
+      "activityRules": {
+        "com.bytedance.android.shopping.orderlist.list.container.OrderListActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.splash.SplashActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity0": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity1": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity3": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.detail.ui.LiveDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.bytedcert.activities.SDKWebActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity3": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity1": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity0": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.live.LivePlayActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.live.LivePlayActivityV2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.im.business.mediaselectpage.choose.MediaChooseActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.bytedance.ies.ugc.aweme.photos.detail.flow.page.FlowPageActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.im.business.mediaselectpage.edit.IMEditPreviewActivity": {
+          "mode": 1,
+          "color": -16777216
+        },
+        "com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.detail.ui.DetailActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.ss.android.ugc.aweme.lite": {
+      "name": "抖音极速版",
+      "enable": true,
+      "activityRules": {
+        "com.bytedance.android.shopping.orderlist.list.container.OrderListActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.splash.SplashActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity0": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity1": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity3": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity3": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity1": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity0": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.live.LivePlayActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.im.business.mediaselectpage.choose.MediaChooseActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.im.business.mediaselectpage.edit.IMEditPreviewActivity": {
+          "mode": 1,
+          "color": -16777216
+        },
+        "com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.detail.ui.DetailActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.ss.android.ugc.live": {
+      "name": "抖音火山版",
+      "enable": true,
+      "activityRules": {
+        "com.ss.android.ugc.aweme.live.LivePlayActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.splash.SplashActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.live.LiveDummyActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.ss.android.ugc.aweme.detail.ui.DetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.ss.android.ugc.livelite": {
+      "name": "抖音商城",
+      "enable": true,
+      "activityRules": {
+        "com.bytedance.android.shopping.orderlist.list.container.OrderListActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.live.LivePlayActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.live.LiveDummyActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.ies.ugc.aweme.hunter.fullpage.HunterContainerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.ss.android.yumme.video": {
+      "name": "抖音精选",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.stratumauth.app": {
+      "name": "Startum",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.sup.android.superb": {
+      "name": "皮皮虾",
+      "enable": true,
+      "activityRules": {
+        "com.sup.android.m_account.view.login.LoginActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.tal.imonkey.chinese": {
+      "name": "学而思启蒙",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.tal.imonkey.business.launch.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.taobao.etao": {
+      "name": "一淘",
+      "enable": true,
+      "activityRules": {
+        "com.taobao.etao.detail.EtaoGoodsDetailNAActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.taobao.idlefish": {
+      "name": "闲鱼",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.idlefish.maincontainer.activity.MainActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.taobao.idlefish.detail.DetailActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.taobao.idlefish.content.PostContentActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.taobao.litetao": {
+      "name": "淘宝特价版",
+      "enable": true,
+      "activityRules": {
+        "com.taobao.search.searchdoor.SearchDoorActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.taobao.android.detail2.core.framework.NewDetailActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.android.detail.wrapper.activity.DetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.taobao.android.detail.alittdetail.TTDetailActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.taobao.live": {
+      "name": "淘宝直播",
+      "enable": true,
+      "activityRules": {
+        "com.live.android.detail.activity.TbLiveTTDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.taobao.live.TaoLiveVideoActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.taobao.taobao": {
+      "name": "淘宝",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.search.searchdoor.SearchDoorActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.taobao.android.tbabilitykit.pop.StdPopActivityGroup": {
+          "mode": 0,
+          "color": null
+        },
+        "com.taobao.browser.BrowserActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.message.activity.ChatActivityV2": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.taobao.android.detail2.core.framework.NewDetailActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.android.detail.wrapper.activity.DetailActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.taobao.themis.container.app.TMSActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.taobao.message.activity.ChatActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.taobao.taolive.room.TaoLiveVideoActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.taolivehome.TaoLiveHomepageActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.taobao.android.detail.alittdetail.TTDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.taobao.weex.weexv2.page.WeexV2Activity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.search.uniform.SearchActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.taobao.tao.welcome.Welcome": {
+          "mode": 0,
+          "color": null
+        },
+        "com.alibaba.triver.triver_shop.newShop.ShopActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.taobao.android.purchase.aura.TBBuyActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.taptap": {
+      "name": "TapTap",
+      "enable": true,
+      "activityRules": {
+        "com.taptap.infra.dispatch.context.page.theme.FragmentNoRestoreActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.tencent.android.qqdownloader": {
+      "name": "应用宝",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.assistant.activity.BrowserActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.tencent.pangu.activity.TranslucentAppDemoActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.tencent.androidqqmail": {
+      "name": "QQ邮箱",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.qqmail.account.activity.LoginFragmentActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.tencent.apps.valorant": {
+      "name": "掌上无畏契约",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.qt.qtl.activity.ugc.UgcFriendPostDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.mudule_web.info.NewsDetailXmlActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.container.page.activity.HalfContainerActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.shortvideo.ShortVideoHomeActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.qt.qtl.activity.barcode.BarcodeScanActivity": {
+          "mode": 1,
+          "color": -16777216
+        }
+      }
+    },
+    "com.tencent.gamehelper.pg": {
+      "name": "和平营地",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.gamehelper.ui.chat.ChatActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.g4p.normallive.NormalLiveActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.gamehelper.ui.personhomepage.HomePageActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.tga.liveplugin.live.LivePlayerActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.gamehelper.videolist.RecommendVideoListActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.tencent.gamehelper.smoba": {
+      "name": "王者营地",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.tga.liveplugin.live.LiveActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.gamehelper.ui.search2.SearchActivityFlutter2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.gamehelper.ui.main.MainActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.tencent.karaoke": {
+      "name": "全名K歌",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.karaoke.module.billboard.ui.SingleDetailsActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.karaoke.module.main.ui.MainTabActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.tencent.mm": {
+      "name": "微信",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.tencent.mm.ui.conversation.NewBizConversationUI": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.lite.ui.WxaLiteAppSheetUI": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.tencent.mm.ui.LauncherUI": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI00": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI01": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI02": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI03": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI04": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.ui.chatting.ChattingUI": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.tencent.mobileqq": {
+      "name": "QQ",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.mobileqq.activity.QPublicFragmentActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.tencent.mobileqq.activity.PublicFragmentActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.tencent.mtt": {
+      "name": "QQ浏览器",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.tencent.qqlive": {
+      "name": "腾讯视频",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.tencent.qqmusic": {
+      "name": "QQ音乐",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.qqmusic.business.lockscreennew.LockScreenActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.tencent.weread": {
+      "name": "微信读书",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.tencent.wework": {
+      "name": "企业微信",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.tencent.zebra": {
+      "name": "水印相机",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.tmall.wireless": {
+      "name": "天猫",
+      "enable": true,
+      "activityRules": {
+        "com.tmall.wireless.themis.container.TMThemisActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.tmri.app.main": {
+      "name": "交管12123",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.twitter.android": {
+      "name": "Twitter",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.twitter.android.search.implementation.results.SearchActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.twitter.app.dm.DMActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.twitter.app.profiles.ProfileActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.twtapp": {
+      "name": "天文通",
+      "enable": false,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.ubnt.usurvey": {
+      "name": "WiFiman",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.UCMobile": {
+      "name": "UC浏览器",
+      "enable": true,
+      "activityRules": {
+        "com.uc.browser.InnerUCMobile": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.umetrip.android.msky.app": {
+      "name": "航旅纵横",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.unionpay": {
+      "name": "云闪付",
+      "enable": true,
+      "activityRules": {
+        "com.unionpay.activity.react.UPActivityReactNative": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.valvesoftware.android.steam.community": {
+      "name": "Steam",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.videogo": {
+      "name": "萤石云视频",
+      "enable": true,
+      "activityRules": {
+        "com.videogo.reactnative.activity.EZReactBizActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.videogo.main.MainTabActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.walixiwa.flash.player": {
+      "name": "资源猫",
+      "enable": true,
+      "activityRules": {
+        "com.jason.videocat.ui.activities.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.wangc.bill": {
+      "name": "一木记账",
+      "enable": false,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.wangc.bill.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.wangc.bill.activity.BillInfoActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.wangc.bill.dialog.t2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.wangc.bill.activity.AddBillActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.wisedu.cpdaily": {
+      "name": "今日校园",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.wuba": {
+      "name": "58同城",
+      "enable": true,
+      "activityRules": {
+        "com.wuba.housecommon.category.activity.HouseCategoryListFragmentActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.wuba.hybrid.CommonWebActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.wuba.house.activity.HouseDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.wuba.job.business.address.view.JobUserTargetApplyJobInfoActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.wuba.tradeline.search.NativeSearchResultActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.wuba.rn.RNActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.wuba.job.business.address.view.JobMapAddressActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.wuba.job.business.hrglive.JobNewLiveListActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.wuba.zhuanzhuan": {
+      "name": "转转",
+      "enable": true,
+      "activityRules": {
+        "com.wuba.zhuanzhuan.activity.ChooseAddressActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.zhuanzhuan.module.webview.page.WebContainerDialogActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.zhuanzhuan.login.page.LoginActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.wudaokou.hippo": {
+      "name": "盒马",
+      "enable": true,
+      "activityRules": {
+        "com.wudaokou.hippo.order.detailUltron.OrderUltronDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.wudaokou.hippo.detail.ultron.DetailUltronActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.x7890.shortcutcreator": {
+      "name": "创建快捷方式",
+      "enable": false,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.xiaomi.router": {
+      "name": "小米 WiFi",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.xiaomi.shop": {
+      "name": "小米商城",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xiaomi.shop2.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.xiaomi.miot.store.mirn.RNMainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.xiaomi.shop.sharelib.ShareDialog": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xiaomi.smarthome": {
+      "name": "米家",
+      "enable": true,
+      "activityRules": {
+        "com.xiaomi.miot.store.ui.MiotStoreMainActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xiaomi.smarthome.miio.consumables.ConsumablesCenterActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.xiaomi.vipaccount": {
+      "name": "小米社区",
+      "enable": true,
+      "activityRules": {
+        "com.xiaomi.vipaccount.newbrowser.NormalWebActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.ximalaya.ting.android": {
+      "name": "喜马拉雅",
+      "enable": false,
+      "activityRules": {}
+    },
+    "com.xingin.xhs": {
+      "name": "小红书",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xingin.xhs.index.v2.IndexActivityV2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.xingin.reactnative.ui.XhsReactActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xingin.im.ui.activity.ChatActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.xingin.matrix.notedetail.NoteDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.xingin.matrix.detail.activity.DetailFeedActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.xingin.matrix.setting.about.AboutActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xingin.im.ui.activity.GroupChatActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xiwang.youke": {
+      "name": "希望优课",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xueersi.parentsmeeting.module.home.HomeV2Activity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xiwang.zaixian": {
+      "name": "希望学习",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xueersi.parentsmeeting.module.home.HomeV2Activity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xjcheng.musictageditor": {
+      "name": "音乐标签",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.xs.fm": {
+      "name": "番茄畅听",
+      "enable": true,
+      "activityRules": {
+        "com.dragon.read.plugin.live.LivePlayerActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xs.fm.lite": {
+      "name": "番茄畅听音乐版",
+      "enable": true,
+      "activityRules": {
+        "com.dragon.read.reader.speech.bullet.BulletActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dragon.read.pages.main.MainFragmentActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dragon.read.pages.category.multitab.MultiTabCategoriesActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dragon.read.reader.speech.page.AudioPlayActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dragon.read.pages.category.BookCategoryActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xueersi.parentsmeeting": {
+      "name": "希望优课",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xueersi.parentsmeeting.module.home.HomeV2Activity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xunlei.downloadprovider": {
+      "name": "迅雷",
+      "enable": true,
+      "activityRules": {
+        "com.xunlei.downloadprovider.frame.MainTabActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.xunlei.browser.XLBrowserActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.xunmeng.pinduoduo": {
+      "name": "拼多多",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity": {
+          "mode": 1,
+          "color": 0
+        }
+      }
+    },
+    "com.ygkj.chelaile.standard": {
+      "name": "车来了",
+      "enable": true,
+      "activityRules": {
+        "dev.xesam.chelaile.app.module.line.gray.LineDetailActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.yiban.app": {
+      "name": "易班",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.yiban.app.home.activity.HomeActivityV2": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.yiban.app.activity.SettingMainActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "com.youdao.dict": {
+      "name": "有道词典",
+      "enable": true,
+      "activityRules": {
+        "com.youdao.dict.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.youdao.dict.activity.TranslatorActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.youku.phone": {
+      "name": "优酷视频",
+      "enable": true,
+      "activityRules": {
+        "com.youku.usercenter.passport.activity.LoginActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.youku.vip.wrapper.VipHomeActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.youku.v2.HomePageEntry": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.youku.usercenter.activity.UserCenterActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.youku.usercenter.passport.activity.MiscLoginActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.youku.hotspot.activity.HotSpotActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.youku.discover.presentation.sub.newdiscover.onearch.NewDiscoverActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.zhihu.android": {
+      "name": "知乎",
+      "enable": true,
+      "activityRules": {
+        "com.zhihu.android.videox.VideoXHostActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.zhihu.android.comment.ui.activity.CommentListActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.zhihu.android.zvideo_publish.editor.DbEditorHostActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.zhihu.daily.android": {
+      "name": "知乎日报",
+      "enable": true,
+      "activityRules": {
+        "com.zhihu.daily.android.epic.MainActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.zhihu.daily.android.epic.activity.FavoritesActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.zhihu.daily.android.epic.activity.NotificationsActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.zhihu.daily.android.epic.activity.BrowserActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.zhihu.android.library.sharecore.activity.ShareHostActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.zidongdianji": {
+      "name": "自动点击器",
+      "enable": true,
+      "activityRules": {
+        "com.autoclicker.clicker.MainActivity": {
+          "mode": 1,
+          "color": -328966
+        }
+      }
+    },
+    "com.zmzx.college.search": {
+      "name": "大学搜题酱",
+      "enable": true,
+      "activityRules": {
+        "com.zmzx.college.search.activity.main.activity.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "com.zwo.seestar": {
+      "name": "Seestar",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.lxj.xpopup.core.FullScreenDialog": {
+          "mode": 1,
+          "color": -15066071
+        },
+        "com.zwo.commiscope.web.ComTitleWebNativeActivity": {
+          "mode": 1,
+          "color": -15461354
+        }
+      }
+    },
+    "com.zzw.october": {
+      "name": "志愿汇",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.zzw.october.MainActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "ctrip.android.view": {
+      "name": "携程旅行",
+      "enable": true,
+      "activityRules": {
+        "ctrip.android.destination.story.media.MediaSelectActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "ctrip.android.reactnative.preloadv2.CRNBaseActivityV2": {
+          "mode": 1,
+          "color": 1
+        },
+        "ctrip.android.flutter.containers.TransparentTripFlutterActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "dev.miuiicons.pedroz": {
+      "name": "完美图标计划",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "flar2.devcheck": {
+      "name": "DevCheck",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "github.tornaco.android.thanos": {
+      "name": "Thanox",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "gov.pianzong.androidnga": {
+      "name": "NGA玩家社区",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "io.github.qauxv": {
+      "name": "QAuxiliary",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "io.legado.app.release": {
+      "name": "Legado",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "io.legado.app.ui.main.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "io.legado.app.ui.book.read.ReadBookActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "io.legado.app.ui.config.ConfigActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "io.legato.kazusa": {
+      "name": "阅读",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "mark.via": {
+      "name": "Via",
+      "enable": false,
+      "activityRules": {}
+    },
+    "me.ele": {
+      "name": "饿了吗",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "me.ele.application.ui.Launcher.LauncherActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "me.ele.muise.page.WeexPageActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "me.ele.im.limoo.activity.LIMActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "me.ele.shopdetailv2.lmagex.ShopDetailV3Activity": {
+          "mode": 1,
+          "color": -1
+        },
+        "me.ele.android.emagex.container.EMagexActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
+    },
+    "me.hd.wauxv": {
+      "name": "WAuxiliary",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "me.iacn.biliroaming": {
+      "name": "哔哩漫游",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "org.telegram.messenger": {
+      "name": "Telegram",
+      "enable": false,
+      "activityRules": {}
+    },
+    "tv.danmaku.bili": {
+      "name": "哔哩哔哩",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "tv.danmaku.bili.MainActivityV2": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bilibili.app.preferences.BiliPreferencesActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "bs.c": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bilibili.app.comm.opus.lightpublish.page.comment.CommentLightPublishDialogFragment$c": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bilibili.lib.ui.menu.BottomDialogMenu": {
+          "mode": 0,
+          "color": null
+        },
+        "tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.bilibili.lib.ui.ComposeActivity": {
+          "mode": 1,
+          "color": 0
+        },
+        "com.bilibili.bplus.im.conversation.ConversationActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bilibili.bililive.room.ui.roomv3.LiveRoomTranslucentActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "tv.danmaku.bilibilihd": {
+      "name": "哔哩哔哩HD",
+      "enable": false,
+      "activityRules": {}
+    },
+    "vegabobo.dsusideloader": {
+      "name": "DSU Sideloader",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "xzr.konabess": {
+      "name": "KonaBess",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    }
+  }
+}
