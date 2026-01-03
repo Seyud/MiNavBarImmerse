@@ -1794,6 +1794,16 @@
         }
       }
     },
+    "com.miui.cit": {
+      "name": "CIT",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
     "com.mihoyo.hyperion": {
       "name": "米游社",
       "enable": true,
