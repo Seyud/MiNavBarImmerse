@@ -7,6 +7,9 @@ MODDIR=${0%/*}
 
 echo "正在应用 MiNavBarImmerse 配置文件..."
 
+# 检查文件格式
+check_config_file || exit 1
+
 # 检查必要文件
 check_files_exist || exit 1
 
