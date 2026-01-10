@@ -154,7 +154,8 @@ restore_backup() {
             echo "恢复文件失败！"
         fi
     else
-        echo "未找到备份文件，跳过恢复！"
+        rm -f "$TARGET_FILE"
+        echo "未找到备份文件，直接删除自定义配置文件！"
     fi
 }
 
