@@ -17,11 +17,10 @@ echo "目标文件: $TARGET_FILE"
 # 检查必要文件
 check_files_exist || abort "检查必要文件失败"
 
-# 如果目标文件存在，先备份
-if [ -f "$TARGET_FILE" ]; then
-    echo "目标文件已存在，执行备份..."
-    backup_config || abort "备份配置文件失败"
-fi
+# 先备份
+echo "执行备份..."
+backup_config || abort "备份配置文件失败"
+
 
 # 应用配置
 apply_custom_config || abort "应用配置文件失败"
