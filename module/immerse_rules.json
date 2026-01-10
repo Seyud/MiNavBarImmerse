@@ -3474,8 +3474,8 @@
           "color": null
         },
         "com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI": {
-          "mode": 1,
-          "color": 0
+          "mode": 2,
+          "color": null
         },
         "com.tencent.mm.ui.LauncherUI": {
           "mode": 0,
