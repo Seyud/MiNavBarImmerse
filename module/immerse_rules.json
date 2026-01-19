@@ -3465,6 +3465,10 @@
           "mode": 0,
           "color": null
         },
+        "com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI": {
+          "mode": 0,
+          "color": null
+        },
         "com.tencent.mm.plugin.lite.ui.WxaLiteAppSheetUI": {
           "mode": 1,
           "color": 0
@@ -3482,10 +3486,6 @@
           "color": null
         },
         "com.tencent.mm.ui.chatting.ChattingUI": {
-          "mode": 0,
-          "color": null
-        },
-        "com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI": {
           "mode": 0,
           "color": null
         },
