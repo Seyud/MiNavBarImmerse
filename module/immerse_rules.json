@@ -4626,6 +4626,16 @@
           "color": null
         }
       }
+    },
+    "com.gonlan.iplaymtg": {
+      "name": "旅法师营地",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
     }
   }
 }
