@@ -1146,6 +1146,16 @@
         }
       }
     },
+    "com.gonlan.iplaymtg": {
+      "name": "旅法师营地",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
     "com.google.android.gms": {
       "name": "Google Play 服务",
       "enable": false,
@@ -4619,16 +4629,6 @@
     },
     "xzr.konabess": {
       "name": "KonaBess",
-      "enable": true,
-      "activityRules": {
-        "*": {
-          "mode": 2,
-          "color": null
-        }
-      }
-    },
-    "com.gonlan.iplaymtg": {
-      "name": "旅法师营地",
       "enable": true,
       "activityRules": {
         "*": {
