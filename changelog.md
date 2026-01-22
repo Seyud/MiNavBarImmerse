@@ -5,10 +5,13 @@
 ### 新增
 
 - 旅法师营地 (__@miaonai__)
+- 1DM+ (__@Ianzb__) (#43)
+- MT管理器（测试版） (__@Ianzb__) (#45)
 
 ### 贡献者
 
 [@miaonai](https://github.com/miaonai)
+[@Ianzb](https://github.com/Ianzb)
 
 ## 2026-01-10
 

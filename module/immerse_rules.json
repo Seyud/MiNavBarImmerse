@@ -42,6 +42,37 @@
           "color": null
         }
       }
+    },"bin.mt.plus.canary": {
+      "name": "MT管理器（测试版）",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.byyoung.setting.HomePage.activitys.MainActivity": {
+          "mode": 0,
+          "color": null
+        }
+      }
+    },
+    "idm.internet.download.manager.plus": {
+      "name": "1DM+",
+      "enable": true,
+      "activityRules": {
+        "idm.internet.download.manager.MainActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "idm.internet.download.manager.IDMSettingsActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "acr.browser.lightning.activity.MainActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
     },
     "cn.com.chsi.chsiapp": {
       "name": "学信网",
