@@ -1,9 +1,6 @@
+import json
 
-def xml_to_dict(path:str):
-    import xmltodict
-    with open(path, "r",encoding="utf-8") as f:
-        xml_data = f.read()
-    return xmltodict.parse(xml_data)
+import xmltodict
 
 
 def rgba_to_argb_int(rgba_hex: str) -> int:
@@ -127,6 +124,8 @@ def argb_int_to_components(argb_int: int) -> tuple:
     b = argb_int & 0xFF
 
     return a, r, g, b
+
+
 def is_number(s):
     """判断字符串是否可以转换为数字（整数或浮点数）"""
     try:
@@ -134,3 +133,21 @@ def is_number(s):
         return True
     except ValueError:
         return False
+
+
+def read_file(path: str):
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read()
+
+
+def read_json_file(path: str):
+    return json.loads(read_file(path))
+
+
+def read_xml_file(path: str):
+    return xmltodict.parse(read_file(path))
+
+
+def save_file(path: str, data: str):
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(data)

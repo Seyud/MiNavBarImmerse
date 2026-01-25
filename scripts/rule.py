@@ -1,7 +1,3 @@
-import json
-
-import xmltodict
-
 from utils import *
 
 
@@ -46,7 +42,7 @@ class ActivityRule:
 
     @classmethod
     def fromData(cls, mode: str, name: str, data):
-        if mode in ["dict" ,"33","30"]:
+        if mode in ["dict", "33", "30"]:
             return cls(name=name, **data)
         elif mode == "22":
             data = data.split(":")
@@ -91,11 +87,13 @@ class AppRule:
             result = {"name": self.name, "enable": self.enable}
             if self.disableVersionCode is not None:
                 result["disableVersionCode"] = self.disableVersionCode
-            result["activityRules"] = {name: rule.toData(mode) for name, rule in self.activityRules.items()}
+            sorted_activity_rules = sorted(self.activityRules.items(), key=lambda x: x[0])
+            result["activityRules"] = {name: rule.toData(mode) for name, rule in sorted_activity_rules}
             return result
         elif mode == "22":
-            result = {"@name": self.package_name, "@enable": self.enable, "@activityRule": ",".join([i.toData(mode) for i in self.activityRules.values()]) if self.activityRules else ""}
-
+            sorted_activities = sorted(self.activityRules.values(), key=lambda x: x.name)
+            activity_rules_str = ",".join([i.toData(mode) for i in sorted_activities]) if sorted_activities else ""
+            result = {"@name": self.package_name, "@enable": self.enable, "@activityRule": activity_rules_str}
             return result
 
     @classmethod
@@ -131,21 +129,33 @@ class Rule:
 
     def toData(self, mode: str = "dict"):
         if mode in "dict":
-            result = {"dataVersion": "999999",
-                      "modules": "navigation_bar_immersive_application_config_new",
-                      "modifyApps": "modifyApps", }
+            sorted_rules = sorted(self.NBIRules.items(), key=lambda x: x[0])
+            result = {
+                "dataVersion": "999999",
+                "modules": "navigation_bar_immersive_application_config_new",
+                "modifyApps": "modifyApps",
+            }
             if self.NBIRules:
-                result["NBIRules"] = {package_name: rule.toData(mode) for package_name, rule in self.NBIRules.items()}
+                result["NBIRules"] = {package_name: rule.toData(mode) for package_name, rule in sorted_rules}
             return result
         elif mode in ["33", "30"]:
-            result = {"dataVersion": "999999",
-                      "modules": "navigation_bar_immersive_application_config_new",
-                      "modifyApps": "modifyApps", }
+            sorted_rules = sorted(self.NBIRules.items(), key=lambda x: x[0])
+            result = {
+                "dataVersion": "999999",
+                "modules": "navigation_bar_immersive_application_config_new",
+                "modifyApps": "modifyApps",
+            }
             if self.NBIRules:
-                result["NBIRules"] = {package_name: rule.toData(mode) for package_name, rule in self.NBIRules.items()}
+                result["NBIRules"] = {package_name: rule.toData(mode) for package_name, rule in sorted_rules}
             return json.dumps(result, indent=2, ensure_ascii=False)
         elif mode == "22":
-            result = {"NBIRules": {'@xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', "package": [i.toData(mode) for i in self.NBIRules.values()]}}
+            sorted_rules = sorted(self.NBIRules.values(), key=lambda x: x.package_name)
+            result = {
+                "NBIRules": {
+                    '@xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
+                    "package": [i.toData(mode) for i in sorted_rules]
+                }
+            }
             result = xmltodict.unparse(result, pretty=True, encoding="utf-8", short_empty_elements=True)
             return result
 
@@ -168,3 +178,15 @@ class Rule:
     def updateFromRule(self, rule):
         self.updateFromDict(rule.toData())
         return self
+
+
+def importFromOS33(path: str):
+    return Rule.fromData("33", read_json_file(path))
+
+
+def importFromOS30(path: str):
+    return Rule.fromData("30", read_json_file(path))
+
+
+def importFromOS22(path: str):
+    return Rule.fromData("22", read_xml_file(path))

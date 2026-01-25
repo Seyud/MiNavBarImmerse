@@ -44,12 +44,12 @@ jobs:
 
       - name: 安装依赖
         run: |
-          pip3 install pypinyin
+          pip3 install -r scripts/requirements.txt
 
       - name: 整理JSON和CSV文件
         run: |
-          python3 scripts/sort_release_files.py module/immerse_rules.json list.csv
-          python3 scripts/json2xml.py module/immerse_rules.json -o module/immerse_rules.xml
+          python3 scripts/sort_csv.py
+          python3 scripts/release.py
 
 
       - name: 更新模块文件
