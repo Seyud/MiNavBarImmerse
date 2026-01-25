@@ -24,9 +24,13 @@ jobs:
       - name: 检出仓库文件
         uses: actions/checkout@v6
 
+      - name: 安装依赖
+        run: |
+          pip3 install -r scripts/requirements.txt
+
       - name: 校验JSON文件
         run: |
-          python3 scripts/validate_json.py module/immerse_rules.json
+          python3 scripts/validate_json.py
 
   Sort-And-Build:
     permissions:
