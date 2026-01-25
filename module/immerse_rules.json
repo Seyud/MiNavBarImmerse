@@ -56,19 +56,6 @@
           "color": null
         }
       }
-    },"gcd.dvpl": {
-      "name": "DVPL 转换器",
-      "enable": true,
-      "activityRules": {
-        "gcd.dvpl.view.AppChooser": {
-          "mode": 2,
-          "color": null
-        },
-        "gcd.dvpl.activity.ActivityMain": {
-          "mode": 2,
-          "color": null
-        }
-      }
     },
     "cn.com.chsi.chsiapp": {
       "name": "学信网",
@@ -4390,6 +4377,20 @@
       "enable": true,
       "activityRules": {
         "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "gcd.dvpl": {
+      "name": "DVPL 转换器",
+      "enable": true,
+      "activityRules": {
+        "gcd.dvpl.activity.ActivityMain": {
+          "mode": 2,
+          "color": null
+        },
+        "gcd.dvpl.view.AppChooser": {
           "mode": 2,
           "color": null
         }
