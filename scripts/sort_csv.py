@@ -183,4 +183,4 @@ def sort_csv(csv_path: Path) -> bool:
 
     print(f"Formatted and globally sorted {sum(len(g) for g in groups.values())} data rows in {csv_path}")
     return True
-sort_csv(Path("list.csv"))
+sort_csv(Path("../list.csv"))
