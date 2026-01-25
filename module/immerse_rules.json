@@ -1104,11 +1104,6 @@
       "enable": true,
       "activityRules": {}
     },
-    "com.cmcc.cmvideo": {
-      "name": "咪咕视频",
-      "enable": true,
-      "activityRules": {}
-    },
     "com.cmri.universalapp": {
       "name": "移动爱家",
       "enable": true,
@@ -1118,6 +1113,11 @@
           "color": null
         }
       }
+    },
+    "com.cmcc.cmvideo": {
+      "name": "咪咕视频",
+      "enable": true,
+      "activityRules": {}
     },
     "com.compose.batteryinfo": {
       "name": "澎湃工具箱",
