@@ -29,6 +29,15 @@
           "color": null
         }
       }
+    },"com.heytap.headset": {
+      "name": "欢律",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 2,
+          "color": null
+        }
+      }
     },
     "bin.mt.plus": {
       "name": "MT管理器",
