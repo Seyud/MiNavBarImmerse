@@ -13,7 +13,8 @@
         },
         "com.douyu.module.player.p.socialinteraction.functions.switch_room.AudioPlayerPagerActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.douyu.module.vod.p.voddownload.VodDownloadActivity": {
           "mode": 1,
@@ -62,8 +63,9 @@
       "enable": true,
       "activityRules": {
         "*": {
-          "mode": 2,
-          "color": null
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "cn.com.chsi.chsiapp.MainActivity": {
           "mode": 1,
@@ -73,7 +75,7 @@
     },
     "cn.com.langeasy.LangEasyLexis": {
       "name": "不背单词",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "cn.com.whty.cqt": {
@@ -91,10 +93,15 @@
       "enable": true,
       "activityRules": {
         "cn.damai.discover.media.MediaPagerActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 0,
+          "color": null
         },
         "cn.damai.filmdetail.activity.DMFilmDetailActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.taobao.movie.android.app.seat.ui.activity.SelectSeatActivity": {
           "mode": 1,
           "color": 1
         }
@@ -145,6 +152,14 @@
         "cn.soulapp.cpnt_voiceparty.soulhouse.SoulHouseActivity": {
           "mode": 0,
           "color": null
+        },
+        "cn.soul.android.soul_rn_sdk.page.singleengine.SoulRnSingleEngineActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "cn.soulapp.android.h5.activity.H5Activity": {
+          "mode": 2,
+          "color": 1
         }
       }
     },
@@ -213,8 +228,9 @@
       "enable": true,
       "activityRules": {
         "*": {
-          "mode": 1,
-          "color": 0
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.MobileTicket.scan.as.tool.ToolsCaptureActivity": {
           "mode": 2,
@@ -226,7 +242,8 @@
         },
         "com.alipay.mobile.nebulacore.ui.H5Activity": {
           "mode": 1,
-          "color": -1
+          "color": -1,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -246,7 +263,8 @@
       "activityRules": {
         "com.mqunar.react.base.stack.container.QReactNativeActivity1": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.mqunar.react.base.stack.container.QReactNativeActivity2": {
           "mode": 1,
@@ -264,7 +282,8 @@
       "activityRules": {
         "com.uc.browser.InnerUCMobile": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -301,7 +320,7 @@
           "color": 1
         },
         "com.achievo.vipshop.productlist.activity.VerticalBrandProductListActivity": {
-          "mode": 1,
+          "mode": 2,
           "color": 1
         },
         "com.achievo.vipshop.search.activity.SearchFilterActivity": {
@@ -309,7 +328,7 @@
           "color": 1
         },
         "com.achievo.vipshop.search.activity.TabSearchProductListActivity": {
-          "mode": 1,
+          "mode": 2,
           "color": 1
         },
         "com.achievo.vipshop.shortvideo.activity.VideoListActivity": {
@@ -351,6 +370,14 @@
         "com.achievo.vipshop.userorder.activity.address.AddressNewActivity": {
           "mode": 1,
           "color": 1
+        },
+        "com.achievo.vipshop.reputation.activity.VipFaqListActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.achievo.vipshop.commons.logic.baseview.NewSpecialActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
@@ -376,7 +403,7 @@
     },
     "com.alibaba.android.rimet": {
       "name": "学习强国",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.alibaba.wireless": {
@@ -385,14 +412,50 @@
       "activityRules": {
         "com.alibaba.wireless.newdetailv2.NewDetailV2Activity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.alibaba.wireless.share.ShareActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.alibaba.wireless.container.windvane.AliWindvaneActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.taobao.message.chat.page.chat.ChatActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.alibaba.wireless.newsearch.result.view.QuickSearchResultActivity": {
+          "mode": -1,
+          "color": null,
+          "dialogMode": 0
+        },
+        "com.alibaba.wireless.launch.home.V5HomeActivity": {
+          "mode": -1,
+          "color": null,
+          "dialogMode": 0
+        },
+        "com.alibaba.wireless.detail_ng.DetailActivity": {
+          "mode": -1,
+          "color": null,
+          "dialogMode": 0
         }
       }
     },
     "com.android.bankabc": {
       "name": "中国农业银行",
       "enable": true,
-      "activityRules": {}
+      "activityRules": {
+        "com.alipay.mobile.nebulacore.ui.H5Activity": {
+          "mode": 0,
+          "color": null
+        }
+      }
     },
     "com.android.email": {
       "name": "小米电子邮件",
@@ -416,7 +479,7 @@
     },
     "com.android.vending": {
       "name": "谷歌应用商店",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.anjuke.android.app": {
@@ -429,7 +492,8 @@
         },
         "com.anjuke.android.app.mainmodule.hybrid.HybridActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.anjuke.android.app.newhouse.newhouse.building.detail.XFBuildingDetailActivity": {
           "mode": 0,
@@ -458,6 +522,15 @@
         "com.wuba.housecommon.videolist.HouseRentVideoListActivityV2": {
           "mode": 0,
           "color": null
+        },
+        "com.anjuke.android.app.newhouse.newhouse.building.moreinfo.info.XFBuildingInfoActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.wuba.housecommon.detail.activity.ApartmentBigImageActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -468,6 +541,11 @@
         "*": {
           "mode": 1,
           "color": 0
+        },
+        "com.autonavi.map.activity.SplashActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -481,7 +559,8 @@
         },
         "com.baidu.baidumaps.MapsActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -506,6 +585,26 @@
         "com.baidu.voicesearh.voice.controller.VoiceSearchShellActivity": {
           "mode": 1,
           "color": 1
+        },
+        "com.baidu.haokan.newhaokan.ares.AresActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.baidu.searchbox.newreader.novel.view.activity.NovelSoundPlayerActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.baidu.searchbox.live.list.MixLiveTranslucentActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.baidu.swan.apps.SwanAppActivity*": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -569,7 +668,8 @@
       "activityRules": {
         "com.baidu.browser.search.LightSearchActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.baidu.live.goods.detail.act.MainActivity": {
           "mode": 0,
@@ -580,8 +680,9 @@
           "color": null
         },
         "com.baidu.searchbox.MainActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.baidu.searchbox.aibot.AIBotActivity": {
           "mode": 2,
@@ -593,11 +694,31 @@
         },
         "com.baidu.searchbox.live.list.MixLiveTranslucentActivity": {
           "mode": 1,
-          "color": -16777216
+          "color": -16777216,
+          "sf_sampling_mode": 1
         },
         "com.baidu.swan.apps.SwanAppActivity": {
           "mode": 2,
           "color": null
+        },
+        "com.baidu.searchbox.novel.audio.NovelSoundPlayerActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.baidu.searchbox.music.TTSFullScreenPlayerActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.baidu.ugc.image.ImageEditActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.baidu.searchbox.video.collectionflow.CollectionFlowActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -608,12 +729,34 @@
         "com.cainiao.wireless.guest.GuestModeActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.baidu.searchbox.lightbrowser.LightBrowserActivityExt1": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.voicesearh.voice.controller.VoiceSearchShellActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.baidu.searchbox.godeye.CodeScannerActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.browser.search.LightSearchActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.baidu.searchbox.music.TTSFullScreenPlayerActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
     "com.bankcomm.Bankcomm": {
       "name": "交通银行",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.bubblesoft.android.bubbleupnp": {
@@ -693,6 +836,26 @@
         "com.chaoxing.mobile.main.ui.MainTabActivity": {
           "mode": 1,
           "color": 1
+        },
+        "com.chaoxing.mobile.webapp.ui.WebAppCommonViewer": {
+          "mode": 2,
+          "color": 1
+        },
+        "com.chaoxing.mobile.study.home.mainpage2.microread.MicroReadActivity": {
+          "mode": 2,
+          "color": 1
+        },
+        "com.chaoxing.mobile.course.ui.MyCourseActivity": {
+          "mode": 2,
+          "color": 1
+        },
+        "com.chaoxing.mobile.mobileoa.schedule.ScheduleListActivity": {
+          "mode": 2,
+          "color": 1
+        },
+        "com.chaoxing.mobile.group.ui.TopicBodyActivity": {
+          "mode": 2,
+          "color": 1
         }
       }
     },
@@ -702,7 +865,8 @@
       "activityRules": {
         "com.boc.bocsoft.mobile.bocmobile.buss.customerservice.common.activity.CustomerServiceActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -717,6 +881,11 @@
         "com.nantian.iBank.ui.activity.container.ProgramSingleWindowActivity": {
           "mode": 2,
           "color": null
+        },
+        "*": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -737,7 +906,7 @@
     },
     "com.cmcc.cmvideo": {
       "name": "咪咕视频",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.cmri.universalapp": {
@@ -767,6 +936,26 @@
         "*": {
           "mode": 1,
           "color": 0
+        },
+        "com.ct.client.activity.MainActivity": {
+          "mode": 1,
+          "color": 1,
+          "appNavColorDisabled": 1
+        },
+        "io.dcloud.feature.sdk.multi.DCUniMPActivity0": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.ct.client.common.webview.OnlineBusinessWebkitActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.ct.client.common.webview.CommWebkitActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -775,8 +964,8 @@
       "enable": true,
       "activityRules": {
         "com.autohome.main.article.zbusiness.video.SlideVideoPageActivity": {
-          "mode": 1,
-          "color": 1
+          "mode": 0,
+          "color": null
         },
         "com.autohome.mainlib.business.reactnative.base.AHCommRNActivity": {
           "mode": 1,
@@ -801,8 +990,8 @@
           "color": null
         },
         "com.dianping.movie.activity.DpMovieDetailActivity": {
-          "mode": 2,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "com.dianping.movie.trade.MovieTitansActivity": {
           "mode": 0,
@@ -813,7 +1002,7 @@
           "color": null
         },
         "com.dianping.nova.picasso.DPPicassoBoxActivity": {
-          "mode": 2,
+          "mode": 0,
           "color": null
         },
         "com.dianping.shopshell.PexusPoiActivity": {
@@ -822,15 +1011,16 @@
         },
         "com.dianping.shortvideo.activity.PicassoVideoBoxActivity": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.dianping.social.activity.GuideDetailV3Activity": {
           "mode": 1,
           "color": 1
         },
         "com.dianping.social.activity.NewFeedDetailActivity": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null
         },
         "com.dianping.tuan.activity.DealDetailAgentActivity": {
           "mode": 0,
@@ -857,8 +1047,8 @@
           "color": null
         },
         "com.meituan.android.movie.tradebase.activity.SelectSeatActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "com.meituan.android.mrn.container.MRNBaseActivity": {
           "mode": 0,
@@ -886,6 +1076,10 @@
         },
         "com.sankuai.xm.imui.session.SessionActivity": {
           "mode": 0,
+          "color": null
+        },
+        "com.dianping.live.live.mrn.MLiveMRNActivity": {
+          "mode": 2,
           "color": null
         }
       }
@@ -934,7 +1128,8 @@
         },
         "com.dragon.read.component.shortvideo.impl.ShortSeriesActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.dragon.read.hybrid.webview.WebViewActivity": {
           "mode": 2,
@@ -960,6 +1155,11 @@
       "activityRules": {
         "com.dz.business.main.ui.MainActivity": {
           "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.dz.business.detail.ui.page.NewPlayDetailActivity": {
+          "mode": 2,
           "color": null
         }
       }
@@ -975,6 +1175,10 @@
         "com.eastmoney.android.shortvideo.EMShortVideoRecActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.eastmoney.android.news.activity.NoticeDetailActivityV2": {
+          "mode": 1,
+          "color": 1
         }
       }
     },
@@ -995,27 +1199,27 @@
           "color": null
         },
         "com.alipay.android.phone.xriver.bundlex.CSGAPushActivity": {
-          "mode": 1,
-          "color": -1
+          "mode": 0,
+          "color": null
         },
         "com.alipay.mobile.antcardsdk.cardapp.CSPushActivity": {
           "mode": 2,
           "color": null
         },
         "com.alipay.mobile.chatapp.ui.PersonalChatMsgActivity_": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null
         },
         "com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main": {
           "mode": 0,
           "color": null
         },
         "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": -1
         },
         "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App01": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App02": {
@@ -1051,11 +1255,16 @@
           "color": 0
         },
         "com.antfortune.wealth.stock.common.cube.page.CubePageActivity": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null
         },
         "com.eg.android.AlipayGphone.AlipayLogin": {
           "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.alipay.mobile.beehive.photo.ui.PhotoPreviewActivity": {
+          "mode": 2,
           "color": null
         }
       }
@@ -1172,7 +1381,7 @@
     },
     "com.google.android.gms": {
       "name": "Google Play 服务",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.google.android.youtube": {
@@ -1202,6 +1411,16 @@
         "com.gotokeep.keep.mo.business.store.activity.detail.GoodsDetailActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.gotokeep.keep.base.webview.KeepInProcessWebViewActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.gotokeep.keep.km.business.ubik.activity.UbikSwitchCoachActivity": {
+          "mode": 1,
+          "color": 1,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -1210,12 +1429,14 @@
       "enable": true,
       "activityRules": {
         "*": {
-          "mode": 2,
-          "color": null
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.mc10086.cmcc.view.tabs.AppTabFragment": {
           "mode": 1,
-          "color": -1
+          "color": 1,
+          "appNavColorDisabled": 1
         }
       }
     },
@@ -1253,7 +1474,18 @@
       "activityRules": {
         "com.huawei.health.h5pro.core.H5ProWebViewActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.huawei.ui.device.activity.adddevice.OneKeyScanActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.huawei.ui.main.stories.me.activity.AppSettingActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -1263,10 +1495,29 @@
       "activityRules": {
         "com.hunantv.imgo.activity.MainActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.mgtv.ui.videoplay.MGVideoPlayActivity": {
           "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.mgtv.ui.cornucopia.CornucopiaActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.mgtv.ui.search.SearchActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.mgtv.ui.channel.selected.second.SelectedSecondActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.mgtv.ui.channel.library.ui.VideoLibraryActivity": {
+          "mode": 2,
           "color": null
         }
       }
@@ -1301,7 +1552,8 @@
         },
         "com.shizhuang.duapp.modules.rn.mini.MiniReactActivity$MiniUIXReactActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -1336,6 +1588,11 @@
         "icbc.com.icbccustomerservice.chat.ui.CsmPublicChatActivity": {
           "mode": 1,
           "color": -1
+        },
+        "*": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -1424,6 +1681,10 @@
           "color": null
         },
         "com.jingdong.common.jdreactFramework.activities.JDReactNativeCommonActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.jd.lib.productdetailmini.PdMiniActivity": {
           "mode": 2,
           "color": null
         }
@@ -1435,19 +1696,32 @@
       "activityRules": {
         "com.alipay.mobile.nebulacore.ui.H5Activity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.hellobike.atlas.business.portal.PortalActivity": {
           "mode": 1,
           "color": -1
         },
         "com.hellobike.moments.business.traveldata.TravelDataActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "com.hellobike.unpaid.UnpaidOrderActivity": {
           "mode": 1,
           "color": -1
+        },
+        "com.hellobike.userbundle.business.login.LoginActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.hellobike.business.productcenter.home.taxi.main.EcoPaxMainActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.hellobike.hitch.business.homenew.HitchHomeActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
@@ -1467,7 +1741,7 @@
     },
     "com.job.android": {
       "name": "前程无忧51Job",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.jooan.qiaoanzhilian": {
@@ -1500,6 +1774,14 @@
         "org.geometerplus.android.fbreader.FBReader": {
           "mode": 0,
           "color": null
+        },
+        "com.qimao.qmuser.view.SettingActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.km.app.home.view.TaskCenterActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
@@ -1517,7 +1799,8 @@
         },
         "com.kuaishou.merchant.transaction.detail.contentdetail.MerchantContentDetailActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.kuaishou.merchant.transaction.detail.detailv2.MerchantDetailV2Activity": {
           "mode": 1,
@@ -1545,11 +1828,13 @@
         },
         "com.yxcorp.gifshow.detail.PhotoDetailActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.yxcorp.gifshow.detail.PhotoDetailActivityTablet": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.yxcorp.gifshow.detail.RtcCallPhotoDetailActivity": {
           "mode": 1,
@@ -1562,6 +1847,10 @@
         "com.yxcorp.gifshow.v3.EditorActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.smile.gifshow.post.profile.ProfileUpdatePostImageCropActivity": {
+          "mode": 1,
+          "color": 1
         }
       }
     },
@@ -1576,6 +1865,15 @@
         "com.kugou.android.app.splash.SplashActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.kugou.framework.musicfees.ui.feeintercept.FeeInterceptWebActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.kugou.fanxing.allinone.watch.liveroominone.media.FALiveRoomInOneActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -1604,13 +1902,27 @@
         "com.kwai.videoeditor.vega.slideplay.v2.activity.SlidePlayActivityV2": {
           "mode": 0,
           "color": null
+        },
+        "com.kwai.videoeditor.support.album.StartCreateActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
     "com.larus.nova": {
       "name": "豆包",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.larus.home.impl.MainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.larus.home.impl.alias.AliasActivity1": {
+          "mode": 0,
+          "color": null
+        }
+      }
     },
     "com.lefan.signal": {
       "name": "信号检测仪",
@@ -1624,7 +1936,7 @@
     },
     "com.lianjia.beike": {
       "name": "贝壳找房",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.lingan.seeyou": {
@@ -1637,7 +1949,8 @@
         },
         "com.lingan.seeyou.ui.activity.main.SeeyouActivity": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.meiyou.community.ui.detail.topic.activity.TopicDetailActivity": {
           "mode": 1,
@@ -1646,6 +1959,19 @@
         "com.meiyou.ecomain.ui.detail_v3.EcoGoodsDetailActivityV3": {
           "mode": 1,
           "color": 1
+        },
+        "com.meiyou.period.base.activity.PreviewImageWithDragCloseActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.lingan.seeyou.ui.activity.main.identifynew.family.QrCodeScanActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.meiyou.yunqi.tools.ui.ymb.YmbMainActivity": {
+          "mode": 0,
+          "color": null
         }
       }
     },
@@ -1722,13 +2048,32 @@
         "com.max.xiaoheihe.module.bbs.post_edit.PostTabActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.max.xiaoheihe.module.bbs.ChannelsDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.max.xiaoheihe.module.webview.WebActionActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.max.xiaoheihe.module.game.SteamBindActivity": {
+          "mode": 2,
+          "color": -1
         }
       }
     },
     "com.meta.box": {
       "name": "233乐园",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.meta.box.ui.main.MainActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
     },
     "com.mfcloudcalculate.networkdisk": {
       "name": "123云盘",
@@ -1916,7 +2261,7 @@
     },
     "com.netease.cloudmusic": {
       "name": "网易云音乐",
-      "enable": false,
+      "enable": true,
       "activityRules": {
         "*": {
           "mode": 2,
@@ -1937,6 +2282,31 @@
         "com.netease.cloudmusic.music.biz.search.activity.SearchActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.netease.cloudmusic.music.biz.share.SharePanelActivity": {
+          "mode": 0,
+          "color": -1
+        },
+        "com.netease.cloudmusic.activity.H5CustomViewActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.netease.cloudmusic.activity.IconChangeDefaultAlias": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1,
+          "dialogMode": 1,
+          "popupMode": 0
+        },
+        "com.netease.cloudmusic.messagecenter.activity.PrivateMsgDetailActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -2024,13 +2394,44 @@
     },
     "com.phoenix.read": {
       "name": "红果免费短剧",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.dragon.read.reader.ui.ReaderActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.AnchorV4Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.bytedance.android.openlive.plugin.OpenLiveDummyActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.dragon.read.component.shortvideo.impl.ShortSeriesActivity": {
+          "mode": 0,
+          "color": null,
+          "dialogMode": 0
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.ProductDetailActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.dragon.read.social.post.details.UgcPostDetailsActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
     },
     "com.pingan.paces.ccms": {
       "name": "平安口袋银行",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.pingan.lzchat.OasisActivity": {
+          "mode": 1,
+          "color": -1
+        }
+      }
     },
     "com.plan.kot32.tomatotime": {
       "name": "番茄 ToDo",
@@ -2082,17 +2483,34 @@
     },
     "com.qiyi.video": {
       "name": "爱奇艺",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.qiyi.video.WelcomeActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.iqiyi.webcontainer.commonwebview.CommonWebView": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
     },
     "com.qiyi.video.lite": {
       "name": "爱奇艺极速版",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.qiyi.video.lite.videoplayer.activity.PlayerV2Activity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
     },
     "com.qqgame.hlddz": {
       "name": "欢乐斗地主",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.quark.browser": {
@@ -2101,7 +2519,8 @@
       "activityRules": {
         "com.ucpro.BrowserActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -2183,15 +2602,17 @@
         },
         "com.meituan.android.mrn.container.MRNBaseActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.meituan.android.mrn.container.MRNStandardActivity": {
           "mode": 0,
           "color": null
         },
         "com.meituan.android.pt.homepage.activity.MainActivity": {
-          "mode": 0,
-          "color": null
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.meituan.android.scan.NewArActivity": {
           "mode": 1,
@@ -2203,7 +2624,8 @@
         },
         "com.meituan.msc.modules.container.MSCActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.meituan.msc.modules.container.MSCTransparentActivity": {
           "mode": 1,
@@ -2232,6 +2654,20 @@
         "com.sankuai.waimai.store.drug.home.NewDrugHomeActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.meituan.android.hotel.reuse.htchomepage.HtcHomepageActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.meituan.sankuai.map.unity.lib.modules.unitymap.UnityMapActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.dianping.live.live.mrn.MLiveMRNActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -2259,8 +2695,9 @@
           "color": null
         },
         "com.meituan.msc.modules.container.MSCActivity": {
-          "mode": 1,
-          "color": -1
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.sankuai.waimai.business.page.homepage.MainActivity": {
           "mode": 0,
@@ -2284,7 +2721,7 @@
     },
     "com.sdu.didi.gsui": {
       "name": "滴滴车主",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.sdu.didi.psnger": {
@@ -2329,7 +2766,8 @@
         },
         "com.sf.activity.DefaultActivity": {
           "mode": 1,
-          "color": -1
+          "color": -1,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -2374,6 +2812,27 @@
         "com.shizhuang.duapp.modules.user.setting.user.ui.RealNameAuthenticationActivityV2": {
           "mode": 1,
           "color": 1
+        },
+        "com.shizhuang.duapp.modules.du_trend_details.trend.activity.FeedDetailsActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.shizhuang.duapp.modules.feed.productreview.activity.ProductDetailEvaluateListActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.shizhuang.duapp.modules.web.ui.FloatingBrowserActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.shizhuang.duapp.modules.web.ui.LargeScreenBrowserActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.shizhuang.duapp.modules.identify.ui.IdentifyOnlineDetailsActivity": {
+          "mode": 0,
+          "color": null
         }
       }
     },
@@ -2400,7 +2859,7 @@
         },
         "com.sina.weibo.feed.halfcontainer.HalfContainerPageActivity": {
           "mode": 1,
-          "color": 1
+          "color": -1
         },
         "com.sina.weibo.feed.home.HomeActivity": {
           "mode": 1,
@@ -2408,7 +2867,8 @@
         },
         "com.sina.weibo.page.ProfileInfoActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.sina.weibo.preview.MediaPreviewActivity": {
           "mode": 2,
@@ -2464,7 +2924,8 @@
       "activityRules": {
         "com.kuaishou.live.core.basic.activity.LiveSlideActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.kuaishou.merchant.pagedy.page.MerchantEraActivity": {
           "mode": 1,
@@ -2500,11 +2961,13 @@
         },
         "com.yxcorp.gifshow.detail.PhotoDetailActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.yxcorp.gifshow.detail.PhotoDetailActivityTablet": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.yxcorp.gifshow.detail.RtcCallPhotoDetailActivity": {
           "mode": 1,
@@ -2517,6 +2980,14 @@
         "com.yxcorp.gifshow.v3.EditorActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.yxcorp.gifshow.profile.activity.UserProfileActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.smile.gifshow.post.profile.ProfileUpdatePostImageCropActivity": {
+          "mode": 1,
+          "color": 1
         }
       }
     },
@@ -2567,12 +3038,17 @@
           "color": 1
         },
         "com.sohu.newsclient.quicknews.activity.QuickNewsActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.sohu.newsclient.videodetail.ImmersiveVideoActivity": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
+        },
+        "com.sohu.newsclient.app.search.SearchActivity3": {
+          "mode": 2,
+          "color": null
         }
       }
     },
@@ -2583,6 +3059,19 @@
         "com.sohu.qfsdk.live.ui.activity.LiveActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.sohu.sohuvideo.ui.homepage.MainActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.sohu.sohuvideo.ui.LiteLoginActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.sohu.sohuvideo.ui.CopyrightActivity": {
+          "mode": 1,
+          "color": 1
         }
       }
     },
@@ -2654,7 +3143,8 @@
         },
         "com.bytedance.novel.shortseries.router.ShortSeriesProxyActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.bytedance.ugc.UgcDetailInfoActivity": {
           "mode": 0,
@@ -2686,7 +3176,8 @@
         },
         "com.ss.android.detail.feature.detail2.view.NewDetailActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.detail.feature.detail2.view.NewVideoDetailActivity": {
           "mode": 0,
@@ -2744,6 +3235,16 @@
         },
         "com.ss.android.article.video.activity.SplashActivity": {
           "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.ixigua.innerstream.specific.container.ActivityContainer": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.ixigua.imageview.specific.imageview.ThumbPreviewActivity": {
+          "mode": 2,
           "color": null
         }
       }
@@ -2758,7 +3259,8 @@
         },
         "com.ss.android.auto.activity.UploadBrowserActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.auto.livesaas.live.activity.LiveActivity": {
           "mode": 0,
@@ -2770,13 +3272,22 @@
         },
         "com.ss.android.auto.ugc.video.activity.UgcVideoDetailActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.garage.activity.CarFilterActivity": {
           "mode": 1,
           "color": 1
         },
         "com.ss.android.mediachooser.MediaChooserActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.ss.android.auto.activity.CarStylePkActivityV2": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.ss.android.garage.activity.CarAllInfoActivity": {
           "mode": 1,
           "color": 1
         }
@@ -2808,7 +3319,8 @@
         },
         "com.bytedance.locallife.page.poi.LifePoiActivity": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.bytedcert.activities.SDKWebActivity": {
           "mode": 0,
@@ -2880,7 +3392,8 @@
         },
         "com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.ugc.aweme.splash.SplashActivity": {
           "mode": 0,
@@ -2921,6 +3434,27 @@
         "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity3": {
           "mode": 0,
           "color": null
+        },
+        "com.ss.android.bytedcert.web.anniex.AnnieXCertActivity": {
+          "mode": 1,
+          "color": -1
+        },
+        "com.ss.android.ugc.aweme.live.LiveDummyActivity": {
+          "mode": -1,
+          "color": null,
+          "dialogMode": 1
+        },
+        "com.ss.android.ugc.aweme.setting.ui.DouYinSettingNewVersionActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsActivity*": {
+          "mode": 2,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.profile.ui.CropActivity": {
+          "mode": 1,
+          "color": 1
         }
       }
     },
@@ -2942,7 +3476,8 @@
         },
         "com.bytedance.ies.ugc.aweme.hunter.fullpage.HunterContainerActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.ugc.aweme.bullet.ui.BulletContainerActivity": {
           "mode": 0,
@@ -2982,7 +3517,8 @@
         },
         "com.ss.android.ugc.aweme.splash.SplashActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsTransInHostStackActivity0": {
           "mode": 0,
@@ -3015,6 +3551,16 @@
         "com.tt.miniapphost.placeholder.MiniAppHostFloatStyleActivity3": {
           "mode": 0,
           "color": null
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsActivity*": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.bytedance.locallife.page.poi.LifePoiActivity": {
+          "mode": 1,
+          "color": 1,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3031,7 +3577,7 @@
           "color": null
         },
         "com.bytedance.ies.ugc.aweme.hunter.fullpage.HunterContainerActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.ss.android.ugc.aweme.commerce.sdk.mall.wholepage.MallContainerActivity": {
@@ -3040,7 +3586,8 @@
         },
         "com.ss.android.ugc.aweme.detail.ui.DetailActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.ugc.aweme.im.business.mediaselectpage.choose.MediaChooseActivity": {
           "mode": 1,
@@ -3068,7 +3615,8 @@
         },
         "com.ss.android.ugc.aweme.splash.SplashActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3089,7 +3637,7 @@
           "color": null
         },
         "com.bytedance.ies.ugc.aweme.hunter.fullpage.HunterContainerActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         },
         "com.ss.android.ugc.aweme.detail.ui.DetailActivity": {
@@ -3102,18 +3650,59 @@
         },
         "com.ss.android.ugc.aweme.live.LiveDummyActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.ss.android.ugc.aweme.live.LivePlayActivity": {
           "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.setting.ui.DouYinSettingNewVersionActivity": {
+          "mode": 2,
           "color": null
         }
       }
     },
     "com.ss.android.yumme.video": {
       "name": "抖音精选",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.ss.android.ugc.aweme.detail.ui.DetailActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.ss.android.ugc.aweme.search.ai.specificbiz.bizmodule.chat.partshow.SearchAiPartShowActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.search.activity.SearchResultActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.lvideo.theater.newui.feed.TheaterFeedActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.ss.android.ugc.aweme.splash.SplashActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.ss.android.ugc.aweme.setting.ui.SettingAccountAndSafetyActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.bytedance.android.shopping.anchorv4.containers.ProductDetailActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsActivity*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
     },
     "com.stratumauth.app": {
       "name": "Startum",
@@ -3168,11 +3757,12 @@
           "color": null
         },
         "com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity": {
-          "mode": 2,
-          "color": null
+          "mode": 1,
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity": {
-          "mode": 2,
+          "mode": 0,
           "color": null
         },
         "com.taobao.fleamarket.business.transferMoney.activity.TransferMoneyActivity": {
@@ -3181,15 +3771,25 @@
         },
         "com.taobao.idlefish.content.PostContentActivity": {
           "mode": 1,
-          "color": 0
+          "color": 1
         },
         "com.taobao.idlefish.detail.DetailActivity": {
           "mode": 1,
-          "color": 0
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.taobao.idlefish.maincontainer.activity.MainActivity": {
           "mode": 1,
-          "color": 0
+          "color": -1
+        },
+        "com.taobao.idlefish.flutter.boost.FishFlutterBoostActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.taobao.idlefish.custom.FishUserLoginActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
@@ -3210,8 +3810,8 @@
           "color": null
         },
         "com.taobao.search.searchdoor.SearchDoorActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 1
         }
       }
     },
@@ -3251,7 +3851,7 @@
         },
         "com.taobao.android.detail.wrapper.activity.DetailActivity": {
           "mode": 1,
-          "color": 0
+          "color": 1
         },
         "com.taobao.android.detail2.core.framework.NewDetailActivity": {
           "mode": 2,
@@ -3263,11 +3863,12 @@
         },
         "com.taobao.android.purchase.aura.TBBuyActivity": {
           "mode": 1,
-          "color": 0
+          "color": 1
         },
         "com.taobao.android.tbabilitykit.pop.StdPopActivityGroup": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.taobao.android.tbabilitykit.pop.StdPopContainerActivity": {
           "mode": 0,
@@ -3278,12 +3879,14 @@
           "color": null
         },
         "com.taobao.message.activity.ChatActivity": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.taobao.message.activity.ChatActivityV2": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.taobao.message.activity.ShareShopActivity": {
           "mode": 1,
@@ -3298,36 +3901,60 @@
           "color": null
         },
         "com.taobao.search.uniform.SearchActivity": {
-          "mode": 2,
+          "mode": 0,
           "color": null
         },
         "com.taobao.tao.TBMainActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.taobao.tao.welcome.Welcome": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.taobao.taolive.room.TaoLiveVideoActivity": {
-          "mode": 2,
+          "mode": 0,
           "color": null
         },
         "com.taobao.taolivehome.TaoLiveHomepageActivity": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null
         },
         "com.taobao.themis.container.app.TMSActivity": {
-          "mode": 1,
-          "color": -1
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.taobao.umipublish.weex.LcWeexPublishActivity": {
           "mode": 1,
           "color": 1
         },
         "com.taobao.weex.weexv2.page.WeexV2Activity": {
-          "mode": 2,
-          "color": null
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.alibaba.triver.container.TriverMainActivity": {
+          "mode": 1,
+          "color": 1,
+          "sf_sampling_mode": 1
+        },
+        "com.alibaba.triver.triver_shop.container.ShopLoftActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.taobao.taopai.business.image.album.ImageGalleryActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.taobao.taopai2.album.MediaPreviewActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3382,8 +4009,8 @@
           "color": 1
         },
         "com.tencent.qt.qtl.activity.barcode.BarcodeScanActivity": {
-          "mode": 1,
-          "color": -16777216
+          "mode": -16777216,
+          "color": null
         },
         "com.tencent.qt.qtl.activity.ugc.UgcFriendPostDetailActivity": {
           "mode": 1,
@@ -3413,7 +4040,8 @@
         },
         "com.tencent.gamehelper.videolist.RecommendVideoListActivity": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.tencent.tga.liveplugin.live.LivePlayerActivity": {
           "mode": 0,
@@ -3454,6 +4082,12 @@
         "com.tencent.karaoke.module.main.ui.MainTabActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1,
+          "dialogMode": 2
         }
       }
     },
@@ -3507,7 +4141,8 @@
         },
         "com.tencent.mm.ui.LauncherUI": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.tencent.mm.ui.chatting.ChattingUI": {
           "mode": 0,
@@ -3516,6 +4151,58 @@
         "com.tencent.mm.ui.conversation.NewBizConversationUI": {
           "mode": 1,
           "color": 1
+        },
+        "com.tencent.mm.plugin.wallet_core.ui.WalletCheckPwdUI": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.mm.plugin.finder.feed.ui.FinderProfileTimeLineUI": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.mm.plugin.ting.TingFlutterActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.mm.plugin.finder.ui.FinderShareFeedRelUI": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.mm.framework.app.UIPageFragmentActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.tencent.mm.ui.chatting.variants.ChattingMainUI": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.mm.plugin.audio.BizAudioFlutterActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.mm.plugin.account.ui.MobileInputUI": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandPluginUI": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3534,18 +4221,69 @@
         "com.tencent.mobileqq.activity.QPublicFragmentActivity": {
           "mode": 2,
           "color": null
+        },
+        "com.tencent.mobileqq.activity.SplashActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.sqshow.zootopia.recommend.main.ZPlanMainRecommendActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
     "com.tencent.mtt": {
       "name": "QQ浏览器",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.tencent.mtt.MainActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
     },
     "com.tencent.qqlive": {
       "name": "腾讯视频",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.tencent.qqlive.ona.browser.HollywoodH5Activity": {
+          "mode": 1,
+          "color": 1,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.qqlive.ona.browser.H5Activity": {
+          "mode": 1,
+          "color": 1,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.qqlive.qrcode.ui.ScanQRCustomActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.tencent.qqlive.iwan.IwanGameCenterActivityJava": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.qqlive.modules.vb.loginservice.QQFastEntryActivity": {
+          "mode": 1,
+          "color": -1,
+          "sf_sampling_mode": 1,
+          "dialogMode": 0,
+          "popupMode": 0
+        },
+        "com.tencent.qqlive.ona.activity.SplashHomeActivity": {
+          "mode": 0,
+          "color": null,
+          "appNavColorDisabled": 1
+        },
+        "com.tencent.qqlive.kmm.VideoDetailKmmActivityBk": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
     },
     "com.tencent.qqmusic": {
       "name": "QQ音乐",
@@ -3554,22 +4292,79 @@
         "com.tencent.qqmusic.business.lockscreennew.LockScreenActivity": {
           "mode": 2,
           "color": null
+        },
+        "com.tencent.qqmusic.activity.AppStarterActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1,
+          "dialogMode": 0
+        },
+        "com.tencent.qqmusic.camerascan.view.CameraScanActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
     "com.tencent.tmgp.dnf": {
       "name": "地下城与勇士：起源",
-      "enable": false
+      "enable": true,
+      "activityRules": {}
     },
     "com.tencent.weread": {
       "name": "微信读书",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.tencent.wework": {
       "name": "企业微信",
-      "enable": false,
-      "activityRules": {}
+      "enable": true,
+      "activityRules": {
+        "com.tencent.wework.contact.controller.CreateConversationSelectActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.wework.launch.WwMainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.tencent.wework.qydisk.flutter.activity.QyDiskFlutterActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.wework.flutter.liteapp.ui.LiteAppSuperActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.luggage.wxa.standalone_open_runtime.container.WxaContainerMultiTaskActivity*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.wework.trtc.activity.LiveNewRoomActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.wework.office.flutter.TencentOfficeFlutterActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.wework.commonFlutter.minicustomerservice.MiniCustomerServiceMainActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.wework.qydisk.flutter.activity.QyDiskTransparentFlutterActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
     },
     "com.tencent.zebra": {
       "name": "水印相机",
@@ -3581,11 +4376,11 @@
       "enable": true,
       "activityRules": {
         "com.taobao.android.order.bundle.TBOrderListActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "com.tmall.wireless.gallery.TMDetailActivity": {
-          "mode": 1,
+          "mode": 2,
           "color": 1
         },
         "com.tmall.wireless.mcartv2.TMCartActivity": {
@@ -3597,11 +4392,19 @@
           "color": 1
         },
         "com.tmall.wireless.themis.container.TMThemisActivity": {
-          "mode": 2,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "com.tmall.wireless.webview.TMCommonWebViewActivity": {
-          "mode": 1,
+          "mode": 2,
+          "color": 1
+        },
+        "mtopsdk.extra.antiattack.CheckCodeValidateActivity": {
+          "mode": 2,
+          "color": 1
+        },
+        "com.tmall.wireless.livePlay.room.TaoLiveVideoActivity": {
+          "mode": 2,
           "color": 1
         }
       }
@@ -3613,6 +4416,11 @@
         "*": {
           "mode": 1,
           "color": 1
+        },
+        "com.tmri.app.ui.activity.common.WebViewActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3621,7 +4429,7 @@
       "enable": true,
       "activityRules": {
         "*": {
-          "mode": 2,
+          "mode": 0,
           "color": null
         },
         "com.twitter.android.search.implementation.results.SearchActivity": {
@@ -3640,7 +4448,7 @@
     },
     "com.twtapp": {
       "name": "天文通",
-      "enable": false,
+      "enable": true,
       "activityRules": {
         "*": {
           "mode": 2,
@@ -3665,6 +4473,16 @@
         "*": {
           "mode": 2,
           "color": null
+        },
+        "com.umetrip.android.msky.user.login.LoginActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.umetrip.android.msky.homepage.activity.UmeHomeActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3718,7 +4536,8 @@
         },
         "com.videogo.reactnative.activity.EZReactBizActivity": {
           "mode": 1,
-          "color": -1
+          "color": 1,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3738,7 +4557,7 @@
     },
     "com.wangc.bill": {
       "name": "一木记账",
-      "enable": false,
+      "enable": true,
       "activityRules": {
         "*": {
           "mode": 2,
@@ -3764,7 +4583,7 @@
     },
     "com.wisedu.cpdaily": {
       "name": "今日校园",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "com.wuba": {
@@ -3808,7 +4627,7 @@
           "color": 1
         },
         "com.wuba.housecommon.detail.map.HouseNearbyMapAcyivity": {
-          "mode": 1,
+          "mode": 2,
           "color": 1
         },
         "com.wuba.housecommon.videolist.HouseRentVideoListActivityV2": {
@@ -3817,7 +4636,7 @@
         },
         "com.wuba.hybrid.CommonWebActivity": {
           "mode": 1,
-          "color": -1
+          "color": 1
         },
         "com.wuba.job.business.address.view.JobMapAddressActivity": {
           "mode": 1,
@@ -3828,8 +4647,8 @@
           "color": 1
         },
         "com.wuba.job.business.hrglive.JobNewLiveListActivity": {
-          "mode": 0,
-          "color": null
+          "mode": 2,
+          "color": 1
         },
         "com.wuba.job.business.im.chatpage.JobIMActivity": {
           "mode": 1,
@@ -3845,11 +4664,15 @@
         },
         "com.wuba.tradeline.search.NativeSearchResultActivity": {
           "mode": 2,
-          "color": null
+          "color": 1
         },
         "com.wuba.tribe.live.activity.TribeMultiStreamActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.wuba.house.im.HouseIMChatActivity": {
+          "mode": 2,
+          "color": 1
         }
       }
     },
@@ -3868,6 +4691,11 @@
         "com.zhuanzhuan.module.webview.page.WebContainerDialogActivity": {
           "mode": 1,
           "color": 1
+        },
+        "com.zhuanzhuan.module.webview.page.WebContainerActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3877,17 +4705,22 @@
       "activityRules": {
         "com.wudaokou.hippo.detail.ultron.DetailUltronActivity": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "com.wudaokou.hippo.order.detailUltron.OrderUltronDetailActivity": {
           "mode": 1,
           "color": 1
+        },
+        "com.wudaokou.hippo.interaction.scan.alipay.AlipayScanActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
     "com.x7890.shortcutcreator": {
       "name": "创建快捷方式",
-      "enable": false,
+      "enable": true,
       "activityRules": {
         "*": {
           "mode": 2,
@@ -3902,6 +4735,11 @@
         "com.xhey.xcamera.ui.camera.picNew.PreviewActivity": {
           "mode": 1,
           "color": -1
+        },
+        "com.xhey.basebiz.ui.GeneralActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -3964,14 +4802,20 @@
     "com.ximalaya.ting.android": {
       "name": "喜马拉雅",
       "enable": true,
-      "activityRules": {}
+      "activityRules": {
+        "com.ximalaya.ting.android.host.activity.MainActivity": {
+          "mode": 1,
+          "color": 1,
+          "dialogMode": 0
+        }
+      }
     },
     "com.xingin.xhs": {
       "name": "小红书",
       "enable": true,
       "activityRules": {
         "*": {
-          "mode": 2,
+          "mode": 0,
           "color": null
         },
         "com.xingin.alioth.search.GlobalSearchActivity": {
@@ -3992,7 +4836,7 @@
         },
         "com.xingin.matrix.detail.activity.DetailFeedActivity": {
           "mode": 1,
-          "color": 0
+          "color": 1
         },
         "com.xingin.matrix.notedetail.NoteDetailActivity": {
           "mode": 0,
@@ -4008,6 +4852,10 @@
         },
         "com.xingin.xhs.index.v2.IndexActivityV2": {
           "mode": 0,
+          "color": null
+        },
+        "com.xingin.alioth.imagesearch.active.scan.ImageSearchScanActivity": {
+          "mode": 1,
           "color": null
         }
       }
@@ -4097,7 +4945,7 @@
           "color": null
         },
         "com.dragon.read.reader.speech.page.AudioPlayActivity": {
-          "mode": 0,
+          "mode": 2,
           "color": null
         }
       }
@@ -4131,6 +4979,18 @@
         "com.xunlei.downloadprovider.frame.MainTabActivity": {
           "mode": 0,
           "color": null
+        },
+        "com.xunlei.reactnative.RNActivity$RNActivityNormal": {
+          "mode": 2,
+          "color": 1
+        },
+        "com.xunlei.downloadprovider.personal.user.feedback.FeedbackActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.xunlei.web.XLWebViewActivity$XLWebViewActivityImpl": {
+          "mode": 2,
+          "color": 1
         }
       }
     },
@@ -4144,15 +5004,20 @@
         },
         "com.xunmeng.pinduoduo.activity.NewPageActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.xunmeng.pinduoduo.activity.NewPageMaskActivity": {
           "mode": 1,
           "color": 1
         },
         "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null
+        },
+        "com.xunmeng.pinduoduo.goods.gallery.GoodsDetailGalleryActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
@@ -4194,6 +5059,14 @@
         },
         "com.youdao.dict.activity.TranslatorActivity": {
           "mode": 0,
+          "color": null
+        },
+        "com.youdao.dict.doctrans.DocTransActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.youdao.dict.activity.MiniProgramActivity": {
+          "mode": 2,
           "color": null
         }
       }
@@ -4238,7 +5111,8 @@
       "activityRules": {
         "com.zhihu.android.app.ui.activity.HostActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.zhihu.android.comment.ui.activity.CommentListActivity": {
           "mode": 1,
@@ -4304,7 +5178,8 @@
       "activityRules": {
         "com.zmzx.college.search.activity.main.activity.MainActivity": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -4354,7 +5229,8 @@
         },
         "ctrip.android.reactnative.preloadv2.CRNBaseActivityV2": {
           "mode": 1,
-          "color": 1
+          "color": 1,
+          "sf_sampling_mode": 1
         },
         "ctrip.android.wendao.ui.WDFullScreenActivity": {
           "mode": 1,
@@ -4478,7 +5354,7 @@
     },
     "mark.via": {
       "name": "Via",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "me.ele": {
@@ -4499,7 +5375,7 @@
         },
         "me.ele.android.emagex.container.EMagexActivity": {
           "mode": 1,
-          "color": -1
+          "color": 1
         },
         "me.ele.android.emagex.container.EMagexPopupActivity": {
           "mode": 1,
@@ -4522,8 +5398,8 @@
           "color": -1
         },
         "me.ele.muise.page.WeexPageActivity": {
-          "mode": 2,
-          "color": null
+          "mode": 1,
+          "color": 1
         },
         "me.ele.newretail.muise.RetailCustomWeexActivity": {
           "mode": 1,
@@ -4544,6 +5420,15 @@
         "me.ele.shopdetailv2.lmagex.ShopDetailV3Activity": {
           "mode": 1,
           "color": -1
+        },
+        "me.ele.pha.shell.ui.ElePhaActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "me.ele.coupon.CouponActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
@@ -4569,7 +5454,7 @@
     },
     "org.telegram.messenger": {
       "name": "Telegram",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "tv.danmaku.bili": {
@@ -4602,7 +5487,8 @@
         },
         "com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.bilibili.bililive.room.ui.roomv3.LiveRoomTranslucentActivity": {
           "mode": 0,
@@ -4614,15 +5500,17 @@
         },
         "com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.bilibili.bplus.im.conversation.ConversationActivity": {
           "mode": 0,
           "color": null
         },
         "com.bilibili.lib.ui.ComposeActivity": {
-          "mode": 1,
-          "color": 0
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.bilibili.lib.ui.menu.BottomDialogMenu": {
           "mode": 0,
@@ -4633,12 +5521,13 @@
           "color": null
         },
         "com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity": {
-          "mode": 2,
+          "mode": 0,
           "color": null
         },
         "com.bilibili.upper.module.contribute.up.ui.ManuscriptUpActivityV5": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "com.mall.ui.page.base.MallFragmentLoaderActivity": {
           "mode": 1,
@@ -4646,7 +5535,8 @@
         },
         "tv.danmaku.bili.MainActivityV2": {
           "mode": 0,
-          "color": null
+          "color": null,
+          "sf_sampling_mode": 1
         },
         "tv.danmaku.bili.ui.video.VideoDetailsActivity": {
           "mode": 0,
@@ -4655,12 +5545,17 @@
         "tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity": {
           "mode": 1,
           "color": 0
+        },
+        "tv.danmaku.bili.ui.webview.MWebActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     },
     "tv.danmaku.bilibilihd": {
       "name": "哔哩哔哩HD",
-      "enable": false,
+      "enable": true,
       "activityRules": {}
     },
     "vegabobo.dsusideloader": {
@@ -4680,6 +5575,631 @@
         "*": {
           "mode": 2,
           "color": null
+        }
+      }
+    },
+    "com.qinyige.navbartest2": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.qinyige.navbartest2.TestDisableImmersionActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.qinyige.navbartest2.TestSpecColorActivity": {
+          "mode": 1,
+          "color": -16777216
+        },
+        "com.qinyige.navbartest2.TestForceE2EActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.qinyige.navbartest2.TestForceDisableSFSamplingActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": -1
+        },
+        "com.qinyige.navbartest2.TestForceSFSamplingActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.qinyige.navbartest2.DialogMainActivity": {
+          "mode": 0,
+          "color": null
+        },
+        "com.qinyige.navbartest2.DisableDialogMainActivity": {
+          "mode": 0,
+          "color": null,
+          "dialogMode": 0,
+          "popupMode": 0
+        }
+      }
+    },
+    "cn.gov.tax.its": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.snda.wifilocating": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "cmb.pb": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.jd.jrapp": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.jd.jrapp.bm.jrv8.JRCustomDyPageActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.jd.jrapp.bm.mainbox.main.MainActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.jd.jrapp.bm.common.web.ui.WebActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.intsig.camscanner": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.tencent.hunyuan.app.chat": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.baidu.tieba": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.baidu.tieba.forum.ForumActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.baidu.tieba.image.ImageViewerActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.mt.mtxx.mtxx": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.mt.mtxx.mtxx.MainActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.xt.retouch": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.xt.retouch.impl.detail.view.CommunityInnerDetailActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.sgcc.wsgw.cn": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.tencent.map": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.map.AppIcon": {
+          "mode": 2,
+          "color": 1
+        }
+      }
+    },
+    "com.meitu.meiyancamera": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.baidu.wenku": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.tongcheng.android": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.moji.mjweather": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.hicorenational.antifraud": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.xtc.watch": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.moonshot.kimichat": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.netease.mc.mi": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.cmbchina.ccd.pluto.cmbActivity": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.duowan.kiwi": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.duowan.kiwi.homepage.Homepage": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.cat.readall": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.bytedance.novel.shortseries.router.ShortSeriesProxyActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.tencent.news": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.news.activity.SplashActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.news.router.shell.AudioPlayerPageActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.news.qa.view.page.QaActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.news.basebiz.ShellActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.tencent.qt.qtl": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.shortvideo.ShortVideoHomeActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.netease.uu": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.tencent.wemeet.app": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.bankcomm.maidanba": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.immomo.momo": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.cctv.yangshipin.app.androidp": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.tencent.videolite.android.business.videodetail.VideoDetailActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.videolite.android.business.videodetail.portrait.PortraitDetailActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.videolite.android.business.portraitlive.PortraitLiveActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.videolite.android.business.videodetail.portrait.PortraitVideoSeriesActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.videolite.android.ui.HomeActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.tencent.videolite.android.business.webview.interact.H5InteractActivity": {
+          "mode": 2,
+          "color": null
+        }
+      }
+    },
+    "com.yueme.itv": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "cn.com.chinatelecom.account.lib.base.ui.AuthActivity": {
+          "mode": 2,
+          "color": null
+        },
+        "com.chinatelecom.smarthome.module.mainpage.ui.SmartHomeActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.zhaopin.social": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.zhaopin.social.app.position.detail.core.view.activity.PositionDetailActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.lalamove.huolala.client": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.lalamove.huolala.main.MainTabActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.lalamove.huolala.freight.picklocation.ui.SdkPickLocationActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "cn.com.spdb.mobilebank.per": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.netease.mobimail": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.netease.mobimail.module.flutter.CustomFlutterActivity": {
+          "mode": 1,
+          "color": 1
+        }
+      }
+    },
+    "com.jym.gcmall": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.meitu.wink": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.chinatelecom.bestpayclient": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.tianyancha.skyeye": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.pingan.carowner": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.pingan.carowner.browser.BaseWebViewActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.pingan.carowner.activity.MainActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.pingan.community.activity.VideoSlideActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.midea.ai.appliances": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.midea.hybrid.business.h5.activity.H5PluginActivity": {
+          "mode": 2,
+          "color": 1
+        },
+        "com.midea.business.ucenter.security.PrivacySettingActivity": {
+          "mode": 2,
+          "color": 1
+        }
+      }
+    },
+    "cn.TuHu.android": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "cn.TuHu.Activity.search.SearchResultRNActivity": {
+          "mode": 2,
+          "color": 1
+        },
+        "cn.TuHu.Activity.AutomotiveProducts.AutoCommentActivity": {
+          "mode": 2,
+          "color": 1
+        },
+        "cn.TuHu.Activity.stores.detail.StoresDetailActivity": {
+          "mode": 2,
+          "color": 1
+        }
+      }
+    },
+    "com.handsgo.jiakao.android": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "cn.mucang.android.core.webview.HTML5Activity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.tplink.ipc": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.tplink.superapp.ui.main.MainActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.ss.android.lark": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.cib.cibmb": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.citiccard.mobilebank": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.citiccard.mobilebank.web.webpage.CommonWebPage": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.ecitic.bank.mobile": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.ecitic.bank.mobile.ui.MainActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.kuaiduizuoye.scan": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.yek.android.kfc.activitys": {
+      "name": "",
+      "enable": true,
+      "activityRules": {}
+    },
+    "com.taobao.trip": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.taobao.trip.home.HomeActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.taobao.trip.flutter.*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "cn.hsa.app": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.yipiao": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.yitong.mbank.psbc": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "cn.gov.chinatax.gt4.app": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.ccb.longjiLife": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "cn.gov.pbc.dcep": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.lynkco.customer": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "*": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.geely.lynkco.main.activity.LynkCoTabMainActivity": {
+          "mode": 1,
+          "color": 1,
+          "appNavColorDisabled": 1
+        },
+        "com.geely.lynkco.main.activity.LynkCoEntranceActivity": {
+          "mode": 1,
+          "color": 16777216,
+          "appNavColorDisabled": 1
+        }
+      }
+    },
+    "com.alicloud.databox": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.alicloud.databox.community.message.MessageListActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.alicloud.databox.webview.jsbridge.BridgeWebViewActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        },
+        "com.alicloud.databox.biz.note.EditNoteActivity": {
+          "mode": 0,
+          "color": null,
+          "sf_sampling_mode": 1
+        }
+      }
+    },
+    "com.okcam.ookcam": {
+      "name": "",
+      "enable": true,
+      "activityRules": {
+        "com.okcam.ookcam.MainActivity": {
+          "mode": -1,
+          "color": null,
+          "sf_sampling_mode": 1
         }
       }
     }
