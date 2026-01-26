@@ -43,19 +43,6 @@
           "color": null
         }
       }
-    },"com.aiyu.kaipanla": {
-      "name": "开盘啦",
-      "enable": true,
-      "activityRules": {
-        "com.aiyu.kaipanla.splash.SplashActivity": {
-          "mode": 2,
-          "color": null
-        },
-        "com.aiyu.kaipanla.newindex.ui.main.MainActivity": {
-          "mode": 1,
-          "color": 1
-        }
-      }
     },
     "bin.mt.plus.canary": {
       "name": "MT管理器（测试版）",
@@ -483,6 +470,20 @@
         "*": {
           "mode": 1,
           "color": -1
+        }
+      }
+    },
+    "com.aiyu.kaipanla": {
+      "name": "开盘啦",
+      "enable": true,
+      "activityRules": {
+        "com.aiyu.kaipanla.newindex.ui.main.MainActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.aiyu.kaipanla.splash.SplashActivity": {
+          "mode": 2,
+          "color": null
         }
       }
     },
