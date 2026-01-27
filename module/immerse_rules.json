@@ -2360,31 +2360,11 @@
       "name": "小黑盒",
       "enable": true,
       "activityRules": {
-        "*": {
-          "mode": 2,
-          "color": null
-        },
-        "com.max.xiaoheihe.MainActivity": {
+        "com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity": {
           "mode": 0,
           "color": null
-        },
-        "com.max.xiaoheihe.base.FragmentContainerActivity": {
-          "mode": 1,
-          "color": 1
-        },
-        "com.max.xiaoheihe.module.account.InterestInitV2Activity": {
-          "mode": 1,
-          "color": 1
-        },
-        "com.max.xiaoheihe.module.bbs.ChannelsDetailActivity": {
-          "mode": 1,
-          "color": 1
         },
         "com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity": {
-          "mode": 0,
-          "color": null
-        },
-        "com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity": {
           "mode": 0,
           "color": null
         },
@@ -2392,14 +2372,25 @@
           "mode": 0,
           "color": null
         },
-        "com.max.xiaoheihe.module.game.SteamBindActivity": {
-          "mode": 2,
-          "color": -1
+        "com.max.xiaoheihe.module.account.InterestInitV2Activity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.max.xiaoheihe.base.FragmentContainerActivity": {
+          "mode": 1,
+          "color": 1
+        },
+        "com.max.xiaoheihe.module.bbs.ChannelsDetailActivity": {
+          "mode": 1,
+          "color": 1
         },
         "com.max.xiaoheihe.module.webview.WebActionActivity": {
           "mode": -1,
-          "color": null,
           "sf_sampling_mode": 1
+        },
+        "com.max.xiaoheihe.module.game.SteamBindActivity": {
+          "mode": 2,
+          "color": -1
         }
       }
     },
